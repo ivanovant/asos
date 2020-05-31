@@ -1,0 +1,77 @@
+.header
+  background-color: transparent
+  &__menu
+    padding: 3.55rem 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+.menu
+  &__nav
+    width: 100%
+    max-width: 40.3rem
+    display: flex
+    justify-content: space-around
+    &-wrap
+      display: flex
+      justify-content: space-between
+      width: 100%
+      max-width: 49.6rem
+.logo
+  &__link
+    position: relative
+    font-family: sans-serif
+    color: $light
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 2.45rem
+    margin: 0
+    font-weight: bolder
+    &:hover
+      &::after
+        position: absolute
+        left: 0
+        top: 3rem
+        content: ''
+        display: inline-block
+        width: 95%
+        height: 2px
+        background-color: $light
+.nav
+  &__link
+    position: relative
+    color: $light
+    font-family: MuseoSansCyrl-900
+    letter-spacing: 0.22rem
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 0.9rem
+    &:hover
+      &::after
+        position: absolute
+        left: 0
+        top: 2rem
+        content: ''
+        display: inline-block
+        width: 95%
+        height: 2px
+        background-color: $light
+.links
+  width: 100%
+  max-width: 6.7rem
+  display: flex
+  justify-content: space-between
+  &__item
+    position: relative
+    &:hover
+      &::after
+        position: absolute
+        left: 0
+        top: 2rem
+        content: ''
+        display: inline-block
+        width: 95%
+        height: 2px
+        background-color: $light
+  &__user, &__cart, &__search
+    position: relative
+    width: 1.4rem

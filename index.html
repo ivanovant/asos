@@ -4,36 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Антон Иванов">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>asos</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <div class="menu">
+      <div class="menu header__menu">
         <div class="logo menu__logo">
           <a class="logo__link" href="#">asos</a>
         </div>
         <!-- logo -->
-        <nav class="nav menu__nav">
-          <a href="#" class="nav__link">Домой</a>
-          <a href="#" class="nav__link">Каталог</a>
-          <a href="#" class="nav__link">О нас</a>
-          <a href="#" class="nav__link">Партнерам</a>
-          <a href="#" class="nav__link">Контакты</a>
-        </nav>
-        <div class="icons menu__icons">
-          <a href="#"><img src="img/user.svg" alt="Пользователь"></a>
-          <a href="#"><img src="img/buy.svg" alt="Корзина"></a>
-          <a href="#"><img src="img/search.svg" alt="Поиск"></a>
+        <div class="menu__nav-wrap">
+          <nav class="nav menu__nav">
+            <a href="#" class="nav__link">Домой</a>
+            <a href="#" class="nav__link">Каталог</a>
+            <a href="#" class="nav__link">О нас</a>
+            <a href="#" class="nav__link">Партнерам</a>
+            <a href="#" class="nav__link">Контакты</a>
+          </nav>
+          <div class="links menu__links">
+            <a href="#" class="links__item"><img src="img/user.svg" alt="Пользователь" class="links__user"></a>
+            <a href="#" class="links__item"><img src="img/buy.svg" alt="Корзина" class="links__cart"></a>
+            <a href="#" class="links__item"><img src="img/search.svg" alt="Поиск" class="links__search"></a>
+          </div>
+          <!-- /.links -->
         </div>
-        <!-- /.contacts -->
+        <!-- /.nav__wrap -->
       </div>
       <!-- /.menu -->
     </div>
     <!-- /.container -->
   </header>
   <main>
-    <section class="hero">
+    <section class="section section__hero">
       <!-- Slider main container -->
       <div class="swiper-container swiper1">
         <!-- Additional required wrapper -->
@@ -87,5 +92,8 @@
     </section>
     <!-- /.hero -->
   </main>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
