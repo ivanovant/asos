@@ -9,6 +9,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
   });
 
+  const menuBtn = document.querySelector('.menu__button');
+  const switchBtn = () => menuBtn.classList.toggle('menu__button--active');
+  const menuBtnItem = document.querySelector('.menu__button-item');
+  const switchBtnItem = () => menuBtnItem.classList.toggle('menu__button-item--active');
+  const nav = document.querySelector('.menu__nav');
+  const switchNav = () => nav.classList.toggle('menu__nav--active');
+
+  menuBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    switchBtn();
+    switchBtnItem();
+    switchNav();
+  });
 
     // const modal = document.querySelector('.modal');
   // const modalBtn = document.querySelectorAll('[data-toggle=modal]');

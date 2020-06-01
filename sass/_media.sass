@@ -1,0 +1,225 @@
+@media screen and ( max-width: 1275px )
+  html
+    font-size: 12px
+  .swiper
+    &-slide
+      padding: 14rem 0 17.6rem
+      &__heading
+        font-size: 1.4rem
+      &__description
+        font-size: 4rem
+        &--big
+          font-size: 9rem
+@media screen and ( max-width: 991px )
+  .menu
+    &__nav
+      margin-left: 7rem
+  .swiper
+    &-slide
+      padding: 15rem 0 18.6rem
+      &__heading
+        font-size: 1.4rem
+      &__description
+        font-size: 2.5rem
+        &--big
+          font-size: 7rem
+      &__link
+        cursor: default
+        &:hover
+          background-color: $dark
+    &-button
+      &-prev1, &-next1
+        background-color: rgba(45, 58, 75, 0.6)
+        cursor: default
+        &:hover
+          background-color: rgba(45, 58, 75, 0.6)
+  .nav
+    &__link
+      cursor: default
+      &:hover
+        &::after
+          display: none
+  .logo
+    &__link
+      cursor: default
+      &:hover
+        &::after
+          display: none
+  .links
+    &__item
+      cursor: default
+      &:hover
+        &::after
+          display: none
+@media screen and ( max-width: 785px )
+  .header
+    &__menu
+      padding: 1rem 0
+
+  .logo
+    padding-top: 0.5rem
+  .menu
+    &__button
+      display: block
+      width: 50px
+      height: 50px
+      min-width: 50px
+      position: relative
+      cursor: default
+      outline: none
+      border: none
+      z-index: 50
+      &--active
+        background-color: $light
+      &:active
+        outline: none
+      &:hover
+        outline: none
+      &-item
+        position: absolute
+        top: 45%
+        margin-top: -1px
+        left: 50%
+        margin-left: -15px
+        height: 3px
+        width: 30px
+        background-color: $light
+        &--active
+          height: 0
+          &::before
+            transform: rotate(45deg) !important
+            background-color: $purple !important
+          &::after
+            transform: rotate(-45deg) !important
+            background-color: $purple !important
+        &::before, &::after
+          content: ''
+          position: absolute
+          top: 45%
+          margin-top: -1px
+          left: 50%
+          margin-left: -15px
+          height: 3px
+          width: 30px
+          background-color: $light
+          transition: 0.2s
+        &::before
+          transform: translateY(-13px)
+        &::after
+          transform: translateY(13px)
+  .links
+    &__item
+      margin-right: 1.5rem
+  .menu
+    &__nav
+      position: absolute
+      right: 0
+      top: 60px
+      padding-bottom: 0
+      flex-direction: column
+      max-width: 19rem
+      z-index: 500
+      background-color: $light
+      transition: 0.3s
+      transform: translateX(100%)
+      transform-origin: 15rem -1rem
+      opacity: 0
+      z-index: 1
+      &--active
+        opacity: 1
+        transform: translateX(0%)
+        z-index: 50
+    &__links
+      justify-content: flex-end
+      max-width: 41rem
+  .nav
+    &__link
+      color: $purple
+      text-align: center
+      padding: 1rem 2rem 
+      border: 1px solid $purple
+      &:first-child
+        border-top: none
+      &:active
+        outline: none
+        background-color: $purple
+        color: $light
+  .section
+    &__hero
+      min-height: 20rem
+  .swiper
+    &-slide
+      padding: 3rem 0 5.6rem
+      &__heading
+        font-size: 1.4rem
+        letter-spacing: 0.1rem
+      &__description
+        font-size: 2rem
+        &--big
+          font-size: 4rem
+      &__first
+        background: url('../img/slide-first-bg.jpg') no-repeat center / cover
+      &__second
+        background: url('../img/slide-second-bg.jpg') no-repeat center / cover
+      &__third
+        background: url('../img/slide-third-bg.jpg') no-repeat center / cover
+      &__heading
+        font-size: 1.4rem
+      &__description
+        font-size: 2.5rem
+        &--big
+          font-size: 7rem
+    &-button
+      &-prev1, &-next1
+        background-color: rgba(45, 58, 75, 0.6)
+        width: 50px
+        height: 50px
+        cursor: default
+        &:hover
+          background-color: rgba(45, 58, 75, 0.6)
+        &::after
+          display: none
+        &::before
+          width: 50px
+          height: 50px
+          z-index: 1
+@media screen and ( max-width: 570px )
+  .swiper
+    &-slide
+      padding: 3rem 0 5.6rem
+      &__heading
+        font-size: 1.4rem
+        letter-spacing: 0.1rem
+      &__description
+        font-size: 2.1rem
+        &--big
+          font-size: 4.5rem
+@media screen and ( max-width: 375px )
+  .swiper
+    &-slide
+      padding: 2rem 0 5.6rem
+      &__heading
+        font-size: 1.4rem
+        letter-spacing: 0.1rem
+      &__description
+        font-size: 2rem
+        letter-spacing: 0.2rem
+        &--big
+          font-size: 4rem
+      &__price
+        max-width: 26rem
+      &__link
+        font-size: 1rem
+        padding: 1rem 1.8rem
+      &__pricetag
+        font-size: 3rem
+        padding: 0 2rem 0 2rem
+      &__sup
+        font-size: 1.38rem
+        padding: 0.4rem 0 0 0
+      &__currency
+        position: relative
+        font-family: Gotham Pro
+        font-size: 1.5rem
+        font-weight: 700
+        padding: 1.5rem 0 0 0
