@@ -1,0 +1,130 @@
+.swiper
+  &-slide
+    padding: 8.5rem 0 11.8rem
+    display: flex
+    justify-content: center
+    align-items: center
+    &__first
+      background: url('../img/slide-first-bg.jpg') no-repeat top
+
+    &__second
+      background: url('../img/slide-second-bg.jpg') no-repeat top
+
+    &__third
+      background: url('../img/slide-third-bg.jpg') no-repeat top
+    &__text
+      position: relative
+      z-index: 5
+      padding-top: 9.6rem
+      text-align: center
+      width: 100%
+      max-width: 70rem
+    &__heading
+      margin: 0
+      font-size: 1.25rem
+      font-family: Gotham Pro
+      color: $light
+      font-weight: 400
+    &__description
+      padding-left: 0.7rem
+      margin-top: 2.82rem
+      font-family: MuseoCyrl-700
+      font-size: 4.875rem
+      text-transform: uppercase
+      letter-spacing: 0.42rem
+      color: $light
+      &--big
+        font-family: MuseoCyrl-900
+        font-size: 9.9375rem
+        letter-spacing: -0.21rem
+        word-spacing: 0.48rem
+        line-height: 10.7rem
+        padding-right: 0.6rem
+    &__price
+      margin: auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      max-width: 31rem
+      margin-top: -3.1rem
+    &__link
+      padding: 1.2rem 3.17rem
+      font-family: Gotham Pro-Black
+      font-size: 1.05rem
+      letter-spacing: 0.09rem
+      text-align: center
+      text-transform: uppercase
+      text-decoration: none
+      color: $light
+      background-color: $dark
+      margin-left: 0.7rem
+    &__pricetag
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      font-family: Gotham Pro-Black
+      color: $light
+      font-size: 3.625rem
+      width: 100%
+      max-width: 11.8rem
+    &__sup
+      font-family: Gotham Pro
+      font-size: 1.1rem
+      padding: 0.48rem 0.8rem 0 0
+    &__currency
+      position: relative
+      font-family: Gotham Pro
+      font-size: 1.5rem
+      font-weight: 700
+      padding: 1.9rem 0.7rem 0 0
+      &::after
+        content: ''
+        left: -0.01rem
+        bottom: 0.08rem
+        position: absolute
+        width: 15px
+        height: 2px
+        background-color: $light
+  &-button
+    &-prev1, &-next1
+      outline: none
+      border: none
+      top: 47%
+    &-prev
+      background-color: rgba(45, 58, 75, 0.6)
+      width: 100px
+      height: 100px
+      left: 0
+      &:hover
+        background-color: $dark
+      &::after
+        display: none
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100px
+        height: 100px
+        background: url('../img/arrow-prev.svg') no-repeat center
+        z-index: 1
+    &-next
+      background-color: rgba(45, 58, 75, 0.6)
+      width: 100px
+      height: 100px
+      right: 0
+      &:hover
+        background-color: $dark
+      &::after
+        display: none
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100px
+        height: 100px
+        background: url('../img/arrow-next.svg') no-repeat center
+        z-index: 1
+
