@@ -28,11 +28,21 @@
         &:hover
           background-color: $dark
     &-button
-      &-prev1, &-next1
+      &-prev1
         background-color: rgba(45, 58, 75, 0.6)
         cursor: default
         &:hover
-          background-color: rgba(45, 58, 75, 0.6)
+          background: rgba(45, 58, 75, 0.6) url('../img/arrow-prev.svg') no-repeat center
+      &-next1
+        background-color: rgba(45, 58, 75, 0.6)
+        cursor: default
+        &:hover
+          background: rgba(45, 58, 75, 0.6) url('../img/arrow-next.svg') no-repeat center
+  .swiper-slide
+    &-next-preview
+      display: none
+    &-prev-preview
+      display: none
   .nav
     &__link
       cursor: default
@@ -170,19 +180,30 @@
         &--big
           font-size: 7rem
     &-button
-      &-prev1, &-next1
-        background-color: rgba(45, 58, 75, 0.6)
+      &-prev1
         width: 50px
         height: 50px
         cursor: default
+        &-wrap
+          width: 50px
+          height: 50px
         &:hover
-          background-color: rgba(45, 58, 75, 0.6)
+          background: rgba(45, 58, 75, 0.6) url('../img/arrow-prev.svg') no-repeat center
         &::after
           display: none
         &::before
           width: 50px
           height: 50px
           z-index: 1
+      &-next1
+        width: 50px
+        height: 50px
+        cursor: default
+        &:hover
+          background: rgba(45, 58, 75, 0.6) url('../img/arrow-next.svg') no-repeat center
+        &-wrap
+          width: 50px
+          height: 50px
 @media screen and ( max-width: 570px )
   .swiper
     &-slide
@@ -191,26 +212,32 @@
         font-size: 1.4rem
         letter-spacing: 0.1rem
       &__description
-        font-size: 2.1rem
+        font-size: 1.9rem
+        letter-spacing: 0.2rem
         &--big
           font-size: 4.5rem
+      &__link
+        font-size: 1.3rem
+        padding: 1.2rem 2.8rem
 @media screen and ( max-width: 375px )
   .swiper
     &-slide
       padding: 2rem 0 5.6rem
+      &__text
+        padding-left: 0.7rem
       &__heading
         font-size: 1.4rem
         letter-spacing: 0.1rem
       &__description
-        font-size: 2rem
+        font-size: 1.8rem
         letter-spacing: 0.2rem
         &--big
-          font-size: 4rem
+          font-size: 3.8rem
       &__price
         max-width: 26rem
       &__link
         font-size: 1rem
-        padding: 1rem 1.8rem
+        padding: 1rem 1.4rem
       &__pricetag
         font-size: 3rem
         padding: 0 2rem 0 2rem

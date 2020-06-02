@@ -49,7 +49,7 @@
                 <p class="swiper-slide__description">Еще красивее <br> <span class="swiper-slide__description--big">этим летом</span></p>
                 <div class="swiper-slide__price">
                   <a href="#" class="swiper-slide__link">На шопинг</a>
-                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>599<span class="swiper-slide__currency">р</span></span>
+                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>599<span class="currency swiper-slide__currency"><img src="img/rouble.svg" alt="р"></span></span>
                 </div>
                 <!-- /.swiper-slide__price -->
               </div>
@@ -62,7 +62,7 @@
                 <p class="swiper-slide__description">Больше стиля <br> <span class="swiper-slide__description--big">этим летом</span></p>
                 <div class="swiper-slide__price">
                   <a href="#" class="swiper-slide__link">На шопинг</a>
-                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>499<span class="swiper-slide__currency">р</span></span>
+                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>499<span class="currency swiper-slide__currency"><img src="img/rouble.svg" alt="р"></span></span>
                 </div>
                 <!-- /.swiper-slide__price -->
               </div>
@@ -75,7 +75,7 @@
                 <p class="swiper-slide__description">Новые тренды <br> <span class="swiper-slide__description--big">этим летом</span></p>
                 <div class="swiper-slide__price">
                   <a href="#" class="swiper-slide__link">На шопинг</a>
-                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>799<span class="swiper-slide__currency">р</span></span>
+                  <span class="swiper-slide__pricetag"><span class="swiper-slide__sup">от</span>799<span class="currency swiper-slide__currency"><img src="img/rouble.svg" alt="р"></span></span>
                 </div>
                 <!-- /.swiper-slide__price -->
               </div>
@@ -84,12 +84,96 @@
             <!-- swiper-slide -->
         </div>
         <!-- swiper-wrapper -->
-        <div class="swiper-button-prev swiper-button-prev1"></div>
-        <div class="swiper-button-next swiper-button-next1"></div>
+        <div class="swiper-button-next1-wrap">
+          <div class="swiper-slide-next-preview"></div>
+          <div class="swiper-button-next swiper-button-next1"></div>
+        </div>
+        <div class="swiper-button-prev1-wrap">
+          <div class="swiper-button-prev swiper-button-prev1"></div>
+          <div class="swiper-slide-prev-preview slide-first"></div>
+        </div>
       </div>
       <!-- swiper-container swiper1 -->
     </section>
     <!-- /.hero -->
+
+    <section class="section product section__product">
+      <div class="container">
+        <div class="product__wrap">
+          <div class="card product__card product__card--right">
+            <div class="product-card__image-wrap">
+              <img src="img/product/image-1.png" alt="Фото" class="product-card__image">
+            </div>
+            <!-- product-card__image-wrap -->
+            <div class="card__text">
+              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
+              <h3 class="product-card__heading"></h3>
+              <lable class="product-card__season"></lable>
+              <lable class="product-card__gender"></lable>
+              <lable class="product-card__brend-country"></lable>
+              <lable class="product-card__factory-country"></lable>
+            </div>
+            <!-- card__text -->
+            <button type="submit" class="button product-card__button add-to-cart">
+          </div>
+          <!-- product__card -->
+          <div class="card product__card product__card--left product__card--blue">
+            <div class="product-card__image-wrap">
+              <img src="img/product/image-2.png" alt="Фото" class="product-card__image">
+            </div>
+            <!-- product-card__image-wrap -->
+            <div class="card__text">
+              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
+              <h3 class="product-card__heading"></h3>
+              <lable class="product-card__season"></lable>
+              <lable class="product-card__gender"></lable>
+              <lable class="product-card__brend-country"></lable>
+              <lable class="product-card__factory-country"></lable>
+            </div>
+            <!-- card__text -->
+            <button type="submit" class="button product-card__button add-to-cart">
+          </div>
+          <!-- product__card -->
+          <div class="card product__card product__card--right product__card--blue">
+            <div class="product-card__image-wrap">
+              <img src="img/product/image-3.png" alt="Фото" class="product-card__image">
+            </div>
+            <!-- product-card__image-wrap -->
+            <div class="card__text">
+              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
+              <h3 class="product-card__heading"></h3>
+              <lable class="product-card__season"></lable>
+              <lable class="product-card__gender"></lable>
+              <lable class="product-card__brend-country"></lable>
+              <lable class="product-card__factory-country"></lable>
+            </div>
+            <!-- card__text -->
+            <button type="submit" class="button product-card__button add-to-cart">
+          </div>
+          <!-- product__card -->
+          <div class="card product__card product__card--left">
+            <div class="product-card__image-wrap">
+              <img src="img/product/image-4.png" alt="Фото" class="product-card__image">
+            </div>
+            <!-- product-card__image-wrap -->
+            <div class="card__text">
+              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
+              <h3 class="product-card__heading"></h3>
+              <lable class="product-card__season"></lable>
+              <lable class="product-card__gender"></lable>
+              <lable class="product-card__brend-country"></lable>
+              <lable class="product-card__factory-country"></lable>
+            </div>
+            <!-- card__text -->
+            <button type="submit" class="button product-card__button add-to-cart">
+          </div>
+          <!-- product__card -->
+        </div>
+        <!-- /.product__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.product -->
   </main>
 
   <script src="js/swiper.min.js"></script>

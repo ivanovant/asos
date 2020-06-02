@@ -1,3 +1,16 @@
+.slide
+  &-first
+    background: url('../img/slide-first-bg.jpg') no-repeat center / 230%
+  &-second
+    background: url('../img/slide-second-bg.jpg') no-repeat center / 230%
+  &-third
+    background: url('../img/slide-third-bg.jpg') no-repeat center / 230%
+  &-fourth
+    background: url('../img/slide-second-bg.jpg') no-repeat center / 230%
+  &-fifth
+    background: url('../img/slide-third-bg.jpg') no-repeat center / 230%
+  &-sixth
+    background: url('../img/slide-first-bg.jpg') no-repeat center / 230%
 .swiper
   &-slide
     padding: 10rem 0 13.6rem
@@ -10,6 +23,24 @@
       background: url('../img/slide-second-bg.jpg') no-repeat center
     &__third
       background: url('../img/slide-third-bg.jpg') no-repeat center
+    &-prev-preview
+      width: 100px
+      height: 100px
+      z-index: 160
+      opacity: 0
+      visibility: hidden
+      &--active
+        opacity: 1
+        visibility: visible
+    &-next-preview
+      width: 100px
+      height: 100px
+      z-index: 160
+      opacity: 0
+      visibility: hidden
+      &--active
+        opacity: 1
+        visibility: visible
     &__text
       position: relative
       z-index: 5
@@ -59,7 +90,8 @@
       background-color: $dark
       margin-left: 0.5rem
       &:hover
-        background-color: rgba(45, 58, 75, 0.6)
+        background-color: $light
+        color: $secondary
     &__pricetag
       display: flex
       justify-content: space-between
@@ -79,54 +111,44 @@
       font-family: Gotham Pro
       font-size: 1.5rem
       font-weight: 700
-      padding: 2.2rem 1.3rem 0 0
-      &::after
-        content: ''
-        left: -0.01rem
-        bottom: 0.08rem
-        position: absolute
-        width: 15px
-        height: 2px
-        background-color: $light
+      padding: 2.7rem 1.3rem 0 0
   &-button
     &-prev1, &-next1
       outline: none
       border: none
       top: 47%
+      margin-top: 0
     &-prev1
-      background-color: rgba(45, 58, 75, 0.6)
+      position: static
+      background: rgba(45, 58, 75, 0.6) url('../img/arrow-prev.svg') no-repeat center
       width: 100px
       height: 100px
-      left: 0
+      &-wrap
+        position: absolute
+        display: flex
+        height: 100px
+        width: 200px
+        top: 47%
+        left: 0
       &:hover
-        background-color: $dark
+        background: $light url('../img/arrow-prev-hover.svg') no-repeat center
       &::after
         display: none
-      &::before
-        content: ''
-        position: absolute
-        left: 0
-        top: 0
-        width: 100px
-        height: 100px
-        background: url('../img/arrow-prev.svg') no-repeat center
-        z-index: 1
     &-next1
-      background-color: rgba(45, 58, 75, 0.6)
+      position: static
       width: 100px
       height: 100px
-      right: 0
+      background: rgba(45, 58, 75, 0.6) url('../img/arrow-next.svg') no-repeat center
+      &-wrap
+        position: absolute
+        display: flex
+        justify-content: flex-end
+        height: 100px
+        width: 200px
+        top: 47%
+        right: 0
       &:hover
-        background-color: $dark
+        background: $light url('../img/arrow-next-hover.svg') no-repeat center
       &::after
         display: none
-      &::before
-        content: ''
-        position: absolute
-        left: 0
-        top: 0
-        width: 100px
-        height: 100px
-        background: url('../img/arrow-next.svg') no-repeat center
-        z-index: 1
 
