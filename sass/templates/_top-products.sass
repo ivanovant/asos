@@ -1,0 +1,123 @@
+.product
+  &-card
+    &__heading
+      color: $dark-blue
+      font-family: Gotham Pro-Bold
+      font-size: 1.5714rem
+      font-weight: 900
+      line-height: 1.5714rem
+      text-transform: uppercase
+      letter-spacing: 0.19rem
+      padding-left: 0.2rem
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__image
+      &-wrap
+        position: relative
+        margin-bottom: 0.4rem
+        z-index: 1
+        height: 342px
+    &__heading
+      margin-bottom: 1rem
+    &__info
+      &-wrap
+        margin-bottom: 1.4rem
+.top-products
+  &__section-title
+    margin-bottom: 5.75rem
+.swiper2-button-next
+  &__wrap
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translate(1217px, -344px)
+    width: 38px
+    height: 38px
+.swiper2-button-prev
+  &__wrap
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translate(-75px, -382px)
+    width: 38px
+    height: 38px
+.swiper
+  &-button
+    &-prev2, &-next2
+      outline: none
+      border: none
+      left: 0
+      top: 0
+      right: 0
+      margin-top: 0
+    &-prev2
+      position: static
+      background:url('../img/arrow-prev2.svg') no-repeat center
+      width: 38px
+      height: 38px
+      border: 1px solid black
+      &:hover
+        background-color: $grey
+      &::after
+        display: none
+    &-next2
+      position: static
+      width: 38px
+      height: 38px
+      background: url('../img/arrow-next2.svg') no-repeat center
+      border: 1px solid black
+      &:hover
+        background-color: $grey
+      &::after
+        display: none
+.card
+  &__links
+    &-wrap
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background-color: $purple
+        opacity: 0.7
+        z-index: 10
+.wrap--active
+  opacity: 1
+  visibility: visible
+.card
+  &__links
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 45.5%
+    z-index: 50
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 8.1rem
+.icon
+  &__heart
+    cursor: pointer
+    &:hover
+      background: url('../img/heart-hover.svg') no-repeat center
+  &__zoom
+    cursor: pointer
+    &:hover
+      background: url('../img/zoom-hover.svg') no-repeat center
+  &__cart
+    cursor: pointer
+    &:hover
+      background: url('../img/cart-hover.svg') no-repeat center 

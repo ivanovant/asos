@@ -7,6 +7,64 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '.swiper-button-prev1',
     },
   });
+  const swiper2 = new Swiper ('.swiper2', {
+    loop: false,
+    slidesPerView: 4,
+    spaceBetween: 46,
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+  });
+  const cardImage = document.querySelectorAll('.swiper2-slide');
+  const productCard = document.querySelectorAll('.product-card__image-wrap');
+
+  cardImage.forEach.call(productCard, function (el, i){
+    el.addEventListener('mouseover', function (event) {
+      el.children[1].classList.add('wrap--active');
+      function changeSrc(img) {
+        k = i + 1;
+        zoomImage.src = './img/top-products/zoom-image' + k + '.jpg';
+      };
+      changeSrc();
+      return false;
+    })
+    el.addEventListener('mouseout', (event) => {
+      el.children[1].classList.remove('wrap--active');
+      return false;
+    });
+  });
+
+  const zoom = document.querySelector('.zoom');
+  const zoomBtn = document.querySelectorAll('[data-toggle=zoom]');
+  const closeZoomBtn = document.querySelector('.zoom__close');
+  const closeZoom = () => zoom.classList.remove('zoom--visible');
+  const switchZoom = () => zoom.classList.add('zoom--visible');
+  const zoomImage = document.getElementById('zoomImg');
+  const swiper2Slides = document.querySelectorAll('.swiper2-slide');
+
+  zoomBtn.forEach(element => {
+    element.addEventListener('click', function(e) {
+      switchZoom();
+      console.log()
+      
+    });
+  });
+
+
+  closeZoomBtn.addEventListener('click', closeZoom);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === "Escape") {
+        closeZoom();
+    }
+  });
+  zoom.addEventListener('click', (event) => {
+    if (event.target === zoom) {
+      closeZoom();
+    }
+  });
+
 
   const next1 = document.querySelector('.swiper-button-next1');
   const prev1 = document.querySelector('.swiper-button-prev1');
@@ -15,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const switchNextPreview = () => nextPreview.classList.toggle('swiper-slide-next-preview--active');
   const prevPreview = document.querySelector('.swiper-slide-prev-preview');
   const switchPrevPreview = () => prevPreview.classList.toggle('swiper-slide-prev-preview--active');
-  const slide = document.querySelectorAll('.swiper-slide');
+  const slide = document.querySelectorAll('.swiper1-slide');
 
   next1.addEventListener('mouseover', (event) => {
     switchNextPreview();

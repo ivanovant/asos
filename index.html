@@ -36,13 +36,14 @@
     <!-- /.container -->
   </header>
   <main>
-    <section class="section hero section__hero">
+
+    <section class="hero section__hero">
       <!-- Slider main container -->
       <div class="swiper-container swiper1">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper swiper-no-swiping">
             <!-- Slides -->
-            <div class="swiper-slide swiper-slide__first">
+            <div class="swiper-slide swiper1-slide swiper-slide__first">
               <!-- /.swiper-slide__image -->
               <div class="swiper-slide__text">
                 <h3 class="swiper-slide__heading">Новая коллекция от OODJI</h3>
@@ -56,7 +57,7 @@
               <!-- /.swiper-slide__text -->
             </div>
             <!-- swiper-slide -->
-            <div class="swiper-slide swiper-slide__second">
+            <div class="swiper-slide swiper1-slide swiper-slide__second">
               <div class="swiper-slide__text">
                 <h3 class="swiper-slide__heading">Новая коллекция от ТВОЕ</h3>
                 <p class="swiper-slide__description">Больше стиля <br> <span class="swiper-slide__description--big">этим летом</span></p>
@@ -69,7 +70,7 @@
               <!-- /.swiper-slide__text -->
             </div>
             <!-- swiper-slide -->
-            <div class="swiper-slide swiper-slide__third">
+            <div class="swiper-slide swiper1-slide swiper-slide__third">
               <div class="swiper-slide__text">
                 <h3 class="swiper-slide__heading">Новая коллекция от BAON</h3>
                 <p class="swiper-slide__description">Новые тренды <br> <span class="swiper-slide__description--big">этим летом</span></p>
@@ -97,85 +98,448 @@
     </section>
     <!-- /.hero -->
 
-    <section class="section product section__product">
-      <div class="container">
-        <div class="product__wrap">
-          <div class="card product__card product__card--right">
-            <div class="product-card__image-wrap">
-              <img src="img/product/image-1.png" alt="Фото" class="product-card__image">
-            </div>
-            <!-- product-card__image-wrap -->
-            <div class="card__text">
-              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
-              <h3 class="product-card__heading"></h3>
-              <lable class="product-card__season"></lable>
-              <lable class="product-card__gender"></lable>
-              <lable class="product-card__brend-country"></lable>
-              <lable class="product-card__factory-country"></lable>
-            </div>
-            <!-- card__text -->
-            <button type="submit" class="button product-card__button add-to-cart">
+    <section class="product section__product">
+      <div class="product__wrap">
+        <div class="card product__card product__card--right">
+          <div class="card__image-wrap">
+            <img src="img/product/image-1.png" alt="Фото" class="card__image">
           </div>
-          <!-- product__card -->
-          <div class="card product__card product__card--left product__card--blue">
-            <div class="product-card__image-wrap">
-              <img src="img/product/image-2.png" alt="Фото" class="product-card__image">
+          <!-- card__image-wrap -->
+          <div class="card__text card__text--left">
+            <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>1 199</span>
+            <h3 class="card__heading">шорты, ТВОЕ</h3>
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__season">Сезон:</lable>
+              <span class="product-info product-info__season-value">лето</span>
             </div>
-            <!-- product-card__image-wrap -->
-            <div class="card__text">
-              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
-              <h3 class="product-card__heading"></h3>
-              <lable class="product-card__season"></lable>
-              <lable class="product-card__gender"></lable>
-              <lable class="product-card__brend-country"></lable>
-              <lable class="product-card__factory-country"></lable>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__gender">Пол:</lable>
+              <span class="product-info product-info__gender-value">Женский</span>
             </div>
-            <!-- card__text -->
-            <button type="submit" class="button product-card__button add-to-cart">
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__brend-country">Страна бренда:</lable>
+              <span class="product-info product-info__brend-country-value">Россия</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__factory-country">Страна производитель:</lable>
+              <span class="product-info product-info__factory-country-value">Бангладеш</span>
+            </div>
+            <!-- card_info-wrap -->
           </div>
-          <!-- product__card -->
-          <div class="card product__card product__card--right product__card--blue">
-            <div class="product-card__image-wrap">
-              <img src="img/product/image-3.png" alt="Фото" class="product-card__image">
-            </div>
-            <!-- product-card__image-wrap -->
-            <div class="card__text">
-              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
-              <h3 class="product-card__heading"></h3>
-              <lable class="product-card__season"></lable>
-              <lable class="product-card__gender"></lable>
-              <lable class="product-card__brend-country"></lable>
-              <lable class="product-card__factory-country"></lable>
-            </div>
-            <!-- card__text -->
-            <button type="submit" class="button product-card__button add-to-cart">
-          </div>
-          <!-- product__card -->
-          <div class="card product__card product__card--left">
-            <div class="product-card__image-wrap">
-              <img src="img/product/image-4.png" alt="Фото" class="product-card__image">
-            </div>
-            <!-- product-card__image-wrap -->
-            <div class="card__text">
-              <span class="product__pricetag"><span class="currency product-card__currency"></span></span>
-              <h3 class="product-card__heading"></h3>
-              <lable class="product-card__season"></lable>
-              <lable class="product-card__gender"></lable>
-              <lable class="product-card__brend-country"></lable>
-              <lable class="product-card__factory-country"></lable>
-            </div>
-            <!-- card__text -->
-            <button type="submit" class="button product-card__button add-to-cart">
-          </div>
-          <!-- product__card -->
+          <!-- card__text -->
+          <button type="submit" class="button card__button add-to-cart">купить</button>
         </div>
-        <!-- /.product__wrap -->
+        <!-- product__card -->
+        <div class="card product__card product__card--left product__card--blue">
+          <div class="card__image-wrap">
+            <img src="img/product/image-2.png" alt="Фото" class="card__image">
+          </div>
+          <!-- card__image-wrap -->
+          <div class="card__text card__text--right">
+            <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>299</span>
+            <h3 class="card__heading">Футболка, ТВОЕ</h3>
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__season">Сезон:</lable>
+              <span class="product-info product-info__season-value">демисезон</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__gender">Пол:</lable>
+              <span class="product-info product-info__gender-value">Женский</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__brend-country">Страна бренда:</lable>
+              <span class="product-info product-info__brend-country-value">Россия</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__factory-country">Страна производитель:</lable>
+              <span class="product-info product-info__factory-country-value">Россия</span>
+            </div>
+            <!-- card_info-wrap -->
+          </div>
+          <!-- card__text -->
+          <button type="submit" class="button card__button add-to-cart card__button--dark">купить</button>
+        </div>
+        <!-- product__card -->
+        <div class="card product__card product__card--right product__card--blue">
+          <div class="card__image-wrap">
+            <img src="img/product/image-3.png" alt="Фото" class="card__image">
+          </div>
+          <!-- card__image-wrap -->
+          <div class="card__text card__text--left">
+            <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>399</span>
+            <h3 class="card__heading">Футболка, ТВОЕ</h3>
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__season">Сезон:</lable>
+              <span class="product-info product-info__season-value">лето</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__gender">Пол:</lable>
+              <span class="product-info product-info__gender-value">Женский</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__brend-country">Страна бренда:</lable>
+              <span class="product-info product-info__brend-country-value">Россия</span>
+            </div>
+            <!-- card_info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__factory-country">Страна производитель:</lable>
+              <span class="product-info product-info__factory-country-value">Молдова, Республика</span>
+            </div>
+            <!-- card_info-wrap -->
+          </div>
+          <!-- card__text -->
+          <button type="submit" class="button card__button add-to-cart">купить</button>
+        </div>
+        <!-- product__card -->
+        <div class="card product__card product__card--left">
+          <div class="card__image-wrap">
+            <img src="img/product/image-4.png" alt="Фото" class="card__image">
+          </div>
+          <!-- card__image-wrap -->
+          <div class="card__text card__text--right">
+            <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>299</span>
+            <h3 class="card__heading">Футболка, ТВОЕ</h3>
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__season">Сезон:</lable>
+              <span class="product-info product-info__season-value">демисезон</span>
+            </div>
+            <!-- card__info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__gender">Пол:</lable>
+              <span class="product-info product-info__gender-value">Женский</span>
+            </div>
+            <!-- card__info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__brend-country">Страна бренда:</lable>
+              <span class="product-info product-info__brend-country-value">Россия</span>
+            </div>
+            <!-- card__info-wrap -->
+            <div class="card__info-wrap">
+              <lable class="product-info product-info__factory-country">Страна производитель:</lable>
+              <span class="product-info product-info__factory-country-value">Россия</span>
+            </div>
+            <!-- card__info-wrap -->
+          </div>
+          <!-- card__text -->
+          <button type="submit" class="button card__button add-to-cart">купить</button>
+        </div>
+        <!-- product__card -->
+      </div>
+      <!-- /.product__wrap -->
+    </section>
+    <!-- /.product -->
+
+    <section class="section top-products section__top-products">
+      <div class="container">
+        <div class="content top-pruducts__content">
+          <div class="section-title top-products__section-title">
+            <h2 class="section-title__heading">Популярные товары</h2>
+            <p class="section-title__text">В этой рубрике мы подобрали самые известные и покупаемые товары. 
+              Знакомьтесь, быть может и вам понравится</p>
+          </div>
+          <!-- /.title section__title -->
+          <div class="swiper-container swiper2">
+            <div class="swiper-wrapper swiper-no-swiping">
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-1.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Жилет, A.Karina</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">серый</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>6 490</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-2.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Юбка, Oodji</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">синий</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>799</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-3.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Брюки, ТВОЕ</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">темно-синий</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-4.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Пижама FORLIFE</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">коралловый, белый</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>1 290</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-5.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Юбка, Oodji</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">морская волна</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>399</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-6.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Юбка, Oodji</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">бирюзовый</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>799</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-7.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">EMKA FASHION</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">синий</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>1 425</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-8.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Юбка, Oodji</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">бледно-розовый</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>499</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+              <div class="swiper-slide swiper2-slide">
+                <div class="product-card swiper1-slide__product-card">
+                  <div class="product-card__image-wrap">
+                    <img src="img/top-products/image-9.png" alt="Модель" class="swiper-slide__image">
+                    <div class="card__links-wrap">
+                      <div class="card__links">
+                        <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
+                        <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                        <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
+                      </div>
+                      <!-- /.card__links -->
+                    </div>
+                    <!-- card__links-wrap -->
+                  </div>
+                  <!-- /.product-card__image-wrap -->
+                  <div class="product-card__text">
+                    <h4 class="product-card__heading">Юбка, КАЛIНКА</h4>
+                    <div class="product-card__info-wrap">
+                      <lable class="product-info product-info__color">Цвет:</lable>
+                      <span class="product-info product-info__color-value">синий</span>
+                    </div>
+                    <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>2 810</span>
+                    <!-- /.product-card__info-wrap -->
+                  </div>
+                  <!-- /.product-card__text -->
+                </div>
+                <!-- /.swiper1-slide__product-card -->
+              </div>
+              <!-- swiper2-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper-container2 swiper2 -->
+          <div class="swiper2-button-next__wrap">
+            <div class="swiper-button-next swiper-button-next2"></div>
+          </div>
+          <!-- /.swiper2-slider-button-next__wrap -->
+          <div class="swiper2-button-prev__wrap">
+            <div class="swiper-button-prev swiper-button-prev2"></div>
+          </div>
+          <!-- /.swiper2-slider-button-prev__wrap -->
+        </div>
+        <!-- /.top-pruduct__content -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.product -->
+    <!-- /.top-products -->
   </main>
 
+  <div class="zoom">
+    <div class="zoom__dialog">
+      <div class="zoom__image-wrap">
+        <img src="" alt="Модель" class="zoom__image" id="zoomImg">
+      </div>
+      <!-- zoom__image-wrap -->
+      <button class="zoom__close"></button>
+    </div>
+    <!-- /.zoom__dialog -->
+  </div>
+  <!-- /.modal modal__zoom -->
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -35,7 +35,15 @@
   font-display: swap;
   }
 @font-face {
-  font-family: Gotha Pro Bla;
+  font-family: Gotham Pro-Bold;
+  src: 
+  url('../fonts/Gotha/GothamPro-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+@font-face {
+  font-family: Gotha Pro-Bla;
   src: 
   url('../fonts/Gotha/GothaProBla.woff') format('woff'),
   url('../fonts/Gotha/GothaProBla.woff2') format('woff2');
@@ -44,7 +52,7 @@
   font-display: swap;
   }
 @font-face {
-  font-family: Gotha Pro Light;
+  font-family: Gotha Pro-Light;
   src: 
   url('../fonts/Gotha/GothaProLig.woff') format('woff'),
   url('../fonts/Gotha/GothaProLig.woff2') format('woff2');
@@ -53,7 +61,7 @@
   font-display: swap;
   }
 @font-face {
-  font-family: Gotha Pro Medium;
+  font-family: Gotha Pro-Medium;
   src: 
   url('../fonts/Gotha/GothaProMed.woff') format('woff'),
   url('../fonts/Gotha/GothaProMed.woff2') format('woff2');
@@ -62,7 +70,7 @@
   font-display: swap;
   }
 @font-face {
-  font-family: Gotha Pro Regular;
+  font-family: Gotha Pro-Regular;
   src: 
   url('../fonts/Gotha/GothaProReg.woff') format('woff'),
   url('../fonts/Gotha/GothaProReg.woff2') format('woff2');
