@@ -376,8 +376,9 @@ template {
   font-weight: 400;
   color: #2d3a4b;
   border: 1px solid #3a4656;
-  border-radius: 1.5rem; }
-  .card__button--dark {
+  border-radius: 1.5rem;
+  cursor: pointer; }
+  .card__button:hover {
     color: #ffffff;
     boreder: none;
     background-color: #2d3a4b; }
