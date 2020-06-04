@@ -1,22 +1,27 @@
 @media screen and ( max-width: 1275px )
   html
     font-size: 12px
+
   .swiper
     &-slide
-      padding: 14rem 0 17.6rem
       &__heading
         font-size: 1.4rem
       &__description
         font-size: 4rem
         &--big
           font-size: 9rem
+  .swiper1
+    &-slide
+      padding: 14rem 0 17.6rem
 @media screen and ( max-width: 991px )
   .menu
     &__nav
       margin-left: 7rem
-  .swiper
+  .swiper1
     &-slide
       padding: 15rem 0 18.6rem
+  .swiper
+    &-slide
       &__heading
         font-size: 1.4rem
       &__description
@@ -24,25 +29,53 @@
         &--big
           font-size: 7rem
       &__link
+        outline: none
         cursor: default
         &:hover
           background-color: $dark
+          color: $light
+        &:active
+          outline: none
+          background-color: $light
+          color: $secondary
+      &-next-preview
+        display: none
+      &-prev-preview
+        display: none
     &-button
       &-prev1
+        outline: none
         background-color: rgba(45, 58, 75, 0.6)
         cursor: default
         &:hover
           background: rgba(45, 58, 75, 0.6) url('../img/arrow-prev.svg') no-repeat center
+        &:active
+          outline: none
+          background: $light url('../img/arrow-prev-hover.svg') no-repeat center
       &-next1
+        outline: none
         background-color: rgba(45, 58, 75, 0.6)
         cursor: default
         &:hover
           background: rgba(45, 58, 75, 0.6) url('../img/arrow-next.svg') no-repeat center
-  .swiper-slide
-    &-next-preview
-      display: none
-    &-prev-preview
-      display: none
+        &:active
+          outline: none
+          background: $light url('../img/arrow-next-hover.svg') no-repeat center
+      &-prev2
+        outline: none
+        cursor: default
+        &:hover
+          background: url('../img/arrow-prev2.svg') no-repeat center
+        &:active
+          outline: none
+          background-color: $grey
+      &-next2
+        outline: none
+        cursor: default
+        &:hover
+          background: url('../img/arrow-next2.svg') no-repeat center
+        &:active
+          background-color: $grey
   .nav
     &__link
       cursor: default
@@ -61,11 +94,122 @@
       &:hover
         &::after
           display: none
+  .card
+    &__button
+      cursor: default
+      &:hover
+        color: $dark-blue
+        border: 1px solid $blue
+        background-color: transparent
+      &:active
+        color: $light
+        background-color: $dark-blue
+  .zoom
+    &__close
+      cursor: default
+      &:hover
+        background: url('../img/close.svg') no-repeat center / 112%
+  .button
+    &__zoom
+      background-color: transparent
+      border: none
+      outline: none 
+      &:hover
+        
+        border: none
+        outline: none
+      &:active
+        border: none
+        outline: none
+      &:clicked
+        border: none
+        outline: none
+      &:checked
+        border: none
+        outline: none
+      &:focus
+        outline: none
+        border: none
+    &__cart
+      background-color: transparent
+      border: none
+      outline: none
+      &:hover
+        border: none
+        outline: none
+      &:active
+        border: none
+        outline: none
+      &:clicked
+        border: none
+        outline: none
+      &:checked
+        border: none
+        outline: none
+      &:focus
+        outline: none
+        border: none
+    &__heart
+      background-color: transparent
+      border: none
+      outline: none
+      &:hover
+        border: none
+        outline: none
+      &:active
+        border: none
+        outline: none
+      &:clicked
+        border: none
+        outline: none
+      &:checked
+        border: none
+        outline: none
+      &:focus
+        outline: none
+        border: none
+  .icon
+    &__heart
+      cursor: default
+      outline: none
+      &:hover
+        background: transparent
+      &:active
+        background: url('../img/heart-hover.svg') no-repeat center / 96%
+    &__zoom
+      cursor: default
+      outline: none
+      &:hover
+        background: transparent
+      &:active
+        outline: none
+        background: url('../img/zoom-hover.svg') no-repeat center / 96%
+    &__cart
+      cursor: default
+      outline: none
+      &:hover
+        outline: none
+        background: transparent 
+      &:active
+        outline: none
+        background: url('../img/cart-hover.svg') no-repeat center / 96.85%
 @media screen and ( max-width: 785px )
+  .product
+    &__card
+      flex-basis: 100%
+      align-items: center
+      padding: 2rem 0
+      &--last
+        order: 5
+  .card
+    &__text
+      align-items: center
   .header
     &__menu
       padding: 1rem 0
-
+  .top-products
+    &__container
+      width: 80%
   .logo
     padding-top: 0.5rem
   .menu
@@ -159,7 +303,6 @@
       min-height: 20rem
   .swiper
     &-slide
-      padding: 3rem 0 5.6rem
       &__heading
         font-size: 1.4rem
         letter-spacing: 0.1rem
@@ -204,8 +347,21 @@
         &-wrap
           width: 50px
           height: 50px
-@media screen and ( max-width: 570px )
-  .swiper
+  .swiper1
+    &-slide
+      padding: 3rem 0 5.6rem
+  .zoom
+    &__close
+      right: 5px
+      top: 5px
+      background: url('../img/close-mobile.svg') no-repeat center / 112%
+      &:hover
+        background: url('../img/close-mobile.svg') no-repeat center / 112%
+@media screen and ( max-width: 574px )
+  .top-products
+    &__container
+      width: 100%
+  .swiper1
     &-slide
       padding: 3rem 0 5.6rem
       &__heading
@@ -219,10 +375,15 @@
       &__link
         font-size: 1.3rem
         padding: 1.2rem 2.8rem
+  .product
+    &-card
+      align-items: center
 @media screen and ( max-width: 375px )
-  .swiper
+  .swiper1
     &-slide
       padding: 2rem 0 5.6rem
+  .swiper
+    &-slide
       &__text
         padding-left: 0.7rem
       &__heading

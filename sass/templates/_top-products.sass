@@ -18,7 +18,7 @@
         position: relative
         margin-bottom: 0.4rem
         z-index: 1
-        height: 342px
+        height: 100%
     &__heading
       margin-bottom: 1rem
     &__info
@@ -30,19 +30,19 @@
 .swiper2-button-next
   &__wrap
     position: relative
-    display: flex
+    display: inline-block
     justify-content: center
     align-items: center
-    transform: translate(1217px, -344px)
+    margin-right: 0
     width: 38px
     height: 38px
 .swiper2-button-prev
   &__wrap
     position: relative
-    display: flex
+    display: inline-block
     justify-content: center
     align-items: center
-    transform: translate(-75px, -382px)
+    margin-left: 0
     width: 38px
     height: 38px
 .swiper
@@ -50,12 +50,9 @@
     &-prev2, &-next2
       outline: none
       border: none
-      left: 0
-      top: 0
-      right: 0
-      margin-top: 0
     &-prev2
-      position: static
+      left: 0
+      top: 52.5%
       background:url('../img/arrow-prev2.svg') no-repeat center
       width: 38px
       height: 38px
@@ -65,7 +62,8 @@
       &::after
         display: none
     &-next2
-      position: static
+      right: 0.1rem
+      top: 52.5%
       width: 38px
       height: 38px
       background: url('../img/arrow-next2.svg') no-repeat center
@@ -111,13 +109,16 @@
 .icon
   &__heart
     cursor: pointer
+    outline: none
     &:hover
       background: url('../img/heart-hover.svg') no-repeat center
   &__zoom
     cursor: pointer
+    outline: none
     &:hover
       background: url('../img/zoom-hover.svg') no-repeat center
   &__cart
     cursor: pointer
+    outline: none
     &:hover
       background: url('../img/cart-hover.svg') no-repeat center 

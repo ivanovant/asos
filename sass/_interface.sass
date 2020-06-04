@@ -7,25 +7,72 @@
     letter-spacing: 0.06rem
     font-weight: 400
     color: $dark-blue
+    background-color: transparent
     border: 1px solid $blue
     border-radius: 1.5rem
     cursor: pointer
     &:hover
       color: $light
-      boreder: none
       background-color: $dark-blue
 .button
+  &:active
+    outline: none !important
+  &:clicked
+    outline: none !important
+  &:checked
+    outline: none !important
+  &:focus
+    outline: none !important
   &__zoom
     background-color: transparent
-    border: none
-    outline: none
+    border: none !important
+    outline: none !important
+    &:hover
+      border: none !important
+      outline: none !important
+    &:active
+      border: none !important
+      outline: none !important
+    &:clicked
+      border: none !important
+      outline: none !important
+    &:checked
+      border: none !important
+      outline: none !important
+    &:focus
+      outline: none !important
+      border: none !important
   &__cart
     background-color: transparent
-    border: none
-    outline: none
+    border: none !important
+    outline: none !important
+    &:active
+      border: none !important
+      outline: none !important
+    &:clicked
+      border: none !important
+      outline: none !important
+    &:checked
+      border: none !important
+      outline: none !important
+    &:focus
+      outline: none !important
+      border: none !important
   &__heart
     background-color: transparent
-    border: none
-    outline: none
+    border: none !important
+    outline: none !important
+    &:active
+      border: none !important
+      outline: none !important
+    &:clicked
+      border: none !important
+      outline: none !important
+    &:checked
+      border: none !important
+      outline: none !important
+    &:focus
+      outline: none !important
+      border: none !important
     &--left
       padding-right: 0.2rem

@@ -8,32 +8,55 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
   });
   const swiper2 = new Swiper ('.swiper2', {
-    loop: false,
+    loop: true,
     slidesPerView: 4,
     spaceBetween: 46,
     navigation: {
       nextEl: '.swiper-button-next2',
       prevEl: '.swiper-button-prev2',
     },
+    breakpoints: {
+      1350: {
+        slidesPerView: 4,
+        spaceBetween: 46,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      220: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      }
+    }
   });
+  
   const cardImage = document.querySelectorAll('.swiper2-slide');
   const productCard = document.querySelectorAll('.product-card__image-wrap');
-
-  cardImage.forEach.call(productCard, function (el, i){
-    el.addEventListener('mouseover', function (event) {
-      el.children[1].classList.add('wrap--active');
-      function changeSrc(img) {
-        k = i + 1;
-        zoomImage.src = './img/top-products/zoom-image' + k + '.jpg';
-      };
-      changeSrc();
-      return false;
-    })
-    el.addEventListener('mouseout', (event) => {
-      el.children[1].classList.remove('wrap--active');
-      return false;
+    
+    cardImage.forEach.call(productCard, function (el, i){
+      el.addEventListener('mouseenter', function (event) {
+        console.log(el.dataset.index)
+        let k = el.dataset.index
+        el.children[1].classList.add('wrap--active');
+        function changeSrc(img) {
+          zoomImage.src = './img/top-products/zoom-image' + k + '.jpg';
+        };
+        changeSrc();
+      })
+      el.addEventListener('mouseleave', (event) => {
+        el.children[1].classList.remove('wrap--active');
+        return false;
+      });
     });
-  });
+
+
+
+
 
   const zoom = document.querySelector('.zoom');
   const zoomBtn = document.querySelectorAll('[data-toggle=zoom]');
@@ -74,38 +97,48 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const prevPreview = document.querySelector('.swiper-slide-prev-preview');
   const switchPrevPreview = () => prevPreview.classList.toggle('swiper-slide-prev-preview--active');
   const slide = document.querySelectorAll('.swiper1-slide');
+  const slidePreviewNext = () => nextPreview.classList.add('slide--second');
+  const slidePreviewPrev = () => prevPreview.classList.add('slide--third');
 
-  next1.addEventListener('mouseover', (event) => {
-    switchNextPreview();
+
+  slidePreviewNext();
+  slidePreviewPrev();
+
+  swiper1.on('slideChange', () => {
     slide.forEach(function (item, i, arr) {
-      if (item.classList.contains('swiper-slide-active')) {
-        if (i === 1) {nextPreview.classList.add('slide-second')} else {nextPreview.classList.remove('slide-second')
-          } if (i === 2) {nextPreview.classList.add('slide-third')} else {nextPreview.classList.remove('slide-third')
-            } if (i === 3) {nextPreview.classList.add('slide-first')} else {nextPreview.classList.remove('slide-first')
-              } if (i === 4) {nextPreview.classList.add('slide-fourth')} else {nextPreview.classList.remove('slide-fourth')
-                } if (i === 0) {nextPreview.classList.add('slide-sixth')} else {nextPreview.classList.remove('slide-sixth')}
-      }
-    }); 
+      let k = swiper1.realIndex + 1;
+        if (k === 1) {
+          nextPreview.classList.add('slide--second'),
+          prevPreview.classList.add('slide--third')
+        } else {
+          nextPreview.classList.remove('slide--second'),
+          prevPreview.classList.remove('slide--third')
+          } if (k === 2) {
+            nextPreview.classList.add('slide--third'),
+            prevPreview.classList.add('slide--first')
+          } else {
+            nextPreview.classList.remove('slide--third'),
+            prevPreview.classList.remove('slide--first')
+            } if (k === 3) {
+              nextPreview.classList.add('slide--first'),
+              prevPreview.classList.add('slide--second')
+            } else {
+              nextPreview.classList.remove('slide--first'),
+              prevPreview.classList.remove('slide--second')
+              }
+    });
   });
-  
-  next1.addEventListener('mouseout', (event) => {
+  next1.addEventListener('mouseenter', (event) => {
+    switchNextPreview();
+  });
+  next1.addEventListener('mouseleave', (event) => {
     switchNextPreview();
   });
   
-  prev1.addEventListener('mouseover', (event) => {
+  prev1.addEventListener('mouseenter', (event) => {
     switchPrevPreview();
-    slide.forEach(function (item, k, arr) {
-      if (item.classList.contains('swiper-slide-active')) {
-        let l = k + 2;
-        if (l === 3) {prevPreview.classList.add('slide-third')} else {prevPreview.classList.remove('slide-third')
-          } if (l === 2) {prevPreview.classList.add('slide-second')} else {prevPreview.classList.remove('slide-second')
-            } if (l === 4) {prevPreview.classList.add('slide-first')} else {prevPreview.classList.remove('slide-first')
-              } if (l === 6) {prevPreview.classList.add('slide-fifth')} else {prevPreview.classList.remove('slide-fifth')
-                } if (l === 5) {prevPreview.classList.add('slide-fourth')} else {prevPreview.classList.remove('slide-fourth')}
-      } 
-    })
   });
-  prev1.addEventListener('mouseout', (event) => {
+  prev1.addEventListener('mouseleave', (event) => {
     switchPrevPreview();
   });
   

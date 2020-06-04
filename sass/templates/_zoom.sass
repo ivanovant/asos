@@ -18,16 +18,28 @@
     opacity: 1
     visibility: visible
   &__dialog
+    margin-left: 1rem
+    margin-right: 1rem
     position: relative
-    background-color: $light
+    background-color: transparent
+    width: 100%
+    max-width: 622px
   &__close
     position: absolute
-    right: -64px
-    top: -10px
+    right: -54px
+    top: 0
     width: 2.5rem
     height: 2.5rem
     background: transparent url('../img/close.svg') no-repeat center / 112%
     border: none
-    margin: 0.7rem 0.857rem
     cursor: pointer
     outline: none
+    &:hover
+      background: url('../img/close-hover.svg') no-repeat center / 112%
+  &__image
+    &-wrap
+      margin: auto
+      position: relative
+      width: 100%
+      max-width: 567px
+      height: 100%
