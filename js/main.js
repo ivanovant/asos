@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const switchZoom = () => zoom.classList.add('zoom--visible');
   const zoomImage = document.getElementById('zoomImg');
   const swiper2Slides = document.querySelectorAll('.swiper2-slide');
-
   zoomBtn.forEach(element => {
     element.addEventListener('click', function(e) {
       switchZoom();
@@ -159,6 +158,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
     switchBtn();
     switchBtnItem();
     switchNav();
+  });
+
+  const cart = document.querySelector('.cart__modal');
+  const cartLink = document.querySelector('.cart__link');
+  const switchCart = () => cart.classList.toggle('cart__modal--visible');
+  const cartBtn = document.querySelectorAll('[data-toggle=cart]');
+
+
+  cartBtn.forEach(element => {
+    cartLink.addEventListener('click', (event) => {
+      event.preventDefault();
+    });
+    element.addEventListener('click', () => {
+    switchCart();
+    document.querySelector('.cart').classList.add('cart--visible')
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === "Escape" && cart.classList.contains('cart__modal--visible')) {
+        cart.classList.remove('cart__modal--visible')
+    }
   });
 
 });

@@ -25,18 +25,67 @@
         </nav>
         <div class="links menu__links">
           <a href="#" class="links__item"><img src="img/user.svg" alt="Пользователь" class="links__user"></a>
-          <a href="#" class="links__item"><img src="img/cart.svg" alt="Корзина" class="links__cart"></a>
+          <a href="#" class="links__item cart__link" data-toggle="cart"><img src="img/cart.svg" alt="Корзина" class="links__cart"></a>
           <a href="#" class="links__item"><img src="img/search.svg" alt="Поиск" class="links__search"></a>
         </div>
         <!-- /.links -->
         <a href="#" class="menu__button"><span class="menu__button-item"></span></a>
       </div>
       <!-- /.menu -->
+      <div class="cart">
+        <div class="cart__modal">
+          <div class="cart__product">
+            <div class="cart__image-wrap">
+              <img src="img/cart-image-1.png" alt="Товар">
+            </div>
+            <!-- /.cart__image-wrap -->
+            <div class="cart__text">
+              <h4 class="cart__text-heading">Женский жилет, А.karina</h4>
+              <span class="cart__pricetag">6 490 <span class="currency cart__currency"><img src="img/rouble-black.svg" alt="р" class="rouble-icon"></span></span>
+              <div class="cart__product-info">
+                <lable class="cart__product-count">Количество:</lable><span class="cart__product-count-value"> 1 ШТ.</span>
+              </div>
+              <!-- /.cart__product-info -->
+            </div>
+            <!-- /.cart__text -->
+  
+          </div>
+          <!-- /.cart__product -->
+          <div class="cart__product">
+            <div class="cart__image-wrap">
+              <img src="img/cart-image-2.png" alt="Товар">
+            </div>
+            <!-- /.cart__image-wrap -->
+            <div class="cart__text">
+              <h4 class="cart__text-heading">Женский Лонгслив, Oodji</h4>
+              <span class="cart__pricetag">999 <span class="currency cart__currency"><img src="img/rouble-black.svg" alt="р" class="rouble-icon"></span></span>
+              <div class="cart__product-info">
+                <lable class="cart__product-count">Количество:</lable>
+                <span class="cart__product-count-value"> 1 ШТ.</span>
+              </div>
+              <!-- /.cart__product-info -->
+            </div>
+            <!-- /.cart__text -->
+          </div>
+          <!-- /.cart__product -->
+          <div class="cart__sum">
+            <lable class="cart__total-price">Итого: </lable>
+            <span class="cart__total-price-value">7 489<span class="currency cart__currency--big"><img src="img/rouble-black.svg" alt="р" class="rouble-icon--big"></span></span>
+          </div>
+          <!-- /.cart__total-price -->
+          <div class="cart__button-wrap">
+            <a href="#" class="cart__button-go-to-cart">Корзина</a>
+            <a href="#" class="cart__button-confirm">Оформить</a>
+          </div>
+        </div>
+        <!-- /.cart__modal -->
+      </div>
+      <!-- /.cart -->
     </div>
     <!-- /.container -->
   </header>
-  <main>
 
+  <main>
     <section class="hero section__hero">
       <!-- Slider main container -->
       <div class="swiper-container swiper1">
@@ -258,7 +307,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -287,7 +336,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -316,7 +365,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -345,7 +394,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -374,7 +423,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -403,7 +452,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -432,7 +481,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -461,7 +510,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -490,7 +539,7 @@
                       <div class="card__links-wrap">
                         <div class="card__links">
                           <button class="button__zoom" data-toggle="zoom"><img src="img/zoom.svg" alt="Zoom" class="icon__zoom"></button>
-                          <button class="button__cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
+                          <button class="button__cart" data-toggle="cart"><img src="img/cart.svg" alt="cart" class="icon__cart"></button>
                           <button class="button__heart"><img src="img/heart.svg" alt="heart" class="icon__heart"></button>
                         </div>
                         <!-- /.card__links -->
@@ -537,15 +586,7 @@
     </div>
     <!-- /.zoom__dialog -->
   </div>
-  <!-- /.modal modal__zoom -->
-
-  <div class="cart">
-    <div class="cart__dialog">
-
-    </div>
-    <!-- /.cart__dialog -->
-  </div>
-  <!-- /.cart -->
+  <!-- /.zoom -->
 
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>

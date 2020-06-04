@@ -1,0 +1,133 @@
+.cart
+  &__modal
+    position: absolute
+    opacity: 0
+    visibility: hidden
+    right: 0
+    top: 103px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 27px 29px 20px 29px
+    z-index: 256
+    background-color: $light
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+    width: 100%
+    max-width: 350px
+    &--visible
+      opacity: 1
+      visibility: visible
+    &::before, &::after 
+      content: ''
+      position: absolute
+      right: 2.95rem
+      top: -22px
+      border: 12px solid transparent
+      border-bottom: 12px solid $light
+  &__product
+    display: flex
+    margin-bottom: 2.02rem
+    width: 100%
+    &-count
+      font-size: 0.8571rem
+      font-weight: 500
+      line-height: 28px
+      text-transform: uppercase
+      &-value
+        font-size: 0.8571rem
+        font-weight: 500
+        line-height: 28px
+        text-transform: uppercase
+  &__currency
+    width: 5px
+    height: 5px
+    &--big
+      width: 8px
+      padding-left: 0.4rem
+  &__text
+    display: flex
+    flex-direction: column
+    font-family: Gotham Pro-Bold
+    color: #252525
+    margin-left: 1.1429rem
+    &-heading
+      margin: 0
+      margin-bottom: 1.12rem
+      max-width: 11.39rem
+      font-size: 1rem
+      font-weight: 700
+      line-height: 1.5714rem
+      text-transform: uppercase
+      letter-spacing: 0.05rem
+  &__pricetag
+    font-size: 0.8571rem
+    font-weight: 700
+    line-height: 1rem
+    margin-bottom: 0
+  &__image
+    &-wrap
+      border: 1px solid #ededee
+      width: 100%
+      max-width: 97px
+      height: 97px
+      display: flex
+      justify-content: center
+      align-items: center
+  &__sum
+    position: relative
+    display: flex
+    align-items: center
+    padding: 0.2rem 0 0.4rem
+    margin-bottom: 2.1rem
+    &::before, &::after
+      position: absolute
+      content: ''
+      width: 292px
+      height: 1px
+      background-color: #e6e6e6
+    &::before
+      top: 0
+      left: -48%
+    &::after
+      bottom: 0
+      left: -48%
+  &__total
+    &-price
+      font-family: Gotham Pro-Bold
+      text-transform: uppercase
+      font-size: 1.1429rem
+      line-height: 2rem
+      letter-spacing: 0.1143rem
+      &-value
+        padding-left: 0.35rem
+        font-family: Gotham Pro-Bold
+        font-size: 1.1429rem
+        letter-spacing: 1.6px
+  &__button
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+    &-go-to-cart
+      text-transform: uppercase
+      text-decoration: none
+      font-family: Gotham Pro-Bold
+      font-weight: 700
+      color: $light
+      background-color: $dark
+      padding: 1.1rem 1.8571rem
+    &-confirm
+      text-transform: uppercase
+      text-decoration: none
+      font-family: Gotham Pro-Bold
+      font-weight: 700
+      color: $light
+      background-color: $pink
+      padding: 1.1rem 1.8571rem
+.rouble
+  &-icon
+    width: 8px
+    &--big
+      width: 11px
+  

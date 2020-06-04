@@ -452,6 +452,7 @@ template {
     padding-right: 0.2rem; }
 
 .container {
+  position: relative;
   width: 90%;
   max-width: 1179px;
   margin: auto; }
@@ -1009,6 +1010,145 @@ img {
     max-width: 567px;
     height: 100%; }
 
+.cart__modal {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  top: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 27px 29px 20px 29px;
+  z-index: 256;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px; }
+  .cart__modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .cart__modal::before, .cart__modal::after {
+    content: '';
+    position: absolute;
+    right: 2.95rem;
+    top: -22px;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #ffffff; }
+
+.cart__product {
+  display: flex;
+  margin-bottom: 2.02rem;
+  width: 100%; }
+  .cart__product-count {
+    font-size: 0.8571rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: uppercase; }
+    .cart__product-count-value {
+      font-size: 0.8571rem;
+      font-weight: 500;
+      line-height: 28px;
+      text-transform: uppercase; }
+
+.cart__currency {
+  width: 5px;
+  height: 5px; }
+  .cart__currency--big {
+    width: 8px;
+    padding-left: 0.4rem; }
+
+.cart__text {
+  display: flex;
+  flex-direction: column;
+  font-family: Gotham Pro-Bold;
+  color: #252525;
+  margin-left: 1.1429rem; }
+  .cart__text-heading {
+    margin: 0;
+    margin-bottom: 1.12rem;
+    max-width: 11.39rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5714rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem; }
+
+.cart__pricetag {
+  font-size: 0.8571rem;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 0; }
+
+.cart__image-wrap {
+  border: 1px solid #ededee;
+  width: 100%;
+  max-width: 97px;
+  height: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cart__sum {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0 0.4rem;
+  margin-bottom: 2.1rem; }
+  .cart__sum::before, .cart__sum::after {
+    position: absolute;
+    content: '';
+    width: 292px;
+    height: 1px;
+    background-color: #e6e6e6; }
+  .cart__sum::before {
+    top: 0;
+    left: -48%; }
+  .cart__sum::after {
+    bottom: 0;
+    left: -48%; }
+
+.cart__total-price {
+  font-family: Gotham Pro-Bold;
+  text-transform: uppercase;
+  font-size: 1.1429rem;
+  line-height: 2rem;
+  letter-spacing: 0.1143rem; }
+  .cart__total-price-value {
+    padding-left: 0.35rem;
+    font-family: Gotham Pro-Bold;
+    font-size: 1.1429rem;
+    letter-spacing: 1.6px; }
+
+.cart__button-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.cart__button-go-to-cart {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Gotham Pro-Bold;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #1a2330;
+  padding: 1.1rem 1.8571rem; }
+
+.cart__button-confirm {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Gotham Pro-Bold;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #ef50a2;
+  padding: 1.1rem 1.8571rem; }
+
+.rouble-icon {
+  width: 8px; }
+  .rouble-icon--big {
+    width: 11px; }
+
 @media screen and (max-width: 1275px) {
   html {
     font-size: 12px; }
@@ -1184,6 +1324,9 @@ img {
       background: url("../img/cart-hover.svg") no-repeat center/96.85%; } }
 
 @media screen and (max-width: 785px) {
+  .cart__modal {
+    right: 80px;
+    top: 73px; }
   .product__card {
     flex-basis: 100%;
     align-items: center;
@@ -1335,6 +1478,15 @@ img {
       background: url("../img/close-mobile.svg") no-repeat center/112%; } }
 
 @media screen and (max-width: 574px) {
+  .cart__modal {
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    top: 73px; }
+    .cart__modal::before, .cart__modal::after {
+      display: none; }
+  .cart__sum::after, .cart__sum::before {
+    width: 250px; }
   .top-products__container {
     width: 100%; }
   .swiper1-slide {

@@ -190,6 +190,10 @@
         outline: none
         background: url('../img/cart-hover.svg') no-repeat center / 96.85%
 @media screen and ( max-width: 785px )
+  .cart
+    &__modal
+      right: 80px
+      top: 73px
   .product
     &__card
       flex-basis: 100%
@@ -354,6 +358,17 @@
       &:hover
         background: url('../img/close-mobile.svg') no-repeat center / 112%
 @media screen and ( max-width: 574px )
+  .cart
+    &__modal
+      margin: auto
+      right: 0px
+      left: 0px
+      top: 73px
+      &::before, &::after
+        display: none
+    &__sum
+      &::after, &::before
+        width: 250px
   .top-products
     &__container
       width: 100%
