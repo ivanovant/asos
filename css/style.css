@@ -396,7 +396,7 @@ template {
   outline: none !important; }
 
 .button__zoom {
-  background-color: transparent;
+  background: transparent;
   border: none !important;
   outline: none !important; }
   .button__zoom:hover {
@@ -416,7 +416,7 @@ template {
     border: none !important; }
 
 .button__cart {
-  background-color: transparent;
+  background: transparent;
   border: none !important;
   outline: none !important; }
   .button__cart:active {
@@ -433,7 +433,7 @@ template {
     border: none !important; }
 
 .button__heart {
-  background-color: transparent;
+  background: transparent;
   border: none !important;
   outline: none !important; }
   .button__heart:active {
@@ -539,6 +539,8 @@ img {
   left: 0;
   z-index: 500;
   width: 100%; }
+  .header--purple {
+    background-color: #5a52a5; }
   .header__title {
     margin: 0;
     margin-top: 0.2rem; }
@@ -547,6 +549,8 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .header__menu--purple {
+      padding: 1.3rem 0 0.8rem 0; }
 
 .menu__nav {
   width: 100%;
@@ -1101,7 +1105,6 @@ img {
     .zoom__close:hover {
       background: url("../img/close.svg") no-repeat center/112%; }
   .button__zoom {
-    background-color: transparent;
     border: none;
     outline: none; }
     .button__zoom:hover {
@@ -1120,7 +1123,6 @@ img {
       outline: none;
       border: none; }
   .button__cart {
-    background-color: transparent;
     border: none;
     outline: none; }
     .button__cart:hover {
@@ -1139,7 +1141,6 @@ img {
       outline: none;
       border: none; }
   .button__heart {
-    background-color: transparent;
     border: none;
     outline: none; }
     .button__heart:hover {
@@ -1350,7 +1351,9 @@ img {
       font-size: 1.3rem;
       padding: 1.2rem 2.8rem; }
   .product-card {
-    align-items: center; } }
+    align-items: center; }
+  .section-title__text {
+    padding: 0 2rem; } }
 
 @media screen and (max-width: 375px) {
   .swiper1-slide {
@@ -1381,4 +1384,8 @@ img {
     font-family: Gotham Pro;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 1.5rem 0 0 0; } }
+    padding: 1.5rem 0 0 0; }
+  .section-title__heading {
+    line-height: 2rem; }
+  .section-title__text {
+    padding: 0 2rem; } }

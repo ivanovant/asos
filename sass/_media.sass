@@ -111,11 +111,9 @@
         background: url('../img/close.svg') no-repeat center / 112%
   .button
     &__zoom
-      background-color: transparent
       border: none
       outline: none 
       &:hover
-        
         border: none
         outline: none
       &:active
@@ -131,7 +129,6 @@
         outline: none
         border: none
     &__cart
-      background-color: transparent
       border: none
       outline: none
       &:hover
@@ -150,7 +147,6 @@
         outline: none
         border: none
     &__heart
-      background-color: transparent
       border: none
       outline: none
       &:hover
@@ -378,6 +374,10 @@
   .product
     &-card
       align-items: center
+  .section
+    &-title
+      &__text
+        padding: 0 2rem
 @media screen and ( max-width: 375px )
   .swiper1
     &-slide
@@ -411,3 +411,9 @@
         font-size: 1.5rem
         font-weight: 700
         padding: 1.5rem 0 0 0
+  .section
+    &-title
+      &__heading
+        line-height: 2rem
+      &__text
+        padding: 0 2rem

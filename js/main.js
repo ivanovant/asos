@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     cardImage.forEach.call(productCard, function (el, i){
       el.addEventListener('mouseenter', function (event) {
-        console.log(el.dataset.index)
         let k = el.dataset.index
         el.children[1].classList.add('wrap--active');
         function changeSrc(img) {
@@ -54,9 +53,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
       });
     });
 
+    const header = document.querySelector('.header');
+    const menu = document.querySelector('.header__menu')
 
-
-
+    window.addEventListener('scroll', () => { 
+      if (scrollY > 100) {
+        header.classList.add('header--purple');
+        menu.classList.add('header__menu--purple')
+      } else {
+        header.classList.remove('header--purple');
+        menu.classList.remove('header__menu--purple')
+      }
+     });
 
   const zoom = document.querySelector('.zoom');
   const zoomBtn = document.querySelectorAll('[data-toggle=zoom]');
@@ -69,8 +77,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   zoomBtn.forEach(element => {
     element.addEventListener('click', function(e) {
       switchZoom();
-      console.log()
-      
     });
   });
 
