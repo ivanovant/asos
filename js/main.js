@@ -177,9 +177,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === "Escape" && cart.classList.contains('cart__modal--visible')) {
-        cart.classList.remove('cart__modal--visible')
+    if (event.key === "Escape") {
+        cart.classList.remove('cart__modal--visible');
+        search.classList.remove('search--visible');
     }
   });
 
+  const searchBtn = document.querySelector('.search__link');
+  const closeSearchBtn = document.querySelector('.search__close');
+  const search = document.querySelector('.search');
+  const switchSearch = () => search.classList.toggle('search--visible');
+
+  searchBtn.addEventListener('click', (e) => { 
+    e.preventDefault();
+    switchSearch();
+  });
+  closeSearchBtn.addEventListener('click', switchSearch);
+  search.addEventListener('click', (e) => {
+    if (e.target === search) {search.classList.remove('search--visible')}
+  });
 });

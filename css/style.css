@@ -1149,9 +1149,105 @@ img {
   .rouble-icon--big {
     width: 11px; }
 
+.search {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 199;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 903px;
+  background-color: rgba(90, 82, 165, 0.9);
+  z-index: 999; }
+  .search--visible {
+    opacity: 1;
+    visibility: visible; }
+  .search__dialog {
+    position: relative;
+    width: 100%;
+    max-width: 891px;
+    height: 100%;
+    max-height: 248px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 20rem;
+    margin-bottom: 20.5rem; }
+  .search__field {
+    width: 100%;
+    max-width: 602px;
+    padding: 20px 23px 18px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #ffffff;
+    font-family: Gotham Pro;
+    font-size: 1.4286rem;
+    font-weight: 700; }
+    .search__field::-moz-placeholder {
+      color: #a19faf;
+      font-family: Gotham Pro;
+      font-size: 1.4286rem;
+      font-weight: 700;
+      line-height: 2rem; }
+    .search__field:-ms-input-placeholder {
+      color: #a19faf;
+      font-family: Gotham Pro;
+      font-size: 1.4286rem;
+      font-weight: 700;
+      line-height: 2rem; }
+    .search__field::-ms-input-placeholder {
+      color: #a19faf;
+      font-family: Gotham Pro;
+      font-size: 1.4286rem;
+      font-weight: 700;
+      line-height: 2rem; }
+    .search__field::placeholder {
+      color: #a19faf;
+      font-family: Gotham Pro;
+      font-size: 1.4286rem;
+      font-weight: 700;
+      line-height: 2rem; }
+  .search__close {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent url("../img/close.svg") no-repeat center/112%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    align-self: flex-start; }
+    .search__close:hover {
+      background: url("../img/close-hover.svg") no-repeat center/112%; }
+  .search__button {
+    position: absolute;
+    bottom: 1.6rem;
+    right: 315px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: #ffffff url("../img/search-icon.png") no-repeat center;
+    cursor: pointer; }
+
 @media screen and (max-width: 1275px) {
   html {
     font-size: 12px; }
+  .search {
+    max-height: 830px; }
+    .search__dialog {
+      margin-left: 10rem;
+      margin-bottom: 10rem;
+      max-width: 700px;
+      max-height: 150px; }
+    .search__button {
+      right: 120px; }
   .swiper-slide__heading {
     font-size: 1.4rem; }
   .swiper-slide__description {
@@ -1162,6 +1258,14 @@ img {
     padding: 14rem 0 17.6rem; } }
 
 @media screen and (max-width: 991px) {
+  .search {
+    max-height: 815px; }
+    .search__dialog {
+      max-width: 620px;
+      max-height: 100px;
+      margin-left: 2.5rem; }
+    .search__button {
+      right: 50px; }
   .menu__nav {
     margin-left: 7rem; }
   .swiper1-slide {
@@ -1324,6 +1428,12 @@ img {
       background: url("../img/cart-hover.svg") no-repeat center/96.85%; } }
 
 @media screen and (max-width: 785px) {
+  .search {
+    max-height: 515px; }
+    .search__dialog {
+      padding: 0 2rem; }
+    .search__button {
+      right: 78px; }
   .cart__modal {
     right: 80px;
     top: 73px; }
@@ -1478,6 +1588,8 @@ img {
       background: url("../img/close-mobile.svg") no-repeat center/112%; } }
 
 @media screen and (max-width: 574px) {
+  .search {
+    max-height: 662px; }
   .cart__modal {
     margin: auto;
     right: 0px;
@@ -1508,6 +1620,21 @@ img {
     padding: 0 2rem; } }
 
 @media screen and (max-width: 375px) {
+  .search {
+    max-height: 470px; }
+    .search__dialog {
+      padding: 0 1rem;
+      margin-bottom: 7rem; }
+    .search__field::-moz-placeholder {
+      font-size: 1.2rem; }
+    .search__field:-ms-input-placeholder {
+      font-size: 1.2rem; }
+    .search__field::-ms-input-placeholder {
+      font-size: 1.2rem; }
+    .search__field::placeholder {
+      font-size: 1.2rem; }
+    .search__button {
+      right: 50px; }
   .swiper1-slide {
     padding: 2rem 0 5.6rem; }
   .swiper-slide__text {
@@ -1541,3 +1668,7 @@ img {
     line-height: 2rem; }
   .section-title__text {
     padding: 0 2rem; } }
+
+@media screen and (max-width: 375px) {
+  .search {
+    max-height: 479px; } }

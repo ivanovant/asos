@@ -1,7 +1,15 @@
 @media screen and ( max-width: 1275px )
   html
     font-size: 12px
-
+  .search
+    max-height: 830px
+    &__dialog
+      margin-left: 10rem
+      margin-bottom: 10rem
+      max-width: 700px
+      max-height: 150px
+    &__button
+      right: 120px
   .swiper
     &-slide
       &__heading
@@ -14,6 +22,14 @@
     &-slide
       padding: 14rem 0 17.6rem
 @media screen and ( max-width: 991px )
+  .search
+    max-height: 815px
+    &__dialog
+      max-width: 620px
+      max-height: 100px
+      margin-left: 2.5rem
+    &__button
+      right: 50px
   .menu
     &__nav
       margin-left: 7rem
@@ -190,6 +206,12 @@
         outline: none
         background: url('../img/cart-hover.svg') no-repeat center / 96.85%
 @media screen and ( max-width: 785px )
+  .search
+    max-height: 515px
+    &__dialog
+      padding: 0 2rem
+    &__button
+      right: 78px
   .cart
     &__modal
       right: 80px
@@ -358,6 +380,8 @@
       &:hover
         background: url('../img/close-mobile.svg') no-repeat center / 112%
 @media screen and ( max-width: 574px )
+  .search
+    max-height: 662px
   .cart
     &__modal
       margin: auto
@@ -394,6 +418,16 @@
       &__text
         padding: 0 2rem
 @media screen and ( max-width: 375px )
+  .search
+    max-height: 470px
+    &__dialog
+      padding: 0 1rem
+      margin-bottom: 7rem
+    &__field
+      &::placeholder
+        font-size: 1.2rem
+    &__button
+      right: 50px
   .swiper1
     &-slide
       padding: 2rem 0 5.6rem
@@ -432,3 +466,6 @@
         line-height: 2rem
       &__text
         padding: 0 2rem
+@media screen and ( max-width: 375px )
+  .search
+    max-height: 479px
