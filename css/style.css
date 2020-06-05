@@ -1915,8 +1915,12 @@ img {
       outline: none;
       background-color: #5a52a5;
       color: #ffffff; }
-  .section__hero {
-    min-height: 20rem; }
+  .section {
+    padding: 5rem 0; }
+    .section__hero {
+      min-height: 20rem; }
+    .section__top-products {
+      padding: 5rem 0; }
   .swiper-slide__heading {
     font-size: 1.4rem;
     letter-spacing: 0.1rem; }
@@ -2017,7 +2021,7 @@ img {
   .product-card {
     align-items: center; }
   .section-title__text {
-    padding: 0 2rem; }
+    padding: 0 1rem; }
   .section-title__heading {
     font-size: 1.6rem;
     letter-spacing: 0.1rem; } }
@@ -2073,7 +2077,7 @@ img {
   .section-title__heading {
     line-height: 2rem; }
   .section-title__text {
-    padding: 0 2rem; }
+    padding: 0 1rem; }
   .top-products__container {
     width: 80%; }
   .product-card__heading {
