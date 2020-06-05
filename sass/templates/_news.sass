@@ -1,0 +1,58 @@
+.news
+  background-color: $grey-bg
+  &__card
+    display: flex
+    flex-direction: column
+    color: $dark-blue
+    padding-top: 0.3rem
+    &--right
+      position: relative
+      padding-left: 7.2rem
+      &::before
+        position: absolute
+        content: ''
+        left: 0
+        top: -1.5rem
+        height: 369px
+        width: 1px
+        background-color: #d1d5db
+  &__section
+    &-title
+      margin-bottom: 8rem
+  &-title
+    &__text
+      max-width: 45rem
+  &__month
+    margin-bottom: 2.3rem
+    font-family: Gotham Pro-Bold
+    font-size: 1.0714rem
+    line-height: 2rem
+    letter-spacing: -0.0214rem
+  &__date
+    font-family: Gotham Pro-Black
+    font-size: 5.7143rem
+    line-height: 2rem
+    text-transform: uppercase
+    letter-spacing: -0.1143rem
+    margin-bottom: 1.5rem
+  &__heading
+    font-size: 1.5714rem
+    font-family: Gotham Pro-Bold
+    text-transform: uppercase
+    letter-spacing: 0.17rem
+    margin-bottom: 1.6rem
+  &__text
+    max-width: 36.3571rem
+    font-family: Gotham Pro
+    font-size: 0.9286rem
+    line-height: 1.88rem
+    letter-spacing: 0.005rem
+    margin: 0
+    margin-bottom: 1.8rem
+  &__link
+    text-decoration: none
+    color: #333333
+    font-family: Gotham Pro
+    font-weight: 700
+    line-height: 2rem
+    letter-spacing: -0.01rem

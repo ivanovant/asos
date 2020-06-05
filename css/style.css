@@ -463,6 +463,12 @@ template {
   max-width: 1331px;
   margin: auto; }
 
+.row {
+  display: flex; }
+
+.col-50 {
+  width: 50%; }
+
 *, *::after, *::before {
   box-sizing: border-box; }
 
@@ -511,6 +517,8 @@ img {
       max-width: 41rem;
       font-weight: 400;
       letter-spacing: 0.005rem; }
+  .section__news {
+    padding-bottom: 11.3rem; }
 
 .rouble--pink {
   width: 9px; }
@@ -964,6 +972,83 @@ img {
   outline: none; }
   .icon__cart:hover {
     background: url("../img/cart-hover.svg") no-repeat center; }
+
+.news {
+  background-color: #f7f7f7; }
+  .news__card {
+    display: flex;
+    flex-direction: column;
+    color: #2d3a4b;
+    padding-top: 0.3rem; }
+    .news__card--right {
+      position: relative;
+      padding-left: 7.2rem; }
+      .news__card--right::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: -1.5rem;
+        height: 369px;
+        width: 1px;
+        background-color: #d1d5db; }
+  .news__section-title {
+    margin-bottom: 8rem; }
+  .news-title__text {
+    max-width: 45rem; }
+  .news__month {
+    margin-bottom: 2.3rem;
+    font-family: Gotham Pro-Bold;
+    font-size: 1.0714rem;
+    line-height: 2rem;
+    letter-spacing: -0.0214rem; }
+  .news__date {
+    font-family: Gotham Pro-Black;
+    font-size: 5.7143rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: -0.1143rem;
+    margin-bottom: 1.5rem; }
+  .news__heading {
+    font-size: 1.5714rem;
+    font-family: Gotham Pro-Bold;
+    text-transform: uppercase;
+    letter-spacing: 0.17rem;
+    margin-bottom: 1.6rem; }
+  .news__text {
+    max-width: 36.3571rem;
+    font-family: Gotham Pro;
+    font-size: 0.9286rem;
+    line-height: 1.88rem;
+    letter-spacing: 0.005rem;
+    margin: 0;
+    margin-bottom: 1.8rem; }
+  .news__link {
+    text-decoration: none;
+    color: #333333;
+    font-family: Gotham Pro;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.01rem; }
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.shop-title__text {
+  max-width: 66.8571rem; }
+
+.shop__section-title {
+  margin-bottom: 4.6rem; }
+
+.shop__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 9.4286rem; }
+
+.socials__ok {
+  margin-top: -0.2rem; }
 
 .zoom {
   opacity: 0;
