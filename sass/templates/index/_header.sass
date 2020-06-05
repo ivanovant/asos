@@ -1,22 +1,28 @@
 .header
-  background-color: transparent
   position: fixed
   top: 0
   left: 0
   z-index: 500
   width: 100%
+  &--transparent
+    background-color: transparent
   &--purple
     background-color: $purple
+  &--light
+    background-color: $light
   &__title
     margin: 0
     margin-top: 0.2rem
   &__menu
-    padding: 3.35rem 0
     display: flex
     justify-content: space-between
     align-items: center
+    &--light
+      padding: 3.65rem 0
     &--purple
       padding: 1.3rem 0 0.8rem 0
+    &--dark
+      padding: 2.9rem 0
 .menu
   &__nav
     width: 100%
@@ -39,17 +45,22 @@
         display: inline-block
         width: 95%
         height: 2px
-        background-color: $light
+    &--light
+      &:hover
+        &::after
+          background-color: $light
+    &--dark
+      &:hover
+        &::after
+          background-color: $dark-blue
 .nav
   &__link
     position: relative
-    color: $light
-    font-family: Gotham Pro
+    font-family: Gotham Pro-Bold
     letter-spacing: 0.18rem
     text-transform: uppercase
     text-decoration: none
     font-size: 1rem
-    font-weight: 700
     &:hover
       &::after
         position: absolute
@@ -59,7 +70,16 @@
         display: inline-block
         width: 96%
         height: 2px
-        background-color: $light
+    &--light
+      color: $light
+      &:hover
+        &::after
+          background-color: $light
+    &--dark
+      color: $dark-blue
+      &:hover
+        &::after
+          background-color: $dark-blue
 .links
   width: 100%
   max-width: 7.8rem
@@ -76,7 +96,14 @@
         display: inline-block
         width: 95%
         height: 2px
-        background-color: $light
+    &--light
+      &:hover
+        &::after
+          background-color: $light
+    &--dark
+      &:hover
+        &::after
+          background-color: $dark-blue
   &__user, &__cart, &__search
     position: relative
     width: 22px

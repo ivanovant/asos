@@ -34,11 +34,11 @@
     &__text
       position: relative
       z-index: 5
-      padding-top: 10.7rem
+      padding-top: 11rem
       text-align: center
       width: 100%
       max-width: 79rem
-      padding-right: 0.5rem
+      padding-left: 0.5rem
     &__heading
       margin: 0
       font-size: 1.45rem
@@ -143,7 +143,64 @@
         display: none
 .swiper1
   &-slide
-    padding: 10rem 0 13.6rem
+    padding: 10rem 0 13.35rem
     display: flex
     justify-content: center
     align-items: center
+.hero
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 7.6rem
+  &-title
+    &__heading
+      letter-spacing: 0.06rem
+    &__text
+      max-width: 35rem
+      line-height: 1.9rem
+      margin-bottom: 2.8rem
+  &__breadcrumbs
+    display: flex
+    background-color: $pink
+    border-radius: 1.5rem
+    font-family: Gotham Pro
+    font-weight: 400
+    line-height: 1.8571rem
+    font-size: 0.92rem
+    padding: 0.62rem 2.48rem
+    &-link
+      position: relative
+      display: flex
+      color: $light
+      text-decoration: none
+      &--prev
+        &::after
+          content: ''
+          width: 1.0714rem
+          height: 1.0714rem
+          background: url('../img/breadcrumbs-arrow.svg') no-repeat center
+          margin-left: 0.85rem
+          margin-right: 0.85rem
+          margin-top: 0.4rem
+        &::before
+          content: ''
+          position: absolute
+          width: 58%
+          height: 2px
+          bottom: 0
+          left: 0
+        &:hover
+          &::before
+            background-color: $light
+      &--active
+        &::before
+          content: ''
+          position: absolute
+          width: 100%
+          height: 2px
+          bottom: 0
+          left: 0
+        &:hover
+          &::before
+            background-color: $light
