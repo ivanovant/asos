@@ -1467,6 +1467,22 @@ img {
   .rouble-icon--big {
     width: 11px; }
 
+.cart--scroll {
+  -webkit-animation: slideDown 0s forwards;
+  animation: slideDown 0s forwards; }
+
+@-webkit-keyframes slideDown {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-32px); } }
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-32px); } }
+
 .search {
   opacity: 0;
   visibility: hidden;

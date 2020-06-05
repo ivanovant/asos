@@ -239,5 +239,14 @@ $(document).ready(function () {
         scrollTop: 0
     }, 1500);
     return false;
-});
+  });
+  const cart = $('.cart__modal');
+
+  $(window).on('scroll', () =>{
+    if (scrollY > 100) {
+      cart.addClass('cart--scroll')
+    } else {
+      cart.removeClass('cart--scroll')
+    }
+  });
 });

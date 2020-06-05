@@ -14,6 +14,7 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
     width: 100%
     max-width: 350px
+
     &--visible
       opacity: 1
       visibility: visible
@@ -130,4 +131,11 @@
     width: 8px
     &--big
       width: 11px
-  
+.cart--scroll
+  animation: slideDown 0s forwards
+
+@keyframes slideDown
+  0%
+    transform: translateY(0)
+  100%
+    transform: translateY(-32px)
