@@ -194,13 +194,14 @@
         background: url('../img/close.svg') no-repeat center / 112%
   .button
     &__zoom
+      cursor: default
       border: none
       outline: none 
       &:hover
-        border: none
+        background: url('../img/zoom.svg') no-repeat center
         outline: none
       &:active
-        border: none
+        background: url('../img/zoom-hover2.svg') no-repeat center
         outline: none
       &:clicked
         border: none
@@ -212,13 +213,14 @@
         outline: none
         border: none
     &__cart
+      cursor: default
       border: none
       outline: none
       &:hover
-        border: none
+        background: url('../img/cart.svg') no-repeat center
         outline: none
       &:active
-        border: none
+        background: url('../img/cart-hover.svg') no-repeat center
         outline: none
       &:clicked
         border: none
@@ -230,13 +232,14 @@
         outline: none
         border: none
     &__heart
+      cursor: default
       border: none
       outline: none
       &:hover
-        border: none
+        background: url('../img/heart.svg') no-repeat center
         outline: none
       &:active
-        border: none
+        background: url('../img/heart-hover.svg') no-repeat center
         outline: none
       &:clicked
         border: none
@@ -247,31 +250,6 @@
       &:focus
         outline: none
         border: none
-  .icon
-    &__heart
-      cursor: default
-      outline: none
-      &:hover
-        background: transparent
-      &:active
-        background: url('../img/heart-hover.svg') no-repeat center / 96%
-    &__zoom
-      cursor: default
-      outline: none
-      &:hover
-        background: transparent
-      &:active
-        outline: none
-        background: url('../img/zoom-hover.svg') no-repeat center / 96%
-    &__cart
-      cursor: default
-      outline: none
-      &:hover
-        outline: none
-        background: transparent 
-      &:active
-        outline: none
-        background: url('../img/cart-hover.svg') no-repeat center / 96.85%
 @media screen and ( max-width: 785px )
   .offers
     &__email

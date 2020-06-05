@@ -400,10 +400,14 @@ template {
   outline: none !important; }
 
 .button__zoom {
-  background: transparent;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  background: url("../img/zoom.svg") no-repeat center;
   border: none !important;
   outline: none !important; }
   .button__zoom:hover {
+    background: url("../img/zoom-hover2.svg") no-repeat center;
     border: none !important;
     outline: none !important; }
   .button__zoom:active {
@@ -420,9 +424,14 @@ template {
     border: none !important; }
 
 .button__cart {
-  background: transparent;
+  cursor: pointer;
+  width: 25px;
+  height: 22px;
+  background: url("../img/cart.svg") no-repeat center;
   border: none !important;
   outline: none !important; }
+  .button__cart:hover {
+    background: url("../img/cart-hover.svg") no-repeat center; }
   .button__cart:active {
     border: none !important;
     outline: none !important; }
@@ -437,9 +446,14 @@ template {
     border: none !important; }
 
 .button__heart {
-  background: transparent;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  background: url("../img/heart.svg") no-repeat center;
   border: none !important;
   outline: none !important; }
+  .button__heart:hover {
+    background: url("../img/heart-hover.svg") no-repeat center; }
   .button__heart:active {
     border: none !important;
     outline: none !important; }
@@ -1020,25 +1034,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 8.1rem; }
-
-.icon__heart {
-  cursor: pointer;
-  outline: none; }
-  .icon__heart:hover {
-    background: url("../img/heart-hover.svg") no-repeat center; }
-
-.icon__zoom {
-  cursor: pointer;
-  outline: none; }
-  .icon__zoom:hover {
-    background: url("../img/zoom-hover.svg") no-repeat center; }
-
-.icon__cart {
-  cursor: pointer;
-  outline: none; }
-  .icon__cart:hover {
-    background: url("../img/cart-hover.svg") no-repeat center; }
+  width: 114.5px;
+  height: 30px; }
 
 .news {
   background-color: #f7f7f7; }
@@ -1727,13 +1724,14 @@ img {
     .zoom__close:hover {
       background: url("../img/close.svg") no-repeat center/112%; }
   .button__zoom {
+    cursor: default;
     border: none;
     outline: none; }
     .button__zoom:hover {
-      border: none;
+      background: url("../img/zoom.svg") no-repeat center;
       outline: none; }
     .button__zoom:active {
-      border: none;
+      background: url("../img/zoom-hover2.svg") no-repeat center;
       outline: none; }
     .button__zoom:clicked {
       border: none;
@@ -1745,13 +1743,14 @@ img {
       outline: none;
       border: none; }
   .button__cart {
+    cursor: default;
     border: none;
     outline: none; }
     .button__cart:hover {
-      border: none;
+      background: url("../img/cart.svg") no-repeat center;
       outline: none; }
     .button__cart:active {
-      border: none;
+      background: url("../img/cart-hover.svg") no-repeat center;
       outline: none; }
     .button__cart:clicked {
       border: none;
@@ -1763,13 +1762,14 @@ img {
       outline: none;
       border: none; }
   .button__heart {
+    cursor: default;
     border: none;
     outline: none; }
     .button__heart:hover {
-      border: none;
+      background: url("../img/heart.svg") no-repeat center;
       outline: none; }
     .button__heart:active {
-      border: none;
+      background: url("../img/heart-hover.svg") no-repeat center;
       outline: none; }
     .button__heart:clicked {
       border: none;
@@ -1779,31 +1779,7 @@ img {
       outline: none; }
     .button__heart:focus {
       outline: none;
-      border: none; }
-  .icon__heart {
-    cursor: default;
-    outline: none; }
-    .icon__heart:hover {
-      background: transparent; }
-    .icon__heart:active {
-      background: url("../img/heart-hover.svg") no-repeat center/96%; }
-  .icon__zoom {
-    cursor: default;
-    outline: none; }
-    .icon__zoom:hover {
-      background: transparent; }
-    .icon__zoom:active {
-      outline: none;
-      background: url("../img/zoom-hover.svg") no-repeat center/96%; }
-  .icon__cart {
-    cursor: default;
-    outline: none; }
-    .icon__cart:hover {
-      outline: none;
-      background: transparent; }
-    .icon__cart:active {
-      outline: none;
-      background: url("../img/cart-hover.svg") no-repeat center/96.85%; } }
+      border: none; } }
 
 @media screen and (max-width: 785px) {
   .offers__email-wrap {
