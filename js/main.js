@@ -196,4 +196,48 @@ document.addEventListener("DOMContentLoaded", function(event) {
   search.addEventListener('click', (e) => {
     if (e.target === search) {search.classList.remove('search--visible')}
   });
+
+
+});
+
+$(document).ready(function () {
+  const offersForm = $('.offers__form');
+  
+  offersForm.validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userEmail: {
+        required: true,
+        email: true,
+        minlength: 8
+      }
+    },
+    messages: {
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+        minlength: "Email не может содержать менее 10 символов"
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          // success.toggleClass('success--visible');
+        }
+      });
+    }
+  });
+  const scrollUp = $('.scroll-up__button');
+  scrollUp.click(function (e) {
+    e.preventDefault();
+    $('body,html').animate({
+        scrollTop: 0
+    }, 1500);
+    return false;
+});
 });

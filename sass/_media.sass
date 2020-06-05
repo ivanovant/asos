@@ -21,7 +21,67 @@
   .swiper1
     &-slide
       padding: 14rem 0 17.6rem
+  .news
+    &__card
+      display: flex
+      flex-direction: column
+      color: $dark-blue
+      padding-top: 0.3rem
+      min-width: 
+      &--right
+        padding-left: 4.2rem
+  .news__card--left
+    padding-right: 5rem
 @media screen and ( max-width: 991px )
+  .scroll-up
+    &__button
+      cursor: default
+      &:hover
+        background-color: transparent
+      &:active
+        background-color: $light
+  .offers
+    &__button
+      cursor: default
+      &:active
+        background-color: #8076dd    
+      &:hover
+        background-color: transparent
+  .news
+    &__link
+      cursor: default
+      &:hover
+        color: #333333
+      &:active
+        color: $pink
+  .socials
+    outline: none
+    cursor: default
+    &__vk
+      &:hover
+        background: url('../img/vk-icon.png') no-repeat center
+      &:active
+        background: url('../img/vk-hover-icon.png') no-repeat center
+    &__facebook
+      &:hover
+        background: url('../img/facebook-icon.png') no-repeat center
+      &:active
+        background: url('../img/facebook-hover-icon.png') no-repeat center
+    &__twitter
+      &:hover
+        background: url('../img/twitter-icon.png') no-repeat center
+      &:active
+        background: url('../img/twitter-hover-icon.png') no-repeat center
+    &__ok
+      &:hover
+        background: url('../img/ok-icon.png') no-repeat center
+      &:active
+        background: url('../img/ok-hover-icon.png') no-repeat center
+    &__youtube
+      &:hover
+        background: url('../img/youtube-icon.png') no-repeat center
+      &:active
+        background: url('../img/youtube-hover-icon.png') no-repeat center
   .search
     max-height: 815px
     &__dialog
@@ -30,6 +90,13 @@
       margin-left: 2.5rem
     &__button
       right: 50px
+      cursor: default
+    &__close
+      cursor: default
+      &:hover
+        background: url('../img/close.svg') no-repeat center / 112%
+      &:active
+        background: url('../img/close-hover.svg') no-repeat center / 112%
   .menu
     &__nav
       margin-left: 7rem
@@ -206,6 +273,37 @@
         outline: none
         background: url('../img/cart-hover.svg') no-repeat center / 96.85%
 @media screen and ( max-width: 785px )
+  .offers
+    &__email
+      &-wrap
+        padding-right: 1.5rem
+  .col-50
+    width: 100%
+    display: flex
+    justify-content: center
+  .news
+    &__section
+      &-title
+        margin-bottom: 7rem
+    &__card
+      position: relative
+      margin: auto
+      max-width: 37.8571rem
+      &::after
+        content: ''
+        position: absolute
+        top: -1rem
+        width: 100%
+        height: 1px
+        background-color: #d1d5db
+        margin-bottom: 1rem
+      &--left
+        margin-bottom: 4rem
+        padding-right: 0
+      &--right
+        padding-left: 0
+        &::before
+          display: none
   .search
     max-height: 515px
     &__dialog
@@ -245,6 +343,7 @@
       outline: none
       border: none
       z-index: 50
+      margin-right: 1px
       &--active
         background-color: $light
       &:active
@@ -379,7 +478,30 @@
       background: url('../img/close-mobile.svg') no-repeat center / 112%
       &:hover
         background: url('../img/close-mobile.svg') no-repeat center / 112%
+  .section
+    &__footer
+      padding: 0
+  .footer
+    &__row
+      display: none
+    &__policy
+      margin-bottom: 0
+      &-wrap
+        padding: 0
+        margin-bottom: 0.5rem
 @media screen and ( max-width: 574px )
+  .offers
+    &__form
+      &-email
+        width: 100%
+        max-width: 100%
+    &__email
+      &-wrap
+        padding-right: 0
+        margin-bottom: 3rem
+    &__form
+      align-items: center
+      flex-direction: column
   .search
     max-height: 662px
   .cart
@@ -417,6 +539,9 @@
     &-title
       &__text
         padding: 0 2rem
+      &__heading
+        font-size: 1.6rem
+        letter-spacing: 0.1rem
 @media screen and ( max-width: 375px )
   .search
     max-height: 470px
@@ -461,11 +586,25 @@
         font-weight: 700
         padding: 1.5rem 0 0 0
   .section
+    &__wrapper
+      display: flex
+      justify-content: center
     &-title
       &__heading
         line-height: 2rem
       &__text
         padding: 0 2rem
-@media screen and ( max-width: 375px )
+  .top-products
+    &__container
+      width: 80%
+  .product
+    &-card
+      &__heading
+        font-size: 1.3rem
+@media screen and ( max-width: 355px )
   .search
     max-height: 479px
+  .section
+    &-title
+      &__heading
+        font-size: 1.4rem

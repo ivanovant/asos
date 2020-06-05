@@ -1,0 +1,78 @@
+.footer
+  background-color: #171e27
+  &__contacts
+    display: flex
+    flex-direction: column
+    max-width: 240px
+  &__icon
+    margin-right: 1rem
+  &__content
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: 240px
+    padding-left: 5.2rem
+    &--right
+      padding-left: 5.8rem
+  &__main
+    &-heading
+      margin-bottom: 1.6rem
+  &__heading
+    font-family: Gotham Pro
+    font-weight: 900
+    line-height: 2rem
+    text-transform: uppercase
+    letter-spacing: 0.2rem
+    color: $light
+    margin-bottom: 2.2rem
+  &__link
+    text-decoration: none
+    color: #999999
+    font-family: Gotham Pro
+    font-size: 0.9286rem
+    font-weight: 400
+    line-height: 2.5714rem
+    margin-bottom: 0.09rem
+    &:hover
+      color: $light
+    &--left
+      display: flex
+      line-height: 1.8571rem
+      margin-bottom: 1.8rem
+      &::before
+        content: ''
+        width: 16px
+        height: 16px
+        margin-right: 1rem
+  &__main
+    &-page
+      margin-bottom: 0.6rem
+  &__adress
+    &::before
+      margin-right: 1.2rem
+      background: url('../img/location.png') no-repeat center
+  &__phone
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/call.png') no-repeat center
+  &__mail
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/mail.png') no-repeat center
+  &__skype
+    &::before
+      margin-top: 0.25rem
+      background: url('../img/skype.png') no-repeat center
+  &__policy
+    color: #999999
+    font-family: Gotham Pro
+    font-weight: 400
+    font-size: 0.9286rem
+    line-height: 2.5714rem
+    letter-spacing: 0.009rem
+    &-wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-top: 3.3rem
+      margin-bottom: 3.85rem

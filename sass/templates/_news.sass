@@ -5,6 +5,9 @@
     flex-direction: column
     color: $dark-blue
     padding-top: 0.3rem
+    min-width: 
+    &--left
+      padding: 
     &--right
       position: relative
       padding-left: 7.2rem
@@ -42,7 +45,8 @@
     letter-spacing: 0.17rem
     margin-bottom: 1.6rem
   &__text
-    max-width: 36.3571rem
+    max-width: 38.3571rem
+    padding: 0 1rem 0 0
     font-family: Gotham Pro
     font-size: 0.9286rem
     line-height: 1.88rem
@@ -50,9 +54,13 @@
     margin: 0
     margin-bottom: 1.8rem
   &__link
+    width: 100%
+    max-width: 8rem
     text-decoration: none
     color: #333333
     font-family: Gotham Pro
     font-weight: 700
     line-height: 2rem
     letter-spacing: -0.01rem
+    &:hover
+      color: $pink

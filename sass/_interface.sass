@@ -76,3 +76,48 @@
       border: none !important
     &--left
       padding-right: 0.2rem
+#user-email-error
+  position: absolute
+  bottom: -1.5rem
+  left: 1.8rem
+  color: #ff9f9f
+  font-family: Gotham Pro
+.scroll-up
+  &__wrap
+    display: flex
+    justify-content: center
+    align-items: flex-end
+  &__button
+    display: block
+    position: relative
+    width: 30px
+    height: 30px
+    border: 1px solid #454545
+    cursor: pointer
+    &:hover
+      background-color: $light
+  &__arrow
+    position: absolute
+    display: flex
+    left: 50%
+    margin-left: -1px
+    margin-top: -7px
+    border-top-left-radius: 1px
+    border-top-right-radius: 1px
+    border: none
+    top: 50%
+    width: 2px
+    height: 14px
+    background-color: #454545
+    &::before, &::after
+      content: ''
+      width: 5px
+      height: 6px
+      background-color: #454545
+    &::before
+      transform-origin: top
+      transform: rotate(-45deg) translate(0.01px, 1px)
+    &::after 
+      transform-origin: top
+      transform: rotate(45deg) translate(0.08px, 1px)
+      
