@@ -215,7 +215,7 @@ offersForm.validate({
     userEmail: {
       required: "Заполните поле",
       email: "Введите корректный email",
-      minlength: "Email не может содержать менее 10 символов"
+      minlength: "Email не может содержать менее 8 символов"
     }
   },
   submitHandler: function(form) {

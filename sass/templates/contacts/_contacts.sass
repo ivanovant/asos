@@ -1,0 +1,125 @@
+.contacts
+  &__title
+    align-items: flex-start
+  &-title
+    &__heading
+      font-size: 1.4rem
+      padding-left: 0
+      letter-spacing: 0.31rem
+      margin-bottom: 3.5rem
+  &__content
+    &-wrap
+      display: flex
+  &__form
+    display: flex
+    flex-wrap: wrap
+  &__input
+    &-group
+      position: relative
+      flex-basis: 49.2%
+  &__question
+    resize: none
+    padding: 12.5px 20px 14px
+    font-weight: 700
+    color: #252525
+    border: 1px solid $dark-blue
+    outline: none
+  &__button
+    outline: none
+    border: none
+    text-transform: uppercase
+    background-color: $dark-blue
+    color: $light
+    font-weight: 700
+    letter-spacing: 0.28px
+    padding: 15px 27px
+    cursor: pointer
+    &:hover
+      background-color: $pink
+  &__items
+    &-block
+      display: flex
+      flex-direction: column
+  &__block
+    border: 3px solid $pink
+    padding: 21px 15px 43px 39px
+    margin-right: -4.2rem
+    margin-top: 0.4rem
+    width: 100%
+    max-width: 448px
+    height: fit-content
+  &__heading
+    text-transform: uppercase
+    font-size: 0.8571rem
+    font-weight: 700
+    line-height: 28px
+    letter-spacing: 0.0514rem
+    color: #333333
+    margin-bottom: 1.3rem
+  &__link
+    display: flex
+    color: #333333
+    font-size: 0.9286rem
+    font-weight: 700
+    line-height: 26px
+    text-decoration: none
+    margin-bottom: 1.65rem
+    &:hover
+      color: $pink
+    &::before
+      content: ''
+      width: 16px
+      height: 16px
+      margin-right: 0.9rem
+  &__adress
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/location-dark.png') no-repeat center
+  &__phone
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/call-dark.png') no-repeat center
+  &__mail
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/mail-dark.png') no-repeat center
+  &__skype
+    &::before
+      margin-top: 0.3rem
+      background: url('../img/skype-dark.png') no-repeat center
+  &__text
+    margin: 0
+    color: #333333
+    font-weight: 700
+    font-size: 0.9286rem
+    line-height: 1.4286rem
+    max-width: 20rem
+    margin-left: 2.2rem
+    letter-spacing: 0.01rem
+    padding-top: 0.2rem
+.input
+  &-group
+    display: flex
+    flex-direction: column
+    padding-right: 30px
+    margin-bottom: 1.5rem
+    &__question
+      flex-basis: 98.5%
+      margin-bottom: 3rem
+.form
+  &__label
+    font-family: Gotham Pro
+    text-transform: uppercase
+    font-size: 0.8571rem
+    font-weight: 700
+    line-height: 1.5714rem
+    letter-spacing: 0.48px
+    color: #252525
+    margin-bottom: 0.9rem
+  &__input
+    border: 1px solid $dark-blue
+    outline: none
+    color: #252525
+    font-size: 1.0714rem
+    font-weight: 500
+    padding: 12.5px 0 12.5px 20px

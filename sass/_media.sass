@@ -10,6 +10,9 @@
       max-height: 150px
     &__button
       right: 120px
+  .contacts
+    &__block
+      margin-right: 0
   .swiper
     &-slide
       &__heading
@@ -37,6 +40,59 @@
       &-item
         flex-basis: 32%
 @media screen and ( max-width: 991px )
+  .ymap-container
+    cursor: default
+  .hero
+    &__breadcrumbs
+      &-link
+        cursor: default
+        &--prev
+          &:hover
+            &::before
+              background-color: transparent
+          &:active
+            &::before
+              background-color: $light
+        &--active
+          &:hover
+            &::before
+              background-color: transparent
+          &:active
+            &::before
+              background-color: $light
+  .contacts
+    &__title
+      align-items: center
+    &__form
+      flex-basis: 60%
+      margin-bottom: 3rem
+    &__content-wrap
+      justify-content: center
+      flex-wrap: wrap
+    &__block
+      margin: auto
+    &__button
+      margin: auto
+      cursor: default
+      &:hover
+        background-color: $dark-blue
+      &:active
+        background-color: $pink
+    &__link
+      cursor: default
+      &:hover
+        color: #333333
+      &:active
+        color: $pink
+      
+    &__input-group
+      flex-basis: 100%
+      padding-right: 0
+  .input
+    &-group
+      &__question
+        padding-right: 0
+        flex-basis: 100%
   .filters
     &__button
       cursor: default
@@ -547,7 +603,18 @@
   .select
     &__head
       padding: 3px 0
+  .contacts
+    &__form
+      flex-basis: 75%
 @media screen and ( max-width: 574px )
+  .contacts
+    &__form
+      flex-basis: 100%
+    &-title
+      &__heading
+        letter-spacing: 0
+        font-size: 1rem
+
   .catalog
     &__card
       &-item
@@ -615,12 +682,6 @@
         font-size: 1.6rem
         letter-spacing: 0.1rem
 @media screen and ( max-width: 375px )
-  #user-email-error
-    position: absolute
-    bottom: -2.5rem
-    left: 1.8rem
-    color: #ff9f9f
-    font-family: Gotham Pro
   .search
     max-height: 470px
     &__dialog
