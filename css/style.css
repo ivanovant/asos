@@ -536,6 +536,12 @@ template {
   max-width: 1179px;
   margin: auto; }
 
+.calculation__container {
+  position: relative;
+  width: 90%;
+  max-width: 1190px;
+  margin: auto; }
+
 .section__wrapper {
   position: relative;
   width: 98%;
@@ -551,6 +557,22 @@ template {
 
 .col-25 {
   width: 25%; }
+
+.col-15 {
+  width: 16%; }
+  .col-15__second {
+    padding-left: 3.3rem; }
+
+.col-60 {
+  width: 57.5%;
+  padding-left: 0.2rem; }
+
+.col-38 {
+  width: 42.5%; }
+
+.col-40 {
+  width: 32%;
+  padding-left: 1.45rem; }
 
 *, *::after, *::before {
   box-sizing: border-box; }
@@ -605,10 +627,17 @@ img {
     padding: 9.5rem 0; }
   .section__contacts {
     padding: 7.2714rem 0 7.8rem 0; }
+  .section__shopping-cart {
+    padding: 96px 0 84px 0; }
+  .section__calculation {
+    padding: 7.4286rem 0 7rem 0;
+    margin-bottom: 4.72rem; }
   .section-title {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .section-title--left {
+      align-items: flex-start; }
     .section-title__heading {
       margin: 0;
       text-align: center;
@@ -645,6 +674,10 @@ img {
 
 .rouble--black {
   width: 9px; }
+
+.rouble--big-black {
+  width: 11px;
+  margin-right: 0.3rem; }
 
 .card__text {
   margin-bottom: 2.1rem; }
@@ -685,6 +718,18 @@ img {
       top: 50%;
       left: -5%;
       margin-top: -0.5px; }
+  .card__pricetag--blue {
+    color: #2d3a4b;
+    font-size: 0.8571rem;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    margin-bottom: 0; }
+  .card__pricetag--big-blue {
+    color: #2d3a4b;
+    font-family: Gotham Pro-Bold;
+    font-size: 1.2857rem;
+    letter-spacing: 0.36px;
+    margin-bottom: 0; }
 
 .card__currency {
   display: flex;
@@ -1035,6 +1080,8 @@ img {
   line-height: 1.8571rem;
   font-size: 0.92rem;
   padding: 0.62rem 2.48rem; }
+  .hero__breadcrumbs--right {
+    margin-left: 1.8rem; }
   .hero__breadcrumbs-link {
     position: relative;
     display: flex;
@@ -2115,6 +2162,288 @@ img {
     opacity: .5; }
   to {
     opacity: 1; } }
+
+.shopping-cart__row {
+  display: flex;
+  position: relative; }
+  .shopping-cart__row::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: #d1d5db;
+    left: 0;
+    bottom: -33px; }
+  .shopping-cart__row--first::after {
+    bottom: -16px; }
+
+.shopping-cart__item {
+  text-transform: uppercase;
+  font-size: 0.8571rem;
+  color: #252525;
+  font-weight: 900;
+  line-height: 1.5714rem;
+  letter-spacing: 0.22px; }
+
+.card--next {
+  margin-top: 4.85rem; }
+
+.card__photo-block {
+  flex-basis: 17.7%; }
+
+.card__title {
+  padding-top: 4.2rem; }
+  .card__title-wrap {
+    flex-basis: 30.5%; }
+
+.card__pricetag--center {
+  padding-bottom: 1rem; }
+
+.card__pricetag-wrap {
+  flex-basis: 15%; }
+
+.card-title__heading {
+  color: #2d3a4b;
+  font-size: 1.5714rem;
+  font-family: Gotham Pro-Bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1886rem;
+  margin: 0;
+  margin-bottom: 0.5rem; }
+
+.card--first {
+  margin-top: 3.7rem; }
+
+.card__pricetag-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.card__select-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 17.8%; }
+
+.card__button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 11.48%;
+  padding-bottom: 2.1rem; }
+
+.card__delete-btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  width: 19px;
+  height: 19px;
+  background: url("../img/delete-icon.svg") no-repeat center; }
+  .card__delete-btn:hover {
+    background: url("../img/delete-icon-hover.svg") no-repeat center; }
+
+.card__select {
+  position: relative;
+  display: block;
+  min-width: 69px;
+  width: 100%;
+  max-width: 30px;
+  margin-bottom: 24px;
+  margin-right: 0.2rem;
+  font-family: Gotham Pro;
+  font-weight: 700;
+  color: #2d3a4b; }
+
+.card-select__head {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #2d3a4b;
+  padding: 0px 0px 0px 12px;
+  margin-left: 2px;
+  font-size: 14px;
+  line-height: 2rem;
+  font-family: Gotham Pro-Bold;
+  font-weight: 700;
+  color: #2d3a4b;
+  cursor: pointer; }
+
+.card-select__head::after {
+  width: 10px;
+  height: 6px;
+  background: #FFF url("../img/select-arrow.svg") no-repeat center;
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
+  content: '';
+  display: block;
+  transition: 0.2s ease-in; }
+
+.card-select__head.open {
+  border: 1px solid #bbbbbb;
+  box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.2); }
+
+.card-select__list {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  margin-top: 5px;
+  max-height: 205px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.43rem;
+  padding-bottom: 0.4rem;
+  font-size: 14px;
+  line-height: 0.5rem;
+  font-family: Gotham Pro-Bold;
+  color: #2d3a4b;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: contain; }
+
+.card-select__list::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F8F9FA;
+  padding: 5px; }
+
+.card-select__list::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9; }
+
+.card-select__list .card-select__item {
+  position: relative;
+  padding: 9.5px 19px;
+  cursor: pointer;
+  list-style-type: none; }
+
+.card-select__list .card-select__item:hover {
+  background-color: #f5f5f5; }
+
+.calculation {
+  background-color: #f7f7f7; }
+  .calculation__total-price-wrap {
+    border: 3px solid #ef50a2;
+    margin-left: 6px;
+    padding: 1.65rem 2.5rem 1.8rem 2.15rem; }
+  .calculation__heading {
+    position: relative;
+    font-size: 1.5714rem;
+    letter-spacing: 0.1886rem;
+    margin-bottom: 4.2rem; }
+    .calculation__heading::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: #2d3a4b;
+      left: 6px;
+      bottom: -11px; }
+  .calculation__form {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 3.5rem 3.95rem;
+    margin-bottom: 2.55rem; }
+    .calculation__form-button {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      background-color: #2d3a4b;
+      border: none;
+      color: #ffffff;
+      padding: 14.5px 26px;
+      cursor: pointer;
+      margin-left: -1px; }
+      .calculation__form-button:hover {
+        background-color: #ef50a2; }
+  .calculation__promo {
+    border: 1px solid #2d3a4b;
+    padding: 12px 18px;
+    width: 100%;
+    max-width: 387px;
+    color: #2d3a4b;
+    font-size: 1.15rem;
+    font-weight: 900; }
+    .calculation__promo::-moz-placeholder {
+      font-weight: 500;
+      font-size: 1.12rem;
+      line-height: 2rem;
+      color: #909090;
+      letter-spacing: -0.2px; }
+    .calculation__promo:-ms-input-placeholder {
+      font-weight: 500;
+      font-size: 1.12rem;
+      line-height: 2rem;
+      color: #909090;
+      letter-spacing: -0.2px; }
+    .calculation__promo::-ms-input-placeholder {
+      font-weight: 500;
+      font-size: 1.12rem;
+      line-height: 2rem;
+      color: #909090;
+      letter-spacing: -0.2px; }
+    .calculation__promo::placeholder {
+      font-weight: 500;
+      font-size: 1.12rem;
+      line-height: 2rem;
+      color: #909090;
+      letter-spacing: -0.2px; }
+  .calculation__col {
+    padding-left: 2.7rem; }
+  .calculation__button {
+    color: #2d3a4b;
+    text-transform: uppercase;
+    font-family: Gotham Pro-Bold;
+    font-size: 1rem;
+    letter-spacing: 0.84px;
+    background-color: #eeeeee;
+    padding: 16px 31px;
+    border: none;
+    margin-right: 1.2rem;
+    cursor: pointer; }
+    .calculation__button:hover {
+      background-color: #2d3a4b;
+      color: #ffffff; }
+
+.item__name {
+  font-size: 0.8571rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.0514rem;
+  color: #2d3a4b; }
+
+.total-price__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.3rem; }
+  .total-price__item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ebebeb;
+    left: 0;
+    bottom: -0.77rem; }
+
+.total-price__sum-wrap {
+  padding-top: 0.1rem;
+  font-size: 18px;
+  font-family: Gotham Pro-Bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase; }
 
 @media screen and (max-width: 1275px) {
   html {

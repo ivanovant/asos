@@ -1,0 +1,102 @@
+.calculation
+  background-color: $grey-bg
+  &__total
+    &-price
+      &-wrap
+        border: 3px solid $pink
+        margin-left: 6px
+        padding: 1.65rem 2.5rem 1.8rem 2.15rem
+  &__heading
+    position: relative
+    font-size: 1.5714rem
+    letter-spacing: 0.1886rem
+    margin-bottom: 4.2rem
+    &::after
+      content: ''
+      position: absolute
+      width: 60px
+      height: 2px
+      background-color: $dark-blue
+      left: 6px
+      bottom: -11px
+  &__form
+    display: flex
+    align-items: center
+    background-color: #eeeeee
+    padding: 3.5rem 3.95rem
+    margin-bottom: 2.55rem
+    &-button
+      font-size: 0.95rem
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.05rem
+      background-color: $dark-blue
+      border: none
+      color: $light
+      padding: 14.5px 26px
+      cursor: pointer
+      margin-left: -1px
+      &:hover
+        background-color: $pink
+  &__promo
+    border: 1px solid $dark-blue
+    padding: 12px 18px
+    width: 100%
+    max-width: 387px
+    color: $dark-blue
+    font-size: 1.15rem
+    font-weight: 900
+    &::placeholder
+      font-weight: 500
+      font-size: 1.12rem
+      line-height: 2rem
+      color: #909090
+      letter-spacing: -0.2px
+  &__col
+    padding-left: 2.7rem
+  &__button
+    color: $dark-blue
+    text-transform: uppercase
+    font-family: Gotham Pro-Bold
+    font-size: 1rem
+    letter-spacing: 0.84px
+    background-color: #eeeeee
+    padding: 16px 31px
+    border: none
+    margin-right: 1.2rem
+    cursor: pointer
+    &:hover
+      background-color: $dark-blue
+      color: $light
+.item
+  &__name
+    font-size: 0.8571rem
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.0514rem
+    color: $dark-blue
+.total
+  &-price
+    &__item
+      position: relative
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 1.3rem
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: #ebebeb
+        left: 0
+        bottom: -0.77rem
+    &__sum
+      &-wrap
+        padding-top: 0.1rem
+        font-size: 18px
+        font-family: Gotham Pro-Bold
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-transform: uppercase

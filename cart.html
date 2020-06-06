@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Антон Иванов">
+  <link rel="stylesheet" href="css/style.css">
+  <title>asos</title>
+</head>
+<body>
+  <header class="header header--light">
+    <div class="container">
+      <div class="menu header__menu header__menu--dark">
+        <div class="logo menu__logo">
+          <h1 class="header__title"><a class="logo__link logo__link--dark" href="#"><img src="img/logo-dark.svg" alt="ASOS"></a></h1>
+        </div>
+        <!-- logo -->
+        <nav class="nav menu__nav">
+          <a href="./index.html" class="nav__link nav__link--dark">Домой</a>
+          <a href="./shop.html" class="nav__link nav__link--dark">Каталог</a>
+          <a href="#" class="nav__link nav__link--dark">О нас</a>
+          <a href="#" class="nav__link nav__link--dark">Партнерам</a>
+          <a href="#" class="nav__link nav__link--dark">Контакты</a>
+        </nav>
+        <div class="links menu__links">
+          <a href="#" class="links__item links__item--dark"><img src="img/user-dark.svg" alt="Пользователь" class="links__user"></a>
+          <a href="#" class="links__item links__item--dark cart__link" data-toggle="cart"><img src="img/cart-dark.svg" alt="Корзина" class="links__cart"></a>
+          <a href="#" class="links__item links__item--dark search__link"><img src="img/search-dark.svg" alt="Поиск" class="links__search"></a>
+        </div>
+        <!-- /.links -->
+        <a href="#" class="menu__button"><span class="menu__button-item menu__button-item--dark"></span></a>
+      </div>
+      <!-- /.menu -->
+      <div class="cart">
+        <div class="cart__modal">
+          <div class="cart__product">
+            <div class="cart__image-wrap">
+              <img src="img/cart-image-1.png" alt="Товар">
+            </div>
+            <!-- /.cart__image-wrap -->
+            <div class="cart__text">
+              <h4 class="cart__text-heading">Женский жилет, А.karina</h4>
+              <span class="cart__pricetag">6 490 <span class="currency cart__currency"><img src="img/rouble-black.svg" alt="р" class="rouble-icon"></span></span>
+              <div class="cart__product-info">
+                <span class="cart__product-count">Количество:</span><span class="cart__product-count-value"> 1 ШТ.</span>
+              </div>
+              <!-- /.cart__product-info -->
+            </div>
+            <!-- /.cart__text -->
+  
+          </div>
+          <!-- /.cart__product -->
+          <div class="cart__product">
+            <div class="cart__image-wrap">
+              <img src="img/cart-image-2.png" alt="Товар">
+            </div>
+            <!-- /.cart__image-wrap -->
+            <div class="cart__text">
+              <h4 class="cart__text-heading">Женский Лонгслив, Oodji</h4>
+              <span class="cart__pricetag">999 <span class="currency cart__currency"><img src="img/rouble-black.svg" alt="р" class="rouble-icon"></span></span>
+              <div class="cart__product-info">
+                <span class="cart__product-count">Количество:</span>
+                <span class="cart__product-count-value"> 1 ШТ.</span>
+              </div>
+              <!-- /.cart__product-info -->
+            </div>
+            <!-- /.cart__text -->
+          </div>
+          <!-- /.cart__product -->
+          <div class="cart__sum">
+            <span class="cart__total-price">Итого: </span>
+            <span class="cart__total-price-value">7 489<span class="currency cart__currency--big"><img src="img/rouble-black.svg" alt="р" class="rouble-icon--big"></span></span>
+          </div>
+          <!-- /.cart__total-price -->
+          <div class="cart__button-wrap">
+            <a href="#" class="cart__button-go-to-cart">Корзина</a>
+            <a href="#" class="cart__button-confirm">Оформить</a>
+          </div>
+        </div>
+        <!-- /.cart__modal -->
+      </div>
+      <!-- /.cart -->
+    </div>
+    <!-- /.container -->
+  </header>
+
+  <main>
+    <section class="hero section__hero section__hero--small">
+      <div class="search">
+        <div class="search__dialog">
+          <input type="search" class="search__field" placeholder="Поисковый запрос">
+          <button class="search__button"></button>
+          <button class="search__close"></button>
+        </div>
+        <!-- /.search__dialog -->
+      </div>
+      <!-- /.search -->
+      <div class="hero__content">
+        <div class="section-title hero__section-title">
+          <h2 class="section-title__heading hero-title__heading section-title__heading--light">Корзина</h2>
+          <p class="section-title__text hero-title__text section-title__text--light">Здесь собраны все товары, которые вы добавили в корзину покупок. <br>
+            При необходимости вы можете отредактировать ваш заказ</p>
+        </div>
+        <!-- /.section-title hero__section-title -->
+        <div class="breadcrumbs hero__breadcrumbs hero__breadcrumbs--right">
+          <a href="./index.html" class="hero__breadcrumbs-link hero__breadcrumbs-link--prev">Главная</a>
+          <a href="./index.html" class="hero__breadcrumbs-link hero__breadcrumbs-link--prev">Каталог</a>
+          <a href="./shop.html" class="hero__breadcrumbs-link hero__breadcrumbs-link--active">Корзина</a>
+        </div>
+        <!-- /.breadcrumbs hero__breadcrumbs -->
+      </div>
+      <!-- /.hero__content -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="section__shopping-cart">
+      <div class="container">
+        <div class="shopping-cart__content">
+          <div class="shopping-cart__row shopping-cart__row--first">
+            <div class="col-15 col-15__first">
+              <span class="shopping-cart__item">Фото товара</span>
+            </div>
+            <!-- /.col-15 -->
+            <div class="col-40">
+              <span class="shopping-cart__item">Название товара</span>
+            </div>
+            <!-- /.col-40 -->
+            <div class="col-15 col-15__second">
+              <span class="shopping-cart__item">Цена</span>
+            </div>
+            <!-- /.col-15 -->
+            <div class="col-15 col-15__third">
+              <span class="shopping-cart__item">Количество</span>
+            </div>
+            <!-- /.col-15 -->
+            <div class="col-15 col-15__fourth">
+              <span class="shopping-cart__item">Итого</span>
+            </div>
+            <!-- /.col-15 -->
+          </div>
+          <!-- /.row -->
+          <div class="shopping-cart__card card--first">
+            <div class="shopping-cart__row">
+              <div class="card__photo-block">
+                <div class="card__photo-wrap">
+                  <img src="./img/shopping-cart/image-1.png" alt="Фото товара" class="card__img">
+                </div>
+                <!-- /.card__photo__wrap -->
+              </div>
+              <!-- /.col-15 -->
+              <div class="card__title-wrap">
+                <div class="card__title">
+                  <h4 class="card-title__heading">Жилет, A.Karina</h4>
+                  <div class="product-card__info-wrap">
+                    <span class="product-info product-info__color">Цвет:</span>
+                    <span class="product-info product-info__color-value">серый</span>
+                  </div>
+                  <!-- /.product-card__info-wrap -->
+                </div>
+                <!-- /.card__heading -->
+              </div>
+              <!-- /.col-40 -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>6 490</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__select-wrap">
+                <div class="card__select">
+                  <input class="card-select__input" type="hidden" name="count">
+                  <div class="card-select__head">1</div>
+                  <ul class="card-select__list" style="display: none;">
+                    <li class="card-select__item">1</li>
+                    <li class="card-select__item">2</li>
+                    <li class="card-select__item">3</li>
+                  </ul>
+                </div>
+                <!-- select -->
+              </div>
+              <!-- /.card__select-wrap -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>6 490</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__button-wrap">
+                <button class="card__delete-btn"></button>
+              </div>
+              <!-- /.card__delete-item -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.shopping-cart__card -->
+          <div class="shopping-cart__card card--next">
+            <div class="shopping-cart__row">
+              <div class="card__photo-block">
+                <div class="card__photo-wrap">
+                  <img src="./img/shopping-cart/image-2.png" alt="Фото товара" class="card__img">
+                </div>
+                <!-- /.card__photo__wrap -->
+              </div>
+              <!-- /.col-15 -->
+              <div class="card__title-wrap">
+                <div class="card__title">
+                  <h4 class="card-title__heading">Юбка, Oodji</h4>
+                  <div class="product-card__info-wrap">
+                    <span class="product-info product-info__color">Цвет:</span>
+                    <span class="product-info product-info__color-value">синий</span>
+                  </div>
+                  <!-- /.product-card__info-wrap -->
+                </div>
+                <!-- /.card__heading -->
+              </div>
+              <!-- /.col-40 -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>799</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__select-wrap">
+                <div class="card__select">
+                  <input class="card-select__input" type="hidden" name="count">
+                  <div class="card-select__head">1</div>
+                  <ul class="card-select__list" style="display: none;">
+                    <li class="card-select__item">1</li>
+                    <li class="card-select__item">2</li>
+                    <li class="card-select__item">3</li>
+                  </ul>
+                </div>
+                <!-- select -->
+              </div>
+              <!-- /.card__select-wrap -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>1 598</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__button-wrap">
+                <button class="card__delete-btn"></button>
+              </div>
+              <!-- /.card__delete-item -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.shopping-cart__card -->
+          <div class="shopping-cart__card card--next">
+            <div class="shopping-cart__row">
+              <div class="card__photo-block">
+                <div class="card__photo-wrap">
+                  <img src="./img/shopping-cart/image-3.png" alt="Фото товара" class="card__img">
+                </div>
+                <!-- /.card__photo__wrap -->
+              </div>
+              <!-- /.col-15 -->
+              <div class="card__title-wrap">
+                <div class="card__title">
+                  <h4 class="card-title__heading">Брюки, ТВОЕ</h4>
+                  <div class="product-card__info-wrap">
+                    <span class="product-info product-info__color">Цвет:</span>
+                    <span class="product-info product-info__color-value">темно-синий</span>
+                  </div>
+                  <!-- /.product-card__info-wrap -->
+                </div>
+                <!-- /.card__heading -->
+              </div>
+              <!-- /.col-40 -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__select-wrap">
+                <div class="card__select">
+                  <input class="card-select__input" type="hidden" name="count">
+                  <div class="card-select__head">1</div>
+                  <ul class="card-select__list" style="display: none;">
+                    <li class="card-select__item">1</li>
+                    <li class="card-select__item">2</li>
+                    <li class="card-select__item">3</li>
+                  </ul>
+                </div>
+                <!-- select -->
+              </div>
+              <!-- /.card__select-wrap -->
+              <div class="card__pricetag-wrap">
+                <span class="card__pricetag card__pricetag--center"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+              </div>
+              <!-- /.card__pricetag-wrap -->
+              <div class="card__button-wrap">
+                <button class="card__delete-btn"></button>
+              </div>
+              <!-- /.card__delete-item -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.shopping-cart__card -->
+        </div>
+        <!-- /.shopping-cart__content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section__shopping-cart -->
+
+    <section class="calculation section__calculation">
+      <div class="calculation__container">
+        <div class="row">
+          <div class="col-60">
+            <div class="section-title section-title--left">
+              <h3 class="section-title__heading calculation__heading">Купон на скидку</h3>
+            </div>
+            <!-- /.section-title -->
+            <form action="#" class="calculation__form">
+              <input type="text" class="calculation__promo" placeholder="Введите номер купона на скидку">
+              <button class="button calculation__form-button">Применить код</button>
+            </form>
+            <!-- calculation__form -->
+            <div class="calculation__button-wrap">
+              <button class="button calculation__button">Продолжить покупки</button>
+              <button class="button calculation__button">Обновить корзину</button>
+            </div>
+            <!-- /.calculation__button-wrap -->
+          </div>
+          <!-- /.col-60 -->
+          <div class="col-38 calculation__col">
+            <div class="section-title section-title--left">
+              <h3 class="section-title__heading calculation__heading">Сумма итого</h3>
+            </div>
+            <!-- /.section-title section-title--left -->
+            <div class="calculation__total-price-wrap">
+              <div class="total-price__item">
+                <span class="item__name">Жилет, A.Karina</span>
+                <span class="card__pricetag card__pricetag--blue"><span class="card__currency"><img src="img/rouble-black.svg" alt="р" class="rouble--black"></span>6490</span>
+              </div>
+              <!-- /.total-price__item -->
+              <div class="total-price__item">
+                <span class="item__name">Юбка, Oodji</span>
+                <span class="card__pricetag card__pricetag--blue"><span class="card__currency"><img src="img/rouble-black.svg" alt="р" class="rouble--black"></span>1598</span>
+              </div>
+              <!-- /.total-price__item -->
+              <div class="total-price__item">
+                <span class="item__name">Брюки, ТВОЕ</span>
+                <span class="card__pricetag card__pricetag--blue"><span class="card__currency"><img src="img/rouble-black.svg" alt="р" class="rouble--black"></span>599</span>
+              </div>
+              <!-- /.total-price__item -->
+              <div class="total-price__sum-wrap">
+                <span class="total-price__sum">Итого</span>
+                <span class="card__pricetag card__pricetag--big-blue"><span class="card__currency"><img src="img/rouble-black.svg" alt="р" class="rouble--big-black"></span>7687</span>
+              </div>
+              <!-- /.total-price__item -->
+            </div>
+            <!-- /.calculation__total-price-wrap -->
+          </div>
+          <!-- /.col-38 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section__calculations -->
+    <section class="section shop section__shop section__shop--small">
+      <div class="container">
+        <div class="shop__content"> 
+          <div class="section-title shop__section-title">
+            <h2 class="section-title__heading shop-title__heading">Магазин asos</h2>
+            <p class="section-title__text shop-title__text">Преимущества интернет магазина - доступные цены, широкий, регулярно обновляемый ассортимент. <br>
+              У нас можно купить одежду любой известной марки - представлена продукция ведущих зарубежных, отечественных брендов.</p>
+          </div>
+          <!-- /.section-title -->
+          <div class="shop__socials">
+            <a href="https://vk.com" class="socials socials__vk"></a>
+            <a href="https://facebook.com" class="socials socials__facebook"></a>
+            <a href="https://twitter.com/" class="socials socials__twitter"></a>
+            <a href="https://ok.ru/" class="socials socials__ok"></a>
+            <a href="https://www.youtube.com/" class="socials socials__youtube"></a>
+          </div>
+          <!-- /.shop__socials -->
+        </div>
+        <!-- /.shop__content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- shop -->
+    
+    <section class="section offers section__offers">
+      <div class="container">
+        <div class="offers__content">
+          <div class="section-title offers__section-title">
+            <h2 class="section-title__heading section-title__heading--light">Узнавайте об акциях</h2>
+            <p class="section-title__text offers-title__text section-title__text--light">Каждую неделю мы устраиваем приятные сюрпризы для наших клиентов. <br>
+              Акции, скидки, распродажи - хотите узнавать о них первым? Подпишитесь на рассылку</p>
+          </div>
+          <!-- /.section-title offers__section-title -->
+          <form action="send.php" method="POST"  class="form offers__form">
+            <div class="offers__email-wrap">
+              <input type="email" name="userEmail" class="offers__form-email" id="user-email" placeholder="Введите свой e-mail">
+            </div>
+            <!-- /.offers__email-wrap -->
+            <button class="button offers__button" type="submit">Подписаться</button>
+          </form>
+          <!-- offers__form -->
+        </div>
+        <!-- /.offers__content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- offers -->
+  </main>
+
+  <footer class="footer section__footer">
+    <div class="container">
+      <div class="row footer__row">
+        <div class="col-25">
+          <div class="footer__contacts">
+            <a href="#" class="footer__main-link footer__main-page"><h4 class="footer__main-heading"><img src="img/logo--dark.svg" alt="Asos" class="logo__icon"></h4></a>
+            <a href="https://yandex.ru/maps/?rtext=~55.733836%2C37.588134" class="footer__link footer__link--left footer__adress">г. Москва, ул. Сибирский тракт 59, офис 514</a>
+            <a href="tel:+74957455599" class="footer__link footer__link--left phone footer__phone">8 (495) 745 55-99</a>
+            <a href="mailto:ivanov-anton.mgn@yandex.ru" class="footer__link footer__link--left footer__mail">info@asos.shop</a>
+            <a href="skype:asos.shop?call" class="footer__link footer__skype footer__link--left">skype: asos.shop</a>
+          </div>
+          <!-- footer__contacts -->
+        </div>
+        <!-- col-25 -->
+        <div class="col-25">
+          <div class="footer__content">
+            <h4 class="footer__heading">Полезное</h4>
+            <a href="#" class="footer__link">Услуги</a>
+            <a href="#" class="footer__link">Как проехать</a>
+            <a href="#" class="footer__link">Статьи</a>
+            <a href="#" class="footer__link">Условия и положения</a>
+            <a href="#" class="footer__link">Блог</a>
+            <a href="#" class="footer__link">Пресса о нас</a>
+          </div>
+          <!-- footer__content -->
+        </div>
+        <!-- col-25 -->
+        <div class="col-25">
+          <div class="footer__content">
+            <h4 class="footer__heading">Магазин</h4>
+            <a href="#" class="footer__link">О нас</a>
+            <a href="#" class="footer__link">Карьера у нас</a>
+            <a href="#" class="footer__link">Способы доставки</a>
+            <a href="#" class="footer__link">Контакты</a>
+            <a href="#" class="footer__link">Поддержка</a>
+            <a href="#" class="footer__link">Оплата</a>
+          </div>
+          <!-- footer__content -->
+        </div>
+        <!-- col-25 -->
+        <div class="col-25">
+          <div class="footer__content footer__content--right">
+            <h4 class="footer__heading">Мой аккаунт</h4>
+            <a href="#" class="footer__link">Мой аккаунт</a>
+            <a href="#" class="footer__link">Корзина</a>
+            <a href="#" class="footer__link">Избранное</a>
+            <a href="#" class="footer__link">Оформить заказ</a>
+            <a href="#" class="footer__link">Выход</a>
+          </div>
+          <!-- footer__content -->
+        </div>
+        <!-- col-25 -->
+      </div>
+      <!-- /.row -->
+      <div class="footer__policy-wrap">
+        <p class="footer__policy">© 2016 ASOS Интернет-магазин брендовой одежды. Все права защищены.</p>
+      </div>
+      <!-- /.footer__policy-wrap -->
+      <div class="scroll-up__wrap">
+        <div class="scroll-up__button"><span class="scroll-up__arrow"></span></div>
+      </div>
+      <!-- /.scroll-up__wrap -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+    
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
