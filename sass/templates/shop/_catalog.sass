@@ -1,4 +1,8 @@
 .catalog
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
   &__product-count
     font-size: 1.0714rem
     color: #cccccc
@@ -6,12 +10,43 @@
     line-height: 2rem
     letter-spacing: -0.18px
   &__title
+    width: 100%
     display: flex
     justify-content: space-between
+    margin-bottom: 3.4rem
   &__filters
     display: flex
     align-items: center
     margin-top: -0.3rem
+    &-wrap
+      display: flex
+  &__card
+    &-wrap
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-bottom: 1.3rem
+    &-item
+      flex-basis: 22%
+      margin-bottom: 2.8rem
+  &__button
+    border: none
+    background-color: #eeeeee
+    font-weight: 900
+    color: $dark-blue
+    text-transform: uppercase
+    letter-spacing: 0.84px
+    font-family: Gotham Pro-Bold
+    padding: 15px 30px
+    margin-left: 2px
+    cursor: pointer
+    &:hover
+      color: $light
+      background-color: $dark-blue
+  &__select
+    &-wrap
+      display: flex
+      align-items: center
 .filters
   &__count
     border: none
@@ -27,6 +62,8 @@
     line-height: 2rem
     letter-spacing: 0px
     color: $dark-blue
+
+
   &__button
     border: none
     outline: none
@@ -34,6 +71,8 @@
     height: 20px
     margin-top: -0.7rem
     cursor: pointer
+    &-wrap
+      display: flex
     &--squares
       background: transparent url(../img/squares.svg) no-repeat center
       margin-right: 1.6rem

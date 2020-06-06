@@ -15,41 +15,29 @@
     &--blue
       background-color: #f3f7f9
   &-card
+    &__discount
+      position: absolute
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      width: 50px
+      height: 50px
+      right: 0
+      top: 0
+      background-color: $pink
+      color: $light
+      line-height: 1rem
+      &-value
+        font-size: 18px
+        font-weight: 700
+        letter-spacing: -0.36px
+      &-word
+        font-size: 11px
+        font-weight: 500
+        letter-spacing: -0.22px
     &__image
       &-wrap
         width: fit-content
-.card
-  &__text
-    margin-bottom: 2.1rem
-    &--left
-      display: flex
-      flex-direction: column
-      align-items: flex-end
-    &--right
-      display: flex
-      flex-direction: column
-      align-items: flex-start
-  &__image
-    &-wrap
-      margin-bottom: 1.7rem
-  &__pricetag
-    display: flex
-    font-size: 1.2857rem
-    font-family: Gotham Pro-Black
-    line-height: 2rem
-    font-weight: 400
-    color: $pink
-    margin-bottom: 0.8rem
-  &__currency
-    display: flex
-    padding: 0 0.3571rem 0.25rem 0
-  &__heading
-    text-transform: uppercase
-    font-family: Gotham Pro-Bold
-    font-weight: 700
-    font-size: 1.5rem
-    letter-spacing: 0.06rem
-    margin: 0
-    margin-bottom: 1.2rem
-  &__info
-    &-wrap
+        position: relative
+

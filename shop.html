@@ -29,7 +29,7 @@
           <a href="#" class="links__item links__item--dark search__link"><img src="img/search-dark.svg" alt="Поиск" class="links__search"></a>
         </div>
         <!-- /.links -->
-        <a href="#" class="menu__button"><span class="menu__button-item"></span></a>
+        <a href="#" class="menu__button"><span class="menu__button-item menu__button-item--dark"></span></a>
       </div>
       <!-- /.menu -->
       <div class="cart">
@@ -113,47 +113,277 @@
       <!-- /.hero__content -->
     </section>
     <!-- /.hero -->
-    <section class="section catalog section__catalog">
+    <section class="section catalog section__catalog section__catalog--line">
       <div class="container">
-        <div class="catalog__title">
-          <div class="catalog__product-count">
-            <span class="product-count__shown">Показано</span>
-            <span class="product-count__value">1 - 12</span>
-            <span class="product-count__of">из</span>
-            <span class="product-count__total">30</span>
-            <span class="product-total__items">Товаров</span>
-          </div>
-          <!-- /.catalog__product-count -->
-          <div class="catalog__filters">
-            <span class="filters__show-by">Показывать по</span>
-            <div class="select">
-              <input class="select__input" type="hidden" name="count">
-              <div class="select__head">12</div>
-              <ul class="select__list" style="display: none;">
-                  <li class="select__item">4</li>
-                  <li class="select__item">8</li>
-                  <li class="select__item">12</li>
-                  <li class="select__item">16</li>
-              </ul>
+        <div class="catalog__content">
+          <div class="catalog__title">
+            <div class="catalog__product-count">
+              <span class="product-count__shown">Показано</span>
+              <span class="product-count__value">1 - 12</span>
+              <span class="product-count__of">из</span>
+              <span class="product-count__total">30</span>
+              <span class="product-total__items">Товаров</span>
             </div>
-            <!-- select -->
-            <div class="select select--wide">
-              <input class="select__input" type="hidden" name="filterBy">
-              <div class="select__head">Фильтр по</div>
-              <ul class="select__list" style="display: none;">
-                  <li class="select__item">Бренду</li>
-                  <li class="select__item">Цене</li>
-                  <li class="select__item">Сезону</li>
-                  <li class="select__item">Цвету</li>
-              </ul>
+            <!-- /.catalog__product-count -->
+            <div class="catalog__filters">
+              <div class="catalog__filters-wrap">
+                <div class="catalog__select-wrap">
+                  <span class="filters__show-by">Показывать по</span>
+                  <div class="select">
+                    <input class="select__input" type="hidden" name="count">
+                    <div class="select__head">12</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item">4</li>
+                        <li class="select__item">8</li>
+                        <li class="select__item">12</li>
+                        <li class="select__item">16</li>
+                    </ul>
+                  </div>
+                  <!-- select -->
+                </div>
+                <!-- /.catalog__select-wrap -->
+                <div class="select select--wide">
+                  <input class="select__input" type="hidden" name="filterBy">
+                  <div class="select__head">Фильтр по</div>
+                  <ul class="select__list" style="display: none;">
+                      <li class="select__item">Бренду</li>
+                      <li class="select__item">Цене</li>
+                      <li class="select__item">Сезону</li>
+                      <li class="select__item">Цвету</li>
+                  </ul>
+                </div>
+                <!-- select -->
+              </div>
+              <!-- /.catalog__filters-wrap -->
+              <div class="filters__button-wrap">
+                <button class="filters__button filters__button--squares"></button>
+                <button class="filters__button filters__button--list"></button>
+              </div>
+              <!-- /.filters__button-wrap -->
             </div>
-            <!-- select -->
-            <button class="filters__button filters__button--squares"></button>
-            <button class="filters__button filters__button--list"></button>
+            <!-- /.catalog__filters -->
           </div>
-          <!-- /.catalog__filters -->
+          <!-- /.section-title -->
+          <div class="catalog__card-wrap">
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-1.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, ТВОЕ</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">темно-синий</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-2.png" alt="Модель" class="swiper-slide__image">
+                <div class="product-card__discount">
+                  <span class="product-card__discount-value">10%</span>
+                  <span class="product-card__discount-word">скидка</span>
+                </div>
+                <!-- /.product-card__discount -->
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, ТВОЕ</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">серый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <div class="card__pricetag-wrap">
+                  <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+                  <span class="card__pricetag card__pricetag--dark"><span class="card__currency"><img src="img/rouble-black.svg" alt="р" class="rouble--black"></span>659</span>  
+                </div>
+                <!-- /.card__pricetag-wrap -->
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/top-products/image-8.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, Oodji</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">бледно-розовый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>499</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/top-products/image-9.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, КАЛIНКА</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">синий</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>2 810</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-5.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, ТВОЕ</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">синий</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/top-products/image-5.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, Oodji</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">морская волна</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>399</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-7.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">ARBOR VITAE</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">розовый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>2 290</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/top-products/image-6.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, Oodji</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">бирюзовый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>799</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/top-products/image-7.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">EMKA FASHION</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">синий</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>1 425</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-10.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, HELMIDGE</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">синий, оранжевый, желтый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>6 990</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-11.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, Baon</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">салатовый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>991</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+            <div class="catalog__card-item product-card">
+              <div class="product-card__image-wrap" data-index="1">
+                <img src="img/catalog/image-12.png" alt="Модель" class="swiper-slide__image">
+              </div>
+              <!-- /.product-card__image-wrap -->
+              <div class="product-card__text">
+                <h4 class="product-card__heading">Юбка, Oodji</h4>
+                <div class="product-card__info-wrap">
+                  <span class="product-info product-info__color">Цвет:</span>
+                  <span class="product-info product-info__color-value">персиковый</span>
+                </div>
+                <!-- /.product-card__info-wrap -->
+                <span class="card__pricetag"><span class="card__currency"><img src="img/rouble-pink.svg" alt="р" class="rouble--pink"></span>599</span>
+              </div>
+              <!-- /.product-card__text -->
+            </div>
+            <!-- /.catalog__card-item -->
+          </div>
+          <!-- /.catolog__card-wrap -->
+          <button class="button catalog__button">Показать еще 12 товаров</button>
         </div>
-        <!-- /.section-title -->
+        <!-- /.catalog__content -->
+
       </div>
       <!-- /.container -->
     </section>
@@ -278,6 +508,6 @@
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery-3.5.0.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/shop-main.js"></script>
 </body>
 </html>

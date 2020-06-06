@@ -148,9 +148,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
   
   const menuBtn = document.querySelector('.menu__button');
-  const switchBtn = () => menuBtn.classList.toggle('menu__button--active');
+  const switchBtn = () => menuBtn.classList.toggle('menu__button--light--active');
   const menuBtnItem = document.querySelector('.menu__button-item');
-  const switchBtnItem = () => menuBtnItem.classList.toggle('menu__button-item--active');
+  const switchBtnItem = () => menuBtnItem.classList.toggle('menu__button-item--light--active');
   const nav = document.querySelector('.menu__nav');
   const switchNav = () => nav.classList.toggle('menu__nav--active');
   menuBtn.addEventListener('click', (event) => {
@@ -199,38 +199,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
 
-$(document).ready(function () {
-  const offersForm = $('.offers__form');
+const offersForm = $('.offers__form');
   
-  offersForm.validate({
-    errorClass: "invalid",
-    errorElement: "div",
-    rules: {
-      userEmail: {
-        required: true,
-        email: true,
-        minlength: 8
-      }
-    },
-    messages: {
-      userEmail: {
-        required: "Заполните поле",
-        email: "Введите корректный email",
-        minlength: "Email не может содержать менее 10 символов"
-      }
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          // success.toggleClass('success--visible');
-        }
-      });
+offersForm.validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  rules: {
+    userEmail: {
+      required: true,
+      email: true,
+      minlength: 8
     }
-  });
+  },
+  messages: {
+    userEmail: {
+      required: "Заполните поле",
+      email: "Введите корректный email",
+      minlength: "Email не может содержать менее 10 символов"
+    }
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        $(form)[0].reset();
+        // success.toggleClass('success--visible');
+      }
+    });
+  }
+});
+$(document).ready(function () {
   const scrollUp = $('.scroll-up__button');
   scrollUp.click(function (e) {
     e.preventDefault();
@@ -243,96 +243,18 @@ $(document).ready(function () {
   const cart = $('.cart__modal');
 
   $(window).on('scroll', () =>{
-    if (scrollY > 100) {
-      cart.addClass('cart--scroll')
-    } else {
-      cart.removeClass('cart--scroll')
-    }
+    let wide = $(window).width(); // Получаем ширину окна
+    if (wide > 785) { console.log(wide)
+      if (scrollY > 100) {
+        cart.addClass('cart--scroll')
+      } else {
+        cart.removeClass('cart--scroll')}
+    } else { return true}
   });
-	$(document).mouseup(function (e){
-		if (!cart.is(e.target)
-		    && cart.has(e.target).length === 0) {
+  $(document).mouseup(function (e){
+    if (!cart.is(e.target)
+        && cart.has(e.target).length === 0) {
           cart.removeClass('cart__modal--visible');
-		}
-  });
-
-  $('.select').on('click', '.select__head', function () {
-    if ($(this).hasClass('open')) {
-        $(this).removeClass('open');
-        $(this).next().fadeOut();
-    } else {
-        $('.select__head').removeClass('open');
-        $('.select__list').fadeOut();
-        $(this).addClass('open');
-        $(this).next().fadeIn();
     }
   });
-  
-  $('.select').on('click', '.select__item', function () {
-      $('.select__head').removeClass('open');
-      $(this).parent().fadeOut();
-      $(this).parent().prev().text($(this).text());
-      $(this).parent().prev().prev().val($(this).text());
-  });
-  
-  $(document).click(function (e) {
-      if (!$(e.target).closest('.select').length) {
-          $('.select__head').removeClass('open');
-          $('.select__list').fadeOut();
-      }
-  });
-//   $('.select').each(function() {
-//     const _this = $(this),
-//         selectOption = _this.find('option'),
-//         selectOptionLength = selectOption.length,
-//         selectedOption = selectOption.filter(':selected'),
-//         duration = 450; // длительность анимации 
-
-//     _this.hide();
-//     _this.wrap('<div class="select"></div>');
-//     $('<div>', {
-//         class: 'new-select',
-//         text: _this.children('option:disabled').text()
-//     }).insertAfter(_this);
-
-//     const selectHead = _this.next('.new-select');
-//     $('<div>', {
-//         class: 'new-select__list'
-//     }).insertAfter(selectHead);
-
-//     const selectList = selectHead.next('.new-select__list');
-//     for (let i = 1; i < selectOptionLength; i++) {
-//         $('<div>', {
-//             class: 'new-select__item',
-//             html: $('<span>', {
-//                 text: selectOption.eq(i).text()
-//             })
-//         })
-//         .attr('data-value', selectOption.eq(i).val())
-//         .appendTo(selectList);
-//     }
-
-//     const selectItem = selectList.find('.new-select__item');
-//     selectList.slideUp(0);
-//     selectHead.on('click', function() {
-//         if ( !$(this).hasClass('on') ) {
-//             $(this).addClass('on');
-//             selectList.slideDown(duration);
-
-//             selectItem.on('click', function() {
-//                 let chooseItem = $(this).data('value');
-
-//                 $('select').val(chooseItem).attr('selected', 'selected');
-//                 selectHead.text( $(this).find('span').text() );
-
-//                 selectList.slideUp(duration);
-//                 selectHead.removeClass('on');
-//             });
-
-//         } else {
-//             $(this).removeClass('on');
-//             selectList.slideUp(duration);
-//         }
-//     });
-// });
 });
