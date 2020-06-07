@@ -769,6 +769,54 @@
       display: flex
       justify-content: center
 @media screen and ( max-width: 574px )
+  .col-40
+    width: 60%
+    justify-content: center
+  .col-15
+    width: 35% 
+    justify-content: center
+    &--desktop
+      display: none
+  .card
+    &__pricetag
+      &-wrap
+        margin-right: 0.5rem
+    &__button-wrap
+      padding-bottom: 0
+    &__lable--mobile
+      display: flex
+      margin-right: 1rem
+    &__photo-block
+      flex-basis: 50%
+      margin-bottom: 2rem
+  .shopping-cart
+    &__row
+      flex-wrap: wrap
+      justify-content: space-between
+
+  .card
+    &-title
+      &__heading
+        font-size: 1.5rem
+    &__title
+      &-wrap
+        flex-basis: 50%
+    &__pricetag
+      &-wrap
+        flex-basis: 100%
+        margin-bottom: 1rem
+      &--center
+        margin-bottom: 0
+        padding-bottom: 0
+    &__select
+      margin-bottom: 0
+      &-wrap
+        flex-basis: 100%
+        margin-bottom: 1rem
+        justify-content: flex-start
+    &__button
+      &-wrap
+        margin-top: -7rem
   .calculation
     &__button
       width: 100% 
@@ -862,6 +910,21 @@
         font-size: 1.6rem
         letter-spacing: 0.1rem
 @media screen and ( max-width: 375px )
+  .col-40
+    justify-content: flex-end
+  .card
+    &__pricetag
+      &-wrap
+        flex-basis: 100%
+        margin-bottom: 1rem
+    &__select
+      &-wrap
+        flex-basis: 100%
+        margin-bottom: 1rem
+        justify-content: flex-start
+    &__button
+      &-wrap
+        margin-top: -7rem
   .calculation
     &__form
       padding: 1.5rem 1.5rem
