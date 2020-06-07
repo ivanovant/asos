@@ -1,0 +1,293 @@
+.item
+  &__description
+    display: flex
+    flex-direction: column
+    padding-left: 2.15rem
+    &-text
+      color: #40494e
+      line-height: 1.8571rem
+      letter-spacing: 0.1px
+      font-weight: 700
+      padding-left: 0.1rem
+      margin-bottom: 2.5rem
+  &__title
+    position: relative
+    margin-bottom: 0.25rem
+    &::after
+      position: absolute
+      content: ''
+      left: 0
+      bottom: -5px
+      width: 94%
+      height: 1px
+      background-color: #e6e6e6
+  &-title
+    &__heading
+      margin: 0.6rem 0 1.5rem 0
+      text-transform: uppercase
+      color: $dark-blue
+      font-family: Gotham Pro-Bold
+      letter-spacing: 0.1886rem
+      font-size: 1.5714rem
+  &__info, &__info-value
+    font-size: 0.9286rem
+    color: #40494e
+    letter-spacing: 0.0071rem
+  &__info
+    font-family: Gotham Pro-Medium
+    line-height: 2.6429rem
+    &--big
+      font-size: 1.0714rem
+      letter-spacing: 0px
+      line-height: 1rem
+    &-wrap
+      margin-bottom: 1.32rem
+    &-value
+      font-family: Gotham Pro
+      font-weight: 500
+    &-box
+      position: relative
+      padding-left: 0.1rem
+      &::after
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 0
+        width: 94%
+        height: 1px
+        background-color: #e6e6e6
+  &__preview
+    &-block
+      max-height: 216px
+      margin: auto
+      position: relative
+      display: flex
+      justify-content: space-between
+      transform: translateY(-55px)
+      width: 100%
+      max-width: 38rem
+      z-index: 1
+  &__color
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 21rem
+  &__input
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      max-width: 11.1rem
+  &__select
+    &-wrap
+      &--small
+        height: 33px
+  &__size
+    &-choice
+      display: flex
+      justify-content: space-between
+      align-items: center
+      max-width: 29.2rem
+      min-height: 50px
+      margin-bottom: 2.8rem
+      cursor: pointer
+      &-value
+        color: #40494e
+        text-transform: uppercase
+        font-weight: 700
+        background-color: #f7f7f7
+        border: 2px solid #a5b3c4
+        padding: 9px 14px
+        &--active
+          border: 2px solid $pink
+          background-color: #ffecf6
+      &-wrap
+        max-width: fit-content
+    &-table
+      margin-bottom: 0.7rem
+      &-link
+        color: #ef50a2
+        font-size: 1.0714rem
+        text-decoration: none
+        font-weight: 700
+        &:hover
+          color: $dark-blue
+  &__payment
+    font-weight: 600
+    line-height: 26px
+    color: #40494e
+    padding-left: 0.1rem
+    letter-spacing: 0.1px
+    &-box
+      display: flex
+      justify-content: space-between
+      max-width: 33.1rem
+      margin-top: 0.8rem
+.preview
+  &__image
+    &-wrap
+      padding: 3px
+      border: 2px solid transparent
+      cursor: pointer
+      &--active
+        border: 2px solid #ef50a2
+.size
+  &--disabled
+    color: #c4c3c3
+    border: 2px solid #e6e6e6
+    background-color: #f7f7f7
+    cursor: default
+.swiper
+  &-button
+    &__wrap
+      position: relative
+      margin: auto
+      top: -8.7%
+      width: 100%
+      max-width: 14.7rem
+      height: 100%
+      max-height: 5rem
+      transform: translateX(-5px)
+    &-prev3, &-next3
+      position: absolute
+      outline: none
+      width: 100px
+      height: 100px
+      bottom: 0
+      &::after
+        display: none
+    &-prev3
+      background: url('../img/swiper3-arrow-prev.svg') no-repeat center
+      left: 0
+      &:hover
+        background: url('../img/swiper3-arrow-prev-hover.svg') no-repeat center
+    &-next3
+      right: 0
+      background: url('../img/swiper3-arrow-next.svg') no-repeat center
+      &:hover
+        background: url('../img/swiper3-arrow-next-hover.svg') no-repeat center
+.descritption
+  &__button
+    background-color: $dark-blue
+    font-size: 1.2857rem
+    text-transform: uppercase
+    color: $light
+    cursor: pointer
+    padding: 20px 37px 20px 40px
+    border: none
+    font-family: Gotham Pro-Bold
+    letter-spacing: 0.6px
+    &:hover
+      outline: none
+      background-color: $pink
+.description
+  &__button
+    &-wrap
+      margin-bottom: 2.65rem
+    &-favorite
+      border: none
+      background: url('../img/favorite-item.svg') no-repeat center / cover
+      width: 28px
+      height: 25px
+      padding: 0.3rem
+      margin-left: 2.5rem
+      cursor: pointer
+      &:hover
+        background: url('../img/favorite-item-hover.svg') no-repeat center / cover
+.social
+  &-links
+    &__label
+      font-weight: 600
+      line-height: 26px
+      color: #40494e
+      padding-left: 0.1rem
+      letter-spacing: 0.1px
+    &__items
+      display: flex
+      justify-content: space-between
+      max-width: 9.4rem
+      margin-left: 0.1rem
+      margin-top: 0.9rem
+    &__wrap
+      margin-bottom: 2.7rem
+.payment
+  width: 5rem
+  height: 3rem
+  outline: none
+  &__visa
+    width: 5.4rem
+    background: url('../img/visa.png') no-repeat center
+    &:hover
+      background: url('../img/visa-hover.png') no-repeat center
+  &__master-card
+    background: url('../img/master-card.png') no-repeat center
+    &:hover
+      background: url('../img/master-card-hover.png') no-repeat center
+  &__yandex
+    width: 7.3rem
+    background: url('../img/yandex.png') no-repeat center
+    &:hover
+      background: url('../img/yandex-hover.png') no-repeat center
+  &__rbk
+    width: 6rem
+    background: url('../img/rbk.png') no-repeat center
+    &:hover
+      background: url('../img/rbk-hover.png') no-repeat center
+  &__qiwi
+    background: url('../img/qiwi.png') no-repeat center
+    &:hover
+      background: url('../img/qiwi-hover.png') no-repeat center
+.section__slider
+  background-color: #f7f7f7
+  box-shadow: inset 0 -1px 0 #d1d5db
+  padding: 2rem 0
+.item__color-choice
+  position: relative
+  width: 25px
+  height: 25px
+  border-radius: 50%
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    left: 50%
+    margin-left: -6.5px
+    top: 50%
+    margin-top: -6.5px
+#pink
+  &::before
+    background-color: #ed7b8c
+#green
+  &::before
+    background-color: #ccbe3c
+#red
+  &::before
+    background-color: #ff4a32
+#grey-blue
+  &::before
+    background-color: #8183ad
+#blue
+  &::before
+    background-color: #2d5dc5
+#gold
+  &::before
+    background-color: #e2a040
+
+.item-1
+  border: 2px solid $pink
+.item-2
+  border: 2px solid #ccbe3c
+.item-3
+  border: 2px solid #ff4a32
+.item-4
+  border: 2px solid #8183ad
+.item-5
+  border: 2px solid #2d5dc5
+.item-6
+  border: 2px solid #e2a040
+
