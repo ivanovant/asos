@@ -2360,7 +2360,9 @@ img {
       background-color: #2d3a4b;
       border: none;
       color: #ffffff;
-      padding: 14.5px 26px;
+      padding: 14.5px 0;
+      width: 100%;
+      max-width: 13.2857rem;
       cursor: pointer;
       margin-left: -1px; }
       .calculation__form-button:hover {
@@ -2402,6 +2404,7 @@ img {
   .calculation__button {
     color: #2d3a4b;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: Gotham Pro-Bold;
     font-size: 1rem;
     letter-spacing: 0.84px;
@@ -2477,9 +2480,101 @@ img {
   .news__card--left {
     padding-right: 5rem; }
   .catalog__card-item {
-    flex-basis: 32%; } }
+    flex-basis: 32%; }
+  .col-38 {
+    flex-basis: 38%; }
+  .col-60 {
+    flex-basis: 62%; }
+  .card__title {
+    padding-top: 5rem; }
+    .card__title-wrap {
+      padding-left: 2rem; }
+  .col-40 {
+    padding-left: 3rem; } }
 
 @media screen and (max-width: 991px) {
+  .card__title {
+    padding-top: 3.2rem; }
+    .card__title-wrap {
+      padding-left: 2rem;
+      flex-basis: 15%; }
+  .card__photo-block {
+    flex-basis: 20%; }
+  .calculation__form-button {
+    outline: none;
+    cursor: default; }
+    .calculation__form-button:hover {
+      outline: none;
+      background-color: #2d3a4b; }
+    .calculation__form-button:active {
+      background-color: #ef50a2;
+      outline: none; }
+  .calculation__button {
+    cursor: default;
+    outline: none; }
+    .calculation__button:hover {
+      outline: none;
+      background-color: #eeeeee;
+      color: #2d3a4b; }
+    .calculation__button:active {
+      background-color: #2d3a4b;
+      outline: none;
+      color: #ffffff; }
+  .card__select {
+    cursor: default !important;
+    outline: none; }
+  .card-select__head {
+    cursor: default;
+    outline: none; }
+  .card-select__list {
+    cursor: default;
+    outline: none; }
+  .card-select__list .card-select__item {
+    cursor: default;
+    outline: none; }
+    .card-select__list .card-select__item:hover {
+      background-color: #ffffff;
+      outline: none; }
+    .card-select__list .card-select__item:active {
+      outline: none;
+      background-color: #f5f5f5; }
+  .card__delete-btn {
+    cursor: default;
+    outline: none; }
+    .card__delete-btn:hover {
+      background: url("../img/delete-icon.svg") no-repeat center;
+      outline: none; }
+    .card__delete-btn:active {
+      outline: none;
+      background: url("../img/delete-icon-hover.svg") no-repeat center; }
+  a:-webkit-any-link {
+    outline: none;
+    cursor: default; }
+  .footer__link {
+    cursor: default;
+    outline: none; }
+    .footer__link:hover {
+      outline: none;
+      color: #999999; }
+    .footer__link:active {
+      outline: none;
+      color: #ffffff; }
+  .col-38 {
+    flex-basis: 100%; }
+  .col-60 {
+    flex-basis: 100%; }
+  .section__calculation {
+    padding: 3rem; }
+  .section-title--left {
+    align-items: center; }
+  .calculation__col {
+    padding-left: 0; }
+  .calculation__promo {
+    max-width: 39.5rem; }
+  .calculation__button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem; }
   .ymap-container {
     cursor: default; }
   .hero__breadcrumbs-link {
@@ -2727,9 +2822,36 @@ img {
       outline: none;
       border: none; }
   .hero__content {
-    padding-top: 9.6rem; } }
+    padding-top: 9.6rem; }
+  .card__title {
+    padding-top: 4rem; }
+    .card__title-wrap {
+      flex-basis: 30%; }
+  .card-title__heading {
+    font-size: 1.3rem; }
+  .col-15__first {
+    width: 23%; }
+  .col-40 {
+    width: 25%;
+    padding-left: 0.2rem; }
+  .col-15 {
+    width: 18%; }
+    .col-15__first {
+      width: 22%; } }
 
 @media screen and (max-width: 785px) {
+  .card-title__heading {
+    font-size: 1.1rem; }
+  .card__title {
+    padding-top: 2.5rem; }
+    .card__title-wrap {
+      padding-top: 0.7rem;
+      padding-left: 2rem;
+      flex-basis: 28%; }
+  .card__button-wrap {
+    flex-basis: 5%; }
+  .card__photo-block {
+    flex-basis: 20%; }
   .offers__email-wrap {
     padding-right: 1.5rem; }
   .col-50 {
@@ -2977,9 +3099,46 @@ img {
   .select__head {
     padding: 3px 0; }
   .contacts__form {
-    flex-basis: 75%; } }
+    flex-basis: 75%; }
+  .section__calculation {
+    padding: 3rem 0; }
+  .calculation__promo {
+    padding: 1rem 0.8rem; }
+  .col-40 {
+    display: flex;
+    justify-content: center;
+    width: 28%; }
+  .col-15 {
+    display: flex;
+    justify-content: center;
+    width: 21%; }
+    .col-15__first {
+      justify-content: flex-start;
+      width: 24%; }
+    .col-15__second {
+      justify-content: flex-start; }
+    .col-15__fourth {
+      display: flex;
+      justify-content: center; } }
 
 @media screen and (max-width: 574px) {
+  .calculation__button {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+    .calculation__button-wrap {
+      flex-direction: column;
+      padding: 0 0rem; }
+  .calculation__form {
+    padding: 2.5rem 2.5rem;
+    flex-direction: column;
+    align-items: center; }
+    .calculation__form-button {
+      max-width: 100%; }
+  .calculation__promo {
+    margin-bottom: 2rem; }
   .contacts__form {
     flex-basis: 100%; }
   .contacts-title__heading {
@@ -3038,6 +3197,10 @@ img {
     letter-spacing: 0.1rem; } }
 
 @media screen and (max-width: 375px) {
+  .calculation__form {
+    padding: 1.5rem 1.5rem; }
+  .calculation__promo {
+    padding: 1rem 0.3rem; }
   .search {
     max-height: 470px; }
     .search__dialog {

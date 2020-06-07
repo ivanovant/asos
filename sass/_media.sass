@@ -39,7 +39,111 @@
     &__card
       &-item
         flex-basis: 32%
+  .col-38
+    flex-basis: 38%
+  .col-60
+    flex-basis: 62%
+  .card
+    &__title
+      padding-top: 5rem
+      &-wrap
+        padding-left: 2rem
+  .col-40
+    padding-left: 3rem
 @media screen and ( max-width: 991px )
+  .card
+    &__title
+      padding-top: 3.2rem
+      &-wrap
+        padding-left: 2rem
+        flex-basis: 15%
+    &__photo-block
+      flex-basis: 20%
+  .calculation
+    &__form
+      &-button
+        outline: none
+        cursor: default
+        &:hover
+          outline: none
+          background-color: $dark-blue
+        &:active
+          background-color: $pink
+          outline: none
+    &__button
+      cursor: default
+      outline: none
+      &:hover
+        outline: none
+        background-color: #eeeeee
+        color: $dark-blue
+      &:active
+        background-color: $dark-blue
+        outline: none
+        color: $light
+  .card
+    &__select
+      cursor: default !important
+      outline: none
+    &-select
+      &__head
+        cursor: default   
+        outline: none
+      &__list
+        cursor: default
+        outline: none
+  .card-select__list .card-select__item
+    cursor: default
+    outline: none
+    &:hover
+      background-color: $light
+      outline: none
+    &:active
+      outline: none
+      background-color: #f5f5f5
+  .card
+    &__delete-btn
+      cursor: default
+      outline: none
+      &:hover
+        background: url('../img/delete-icon.svg') no-repeat center
+        outline: none
+      &:active
+        outline: none
+        background: url('../img/delete-icon-hover.svg') no-repeat center
+  a:-webkit-any-link
+    outline: none
+    cursor: default
+  .footer
+    &__link
+      cursor: default
+      outline: none
+      &:hover
+        outline: none
+        color: #999999
+      &:active
+        outline: none
+        color: $light
+  .col-38
+    flex-basis: 100%
+  .col-60
+    flex-basis: 100%
+  .section
+    &__calculation
+      padding: 3rem
+    &-title
+      &--left
+        align-items: center
+  .calculation
+    &__col
+      padding-left: 0
+    &__promo
+      max-width: 39.5rem
+    &__button
+      &-wrap
+        display: flex
+        justify-content: center
+        margin-bottom: 3rem
   .ymap-container
     cursor: default
   .hero
@@ -326,7 +430,43 @@
   .hero
     &__content
       padding-top: 9.6rem
+  .card
+    &__title
+      padding-top: 4rem
+      &-wrap
+        flex-basis: 30%
+    &-title
+      &__heading
+        font-size: 1.3rem
+  .col-15
+    &__first
+      width: 23%
+  .col-40
+    width: 25%
+    padding-left: 0.2rem
+  .col-15
+    width: 18%
+    &__first
+      width: 22%
 @media screen and ( max-width: 785px )
+  .shopping
+    &-cart
+      &__row
+  .card
+    &-title
+      &__heading
+        font-size: 1.1rem
+    &__title
+      padding-top: 2.5rem
+      &-wrap
+        padding-top: 0.7rem
+        padding-left: 2rem
+        flex-basis: 28%
+    &__button
+      &-wrap
+        flex-basis: 5%
+    &__photo-block
+      flex-basis: 20%
   .offers
     &__email
       &-wrap
@@ -606,7 +746,47 @@
   .contacts
     &__form
       flex-basis: 75%
+  .section
+    &__calculation
+      padding: 3rem 0
+  .calculation
+    &__promo
+      padding: 1rem 0.8rem
+  .col-40
+    display: flex
+    justify-content: center
+    width: 28%
+  .col-15
+    display: flex
+    justify-content: center
+    width: 21%
+    &__first
+      justify-content: flex-start
+      width: 24%  
+    &__second
+      justify-content: flex-start
+    &__fourth
+      display: flex
+      justify-content: center
 @media screen and ( max-width: 574px )
+  .calculation
+    &__button
+      width: 100% 
+      max-width: 100%
+      display: flex
+      justify-content: center
+      margin-bottom: 2rem
+      &-wrap
+        flex-direction: column
+        padding: 0 0rem
+    &__form
+      padding: 2.5rem 2.5rem
+      flex-direction: column
+      align-items: center
+      &-button
+        max-width: 100%
+    &__promo
+      margin-bottom: 2rem
   .contacts
     &__form
       flex-basis: 100%
@@ -682,6 +862,11 @@
         font-size: 1.6rem
         letter-spacing: 0.1rem
 @media screen and ( max-width: 375px )
+  .calculation
+    &__form
+      padding: 1.5rem 1.5rem
+    &__promo
+      padding: 1rem 0.3rem
   .search
     max-height: 470px
     &__dialog
