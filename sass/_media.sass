@@ -1,6 +1,21 @@
 @media screen and ( max-width: 1275px )
   html
     font-size: 12px
+  .col
+    &__user
+      width: 35%
+      flex-basis: 35%
+      max-width: 35%
+    &__useful
+      width: 29%
+      flex-basis: 29%
+      max-width: 29%
+  .review
+    &__form
+      width: 100%
+      max-width: 100%
+    &__input
+      &-group
   .search
     max-height: 830px
     &__dialog
@@ -51,6 +66,116 @@
   .col-40
     padding-left: 3rem
 @media screen and ( max-width: 991px )
+  .preview
+    &__image
+      &-wrap
+        cursor: default
+  .item
+    &__title
+      margin-top: 3rem
+  .item
+    &__color-choice, &__size-choice
+      cursor: default
+    &__size
+      &-table
+        &-button
+          cursor: default
+          &:hover
+            color: $pink
+          &:active
+            color: $dark-blue
+  .payment
+    &__visa
+      &:hover
+        background: url(../img/visa.png) no-repeat center
+      &:active
+        background: url(../img/visa-hover.png) no-repeat center
+    &__master-card
+      &:hover
+        background: url(../img/master-card.png) no-repeat center
+      &:active
+        background: url(../img/master-card-hover.png) no-repeat center
+    &__yandex
+      &:hover
+        background: url(../img/yandex.png) no-repeat center
+      &:active
+        background: url(../img/yandex-hover.png) no-repeat center
+    &__rbk
+      &:hover
+        background: url(../img/rbk.png) no-repeat center
+      &:active
+        background: url(../img/rbk-hover.png) no-repeat center
+    &__qiwi
+      &:hover
+        background: url(../img/qiwi.png) no-repeat center
+      &:active
+        background: url(../img/qiwi-hover.png) no-repeat center
+  .review
+    &__useful
+      &-button
+        cursor: default
+        &--yes
+          &:hover
+            background: url("../img/thumb-up.svg") no-repeat center
+          &:active
+            background: url("../img/thumb-up-active.svg") no-repeat center
+        &--no
+          &:hover
+            background: url("../img/thumb-down.svg") no-repeat center
+          &:active
+            background: url("../img/thumb-down-active.svg") no-repeat center
+    &__estimation
+      &-item
+        cursor: default
+        &:hover
+          background: url("../img/star.svg") no-repeat center / cover
+        &:active
+          background: url("../img/star-active.svg") no-repeat center / cover
+    &__form
+      &-button
+        margin-right: 0
+  .about
+    &__item
+      cursor: default
+  .descritption
+    &__button
+      cursor: default
+      &:hover
+        background-color: $dark-blue
+      &:active
+        background-color: $pink
+  .description__button-favorite
+    cursor: default
+    &:hover
+      background: url('../img/favorite-item.svg') no-repeat center / cover
+    &:active
+      background: url('../img/favorite-item-hover.svg') no-repeat center / cover
+  .swiper
+    &-button
+      &-next3, &-prev3
+        cursor: default
+      &-prev3
+        &:hover
+          background: url('../img/swiper3-arrow-prev.svg') no-repeat center
+        &:active
+          background: url('../img/swiper3-arrow-prev-hover.svg') no-repeat center
+      &-next3
+        &:hover
+          background: url('../img/swiper3-arrow-next.svg') no-repeat center
+        &:active
+          background: url('../img/swiper3-arrow-next-hover.svg') no-repeat center
+  .swiper3
+    &-slide
+      display: flex
+      justify-content: center
+      align-items: center
+
+  .item
+    &-card
+      &__col
+        flex-basis: 100%
+        width: 100%
+        max-width: 100%
   .card
     &__title
       padding-top: 3.2rem
@@ -128,6 +253,25 @@
     flex-basis: 100%
   .col-60
     flex-basis: 100%
+  .col
+    &__user
+      flex-basis: 100%
+      max-width: 100%
+      width: 100%
+      margin-bottom: 1rem
+    &__useful
+      flex-basis: 35.5%
+      max-width: 35.5%
+      width: 35.5%
+      justify-content: flex-start
+    &__estimation
+      flex-basis: 35.5%
+      max-width: 35.5%
+      width: 35.5%
+    &__date
+      flex-basis: 29%
+      max-width: 29%
+      width: 29%
   .section
     &__calculation
       padding: 3rem
@@ -175,13 +319,14 @@
       flex-wrap: wrap
     &__block
       margin: auto
-    &__button
-      margin: auto
-      cursor: default
-      &:hover
-        background-color: $dark-blue
-      &:active
-        background-color: $pink
+    &-form
+      &__button
+        margin: auto
+        cursor: default
+        &:hover
+          background-color: $dark-blue
+        &:active
+          background-color: $pink
     &__link
       cursor: default
       &:hover
@@ -768,7 +913,153 @@
     &__fourth
       display: flex
       justify-content: center
+  .col
+    &__useful
+      flex-basis: 50%
+      max-width: 50%
+      width: 50%
+      justify-content: flex-start
+    &__estimation
+      flex-basis: 34%
+      max-width: 34%
+      width: 34%
+    &__date
+      flex-basis: 16%
+      max-width: 16%
+      width: 16%
+  .review
+    &__input
+      &-group
+        flex-basis: 100%
+        width: 100%
+        max-width: 100%
+        padding-right: 0
+  .input
+    &-group
+      &__text
+        padding-right: 0
+      &-wrap
+        display: flex
+        justify-content: center
+        flex-direction: column
+  .form
+    &__button
+      &-wrap
+        flex-basis: 100%
+        width: 100%
+        max-width: 100%
 @media screen and ( max-width: 574px )
+  .about
+    &__title
+      flex-direction: column
+      align-items: center
+    &__item
+      margin-bottom: 1.5rem
+  .item
+    &__size
+      &-choice
+        flex-wrap: wrap
+        min-height: 7rem
+    &__payment
+      &-box
+        flex-wrap: wrap
+      &-wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__description
+      padding-left: 0
+      padding: 0 1rem
+  .review
+    &__input
+      &-group
+        max-width: 100%
+        padding-right: 0
+    &__form
+      &-wrap
+        padding: 0rem 0
+    &__row
+      flex-wrap: wrap
+    &__card
+      height: 100%
+      min-height: 15rem
+    &__useful
+      &-wrap
+        margin-bottom: 0.5rem
+    &__text
+      font-size: 1.3rem
+      line-height: 28px
+  .card
+    &__photo
+      &-wrap
+        padding-top: 1rem
+        align-items: flex-start
+  .col
+    &__useful
+      width: 100%
+      flex-basis: 100%
+      max-width: 100%
+      padding-right: 0
+      display: flex
+      justify-content: flex-start
+    &__date
+      width: 100%
+      flex-basis: 100%
+      max-width: 100%
+      display: flex
+      justify-content: flex-start
+    &__estimation
+      width: 100%
+      flex-basis: 100%
+      max-width: 100%
+      padding-right: 0.5rem
+      margin-bottom: 0.5rem
+      display: flex
+      justify-content: flex-start
+    &__user
+      margin-bottom: 1.5rem
+      width: 100%
+      max-width: 100%
+      flex-basis: 100%
+  .card__photo-wrap--logo
+    padding-top: 2.5rem
+  .input
+    &-group
+      &__text
+        max-width: 100%
+        flex-basis: 100%
+  .form
+    &__button
+      &-wrap
+        flex-direction: column
+        align-items: center
+        min-height: 9rem
+  .contacts
+    &__button
+      width: 100%
+      max-width: 100%
+  .payment
+    &__yandex
+      width: 8rem
+    &__qiwi
+      width: 7rem
+  .descritption
+    &__button
+      padding: 20px 0
+      width: 100%
+      max-width: 100%
+      margin-bottom: 2rem
+  .description__social-links
+    max-width: 50%
+    width: 100%
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: center
+  .description__button-favorite
+    margin-left: 50%
+    transform: translateX(-14px)
   .col-40
     width: 60%
     justify-content: center
@@ -777,6 +1068,14 @@
     justify-content: center
     &--desktop
       display: none
+  .col__user
+    flex-basis: 100%
+    width: 100%
+    max-width: 90%
+  .admin
+    &__answer
+      padding: 0rem 0 0.5rem 0
+      padding-left: 1rem
   .card
     &__pricetag
       &-wrap
@@ -793,7 +1092,10 @@
     &__row
       flex-wrap: wrap
       justify-content: space-between
-
+  .swiper
+    &-button
+      &-next3, &-prev3
+        top: 0
   .card
     &-title
       &__heading
@@ -908,7 +1210,18 @@
       &__heading
         font-size: 1.6rem
         letter-spacing: 0.1rem
+    &__item
+      &-card
+        padding: 3rem 0
+    &__slider
+      padding: 2rem 0
+  .top-products
+    &__section-title
+      margin-bottom: 1.5rem
 @media screen and ( max-width: 375px )
+  .description__social-links
+    max-width: 65%
+    width: 100%
   .col-40
     justify-content: flex-end
   .card

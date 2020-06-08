@@ -117,7 +117,7 @@
     <section class="section__item-card">
       <div class="container">
         <div class="row">
-          <div class="col-55">
+          <div class="col-55 item-card__col">
             <div class="swiper-container swiper3">
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper3-slide">
@@ -157,8 +157,8 @@
             </div>
             <!-- /.swiper-button__wrap -->
           </div>
-          <!-- /.col-55 -->
-          <div class="col-45">
+          <!-- /.col-55 item-card__col -->
+          <div class="col-45 item-card__col">
             <div class="item__description">
               <div class="item__title">
                 <h4 class="item-title__heading">Юбка, Oodji</h4>
@@ -275,7 +275,7 @@
               <!-- /.description__button-wrap -->
               <div class="social-links__wrap description__social-links-wrap">
                 <span class="social-links__label">Поделиться товаром в соцсетях</span>
-                <div class="social-links__items">
+                <div class="social-links__items description__social-links">
                   <a target="blank" href="https://vk.com" class="socials socials__vk"></a>
                   <a target="blank" href="https://facebook.com" class="socials socials__facebook"></a>
                   <a target="blank" href="https://twitter.com/" class="socials socials__twitter"></a>
@@ -526,6 +526,45 @@
           <!-- /.review__card -->
         </div>
         <!-- /.about__review-wrap -->
+        <div class="review__form-wrap">
+          <h4 class="review__form-heading">Добавить свой отзыв</h4>
+          <!-- /.review__form-heading -->
+          <form action="send.php" method="POST" class="form review__form contacts__form ">
+            <div class="input-group review__input-group">
+              <label for="review-user-name" class="label form__label">Ваше имя *</label>
+              <input type="text" name="userName" class="input form__input review__input input--small" id="review-user-name">
+            </div>
+            <!-- /.input-group review__input-group -->
+            <div class="input-group review__input-group">
+              <label for="review-user-email" class="label form__label">e-mail *</label>
+              <input type="email" name="userEmail" class="input form__input review__input input--small" id="review-user-email">
+            </div>
+            <!-- /.input-group review__input-group -->
+            <div class="input-group input-group__text">
+              <label for="user-text" class="label form__label">Ваш отзыв *</label>
+              <textarea class="review__user-text" name="userText" id="user-text" cols="12" rows="10"></textarea>
+            </div>
+            <!-- /.input-group review__input-group -->
+            <div class="form__button-wrap">
+              <div class="review__estimation-wrap form__estimation">
+                <span class="review__label">Оценка</span>
+                <div class="review__estimation-value">
+                  <span class="review__estimation-item"></span>
+                  <span class="review__estimation-item"></span>
+                  <span class="review__estimation-item"></span>
+                  <span class="review__estimation-item"></span>
+                  <span class="review__estimation-item"></span>
+                </div>
+                <!-- /.review__estimation-value -->
+              </div>
+              <!-- /.review__estimation-wrap -->
+              <button class="button contacts__button review__form-button button--primary" type="submit">Разместить отзыв</button>
+            </div>
+            <!-- /.form__button-wrap -->
+          </form>
+          <!-- /.review__form -->
+        </div>
+        <!-- /.review__form-wrap -->
       </div>
       <!-- /.container -->
     </section>
@@ -820,7 +859,7 @@
     </section>
     <!-- /.top-products -->
 
-    <section class="section shop section__shop section__shop--small">
+    <section class="section shop section__shop ">
       <div class="container">
         <div class="shop__content"> 
           <div class="section-title shop__section-title">
@@ -1032,7 +1071,7 @@
   <footer class="footer section__footer">
     <div class="container">
       <div class="row footer__row">
-        <div class="col-25 size__col">
+        <div class="col-25">
           <div class="footer__contacts">
             <a target="blank" href="#" class="footer__main-link footer__main-page"><h4 class="footer__main-heading"><img src="img/logo--dark.svg" alt="Asos" class="logo__icon"></h4></a>
             <a target="blank" href="https://yandex.ru/maps/?rtext=~55.733836%2C37.588134" class="footer__link footer__link--left footer__adress">г. Москва, ул. Сибирский тракт 59, офис 514</a>
@@ -1043,7 +1082,7 @@
           <!-- footer__contacts -->
         </div>
         <!-- col-25 size__col -->
-        <div class="col-25 size__col">
+        <div class="col-25">
           <div class="footer__content">
             <h4 class="footer__heading">Полезное</h4>
             <a target="blank" href="#" class="footer__link">Услуги</a>
@@ -1056,7 +1095,7 @@
           <!-- footer__content -->
         </div>
         <!-- col-25 size__col -->
-        <div class="col-25 size__col">
+        <div class="col-25">
           <div class="footer__content">
             <h4 class="footer__heading">Магазин</h4>
             <a target="blank" href="#" class="footer__link">О нас</a>
@@ -1069,7 +1108,7 @@
           <!-- footer__content -->
         </div>
         <!-- col-25 size__col -->
-        <div class="col-25 size__col">
+        <div class="col-25">
           <div class="footer__content footer__content--right">
             <h4 class="footer__heading">Мой аккаунт</h4>
             <a target="blank" href="#" class="footer__link">Мой аккаунт</a>

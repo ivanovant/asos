@@ -74,6 +74,10 @@
     text-transform: uppercase
     font-weight: 700
     line-height: 25px
+    &-text
+      resize: none
+      width: 100%
+      max-width: 100%
   &__label
     color: #40494e
     font-size: 0.8571rem
@@ -85,6 +89,23 @@
     color: #808080
     font-weight: 700
     text-transform: uppercase
+  &__input
+    width: 100%
+    &-group
+      width: 100%
+      max-width: 585.2px
+      margin-bottom: 1.2rem
+      flex-basis: 50%
+  &__form
+    padding-top: 1.5rem
+    &-wrap
+      padding: 5.6rem 0
+    &-heading
+      font-size: 1.1429rem
+      font-weight: 700
+      line-height: 2rem
+      text-transform: uppercase
+      color: #141414
   &__useful
     &-button
       width: 18px
@@ -143,6 +164,26 @@
       letter-spacing: 0.13rem
       line-height: 2rem
       margin-bottom: 0.5rem
+.form
+  &__button
+    &-wrap
+      width: 100%
+      max-width: 96.6%
+      flex-basis: 96.6%
+      display: flex
+      justify-content: space-between
+  &__estimation
+    padding-top: 1.2rem
+.input
+  &-group
+    &__text
+      width: 100%
+      max-width: 1170px
+      flex-basis: 100%
+#review-user-email,
+#review-user-name,
+#user-text
+  border-color: #d1d5db
 .admin
   &__answer
     position: relative
