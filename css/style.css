@@ -577,9 +577,11 @@ template {
 .col-55 {
   flex-basis: 56%;
   width: 56%;
+  max-width: 56%;
   position: relative; }
 
 .col-45 {
+  max-width: 56%;
   flex-basis: 44%;
   width: 44%; }
 
