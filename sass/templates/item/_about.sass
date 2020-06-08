@@ -1,0 +1,204 @@
+.about
+  &__title
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 35.9rem
+    margin-bottom: 1.2rem
+    &-wrap
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 1px
+        left: 0
+        bottom: -9px
+        background-color: #d1d5db
+  &__item
+    position: relative
+    color: #141414
+    font-size: 1rem
+    text-transform: uppercase
+    letter-spacing: 0.12rem
+    line-height: 2rem
+    font-weight: 700
+    &--active
+      color: #808080
+      &::before
+        content: ''
+        position: absolute
+        height: 3px
+        width: 100%
+        left: 0
+        bottom: -10px
+        background-color: $pink
+.review
+  &__content
+    display: flex
+    flex-direction: column
+  &-title
+    &__heading
+      color: #141414
+      font-size: 1.1429rem
+      text-transform: uppercase
+      font-weight: 700
+      line-height: 2rem
+  &__card
+    display: flex
+    flex-direction: column
+    position: relative
+    padding: 0.2rem 0 1.7rem 0
+    margin-bottom: 1.7rem
+    &::before
+      position: absolute
+      content: ''
+      width: 100%
+      height: 1px
+      background-color: #d1d5db
+      left: 0
+      bottom: 0
+  &__row
+    display: flex
+  &__text
+    margin-top: 0.3rem
+    color: #666666
+    font-size: 0.9286rem
+    font-weight: 500
+    letter-spacing: 0.1px
+    &--bold
+      font-weight: 700
+  &__user
+    color: #40494e
+    font-size: 0.8571rem
+    text-transform: uppercase
+    font-weight: 700
+    line-height: 25px
+  &__label
+    color: #40494e
+    font-size: 0.8571rem
+    text-transform: uppercase
+    font-weight: 700
+    margin-right: 1rem
+  &__date
+    font-size: 0.8571rem
+    color: #808080
+    font-weight: 700
+    text-transform: uppercase
+  &__useful
+    &-button
+      width: 18px
+      height: 14px
+      border: none
+      outline: none
+      cursor: pointer
+      &--yes
+        background: url('../img/thumb-up.svg') no-repeat center
+        &:hover
+          background: url('../img/thumb-up-active.svg') no-repeat center
+        &--active
+          background: url('../img/thumb-up-active.svg') no-repeat center
+      &--no
+        background: url('../img/thumb-down.svg') no-repeat center
+        transform: translateY(4px)
+        &:hover
+          background: url('../img/thumb-down-active.svg') no-repeat center
+        &--active
+          background: url('../img/thumb-down-active.svg') no-repeat center
+    &-num
+      color: #40494e
+      font-size: 0.8571rem
+      text-transform: uppercase
+      font-weight: 700
+      margin-right: 1.1rem
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-value
+      &-wrap
+        display: flex
+  &__estimation
+    &-value
+      display: flex
+    &-wrap
+      display: flex
+      justify-content: center
+    &-item
+      display: flex
+      margin-right: 3px
+      width: 14px
+      height: 14px
+      background: url('../img/star.svg') no-repeat center / cover
+      cursor: pointer
+      &:hover
+        background: url('../img/star-active.svg') no-repeat center / cover
+      &--active
+        background: url('../img/star-active.svg') no-repeat center / cover
+  &__admin
+    &-lable
+      color: #141414
+      font-family: Gotham Pro-Medium
+      text-transform: uppercase
+      letter-spacing: 0.13rem
+      line-height: 2rem
+      margin-bottom: 0.5rem
+.admin
+  &__answer
+    position: relative
+    padding: 0.95rem 0 1.4rem 0
+    margin: 1.7rem 0 0.72rem 0
+    background-color: #ffeff7
+    display: flex
+    padding-left: 2.7rem
+    &::before, &::after
+      content: ''
+      position: absolute
+      left: 50px
+      top: -20px
+      border: 10px solid transparent
+      border-bottom: 10px solid #ffeff7
+    &::after
+      border-left: 10px solid #ffeff7
+      top: -19px
+.answer--wrap
+  padding-left: 2.5rem
+.user
+  &__review
+    display: flex
+    width: 100%
+    max-width: 100%
+
+.col
+  &__user
+  &__date
+    padding-bottom: 0.5rem
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+  &__useful
+    padding-right: 0.8rem
+    padding-bottom: 0.5rem
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+  &__estimation
+    padding-right: 3.75rem
+    padding-bottom: 0.5rem
+    justify-content: flex-end
+    display: flex
+    align-items: flex-end
+.card
+  &__review
+    &-wrap
+      display: flex
+      flex-direction: column
+      width: 100%
+  &__photo
+    &-wrap
+      width: 100%
+      max-width: 5rem
+      display: flex
+      align-items: center
+      &--logo
+        padding-top: 0.5rem

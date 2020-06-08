@@ -232,7 +232,7 @@
               <!-- /.card__select-wrap -->
               <div class="item__size-wrap">
                 <div class="item__size-table">
-                  <button class="item__size-table-button">Открыть таблицу размеров</button>
+                  <span class="item__size-table-button">Открыть таблицу размеров</span>
                 </div>
                 <!-- /.item__size-tab -->
                 <div class="item__size-choice">
@@ -310,31 +310,227 @@
 
     <section class="section__about">
       <div class="container">
-        <div class="about__title">
-          <span class="about__item title__description">Описание</span>
-          <span class="about__item title__review">Отзывы (03)</span>
-          <span class="about__item title__delivery">Оплата и доставка</span>
+        <div class="about__title-wrap">
+          <div class="about__title">
+            <span class="about__item title__description">Описание</span>
+            <span class="about__item title__review about__item about__item--active">Отзывы (03)</span>
+            <span class="about__item title__delivery">Оплата и доставка</span>
+          </div>
+          <!-- /.about__title -->
         </div>
-        <!-- /.about__title -->
-        <div class="review review__content">
+        <!-- /.about__title-wrap -->
+        <div class="review about__review review__content">
           <div class="review-title">
             <h4 class="review-title__heading">3 отзыва к товару</h4>
           </div>
           <!-- /.review__title -->
+
           <div class="card review__card">
-            <div class="card__photo-wrap">
-              <img src="" alt="" class="card__photo">
+            <div class="user__review">
+              <div class="card__photo-wrap">
+                <img src="./img/about/image-1.png" alt="Фото" class="card__photo">
+              </div>
+              <!-- /.card__photo-wrap -->
+              <div class="card__review-wrap">
+                <p class="review__text">Очень хорошая юбка, стильно смотрится.взяла без раздумья!</p>
+                <div class="row review__row">
+                  <div class="col-45 col__user">
+                    <span class="review__user">Олеся рогозина</span>
+                  </div>
+                  <!-- /.col-45 -->
+                  <div class="col-20 col__useful">
+                    <div class="review__useful-wrap">
+                      <span class="review__label">Отзыв полезен?</span>
+                      <div class="review__useful-value-wrap">
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--yes"></button>
+                          <span class="review__useful-num">3</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--no"></button>
+                          <span class="review__useful-num">0</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                      </div>
+                      <!-- /.review__useful-value-wrap -->
+                    </div>
+                    <!-- /.review__useful-wrap -->
+                  </div>
+                  <!-- /.col-20 -->
+                  <div class="col-20 col__estimation">
+                    <div class="review__estimation-wrap">
+                      <span class="review__label">Оценка</span>
+                      <div class="review__estimation-value">
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                      </div>
+                      <!-- /.review__estimation-value -->
+                    </div>
+                    <!-- /.review__estimation-wrap -->
+                  </div>
+                  <!-- /.col-20 col__estimation -->
+                  <div class="col-13 col__date">
+                    <span class="review__date">23 июня, 17:02</span>
+                  </div>
+                  <!-- /.col-13 col__date -->
+                </div>
+                <!-- /.row review__row -->
+              </div>
+              <!-- /.card__review-wrap -->
             </div>
-            <!-- /.card__photo-wrap -->
+            <!-- user__review -->
+          </div>
+          <!-- /.review__card -->
+
+          <div class="card review__card">
+            <div class="user__review">
+              <div class="card__photo-wrap">
+                <img src="./img/about/image-2.png" alt="Фото" class="card__photo">
+              </div>
+              <!-- /.card__photo-wrap -->
+              <div class="card__review-wrap">
+                <p class="review__text">Для милого образа с грамотно подобранными аксессуарами и обувью выглядит супер!</p>
+                <div class="row review__row">
+                  <div class="col-45 col__user">
+                    <span class="review__user">Марина хлебникова</span>
+                  </div>
+                  <!-- /.col-45 -->
+                  <div class="col-20 col__useful">
+                    <div class="review__useful-wrap">
+                      <span class="review__label">Отзыв полезен?</span>
+                      <div class="review__useful-value-wrap">
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--yes"></button>
+                          <span class="review__useful-num">0</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--no"></button>
+                          <span class="review__useful-num">0</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                      </div>
+                      <!-- /.review__useful-value-wrap -->
+                    </div>
+                    <!-- /.review__useful-wrap -->
+                  </div>
+                  <!-- /.col-20 -->
+                  <div class="col-20 col__estimation">
+                    <div class="review__estimation-wrap">
+                      <span class="review__label">Оценка</span>
+                      <div class="review__estimation-value">
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                      </div>
+                      <!-- /.review__estimation-value -->
+                    </div>
+                    <!-- /.review__estimation-wrap -->
+                  </div>
+                  <!-- /.col-20 col__estimation -->
+                  <div class="col-13 col__date">
+                    <span class="review__date">19 июня, 18:12</span>
+                  </div>
+                  <!-- /.col-13 col__date -->
+                </div>
+                <!-- /.row review__row -->
+              </div>
+              <!-- card__review-wrap -->
+            </div>
+            <!-- /.user__review -->
+            <div class="admin__answer">
+               <div class="card__photo-wrap card__photo-wrap--logo">
+                <img src="./img/logo--pink.svg" alt="Лого" class="card__photo">
+              </div>
+              <!-- /.card__photo-wrap -->
+              <div class="card__review-wrap answer--wrap">
+                <p class="review__admin-lable">Ответ администрации</p>
+                <div class="row review__row">
+                  <div class="col-45 col__user">
+                    <p class="review__text review__text--bold">Марина, полностью с вами согласны, спасибо за ваш заказ!</p>
+                  </div>
+                  <!-- /.col-45 -->
+                </div>
+                <!-- /.row review__row -->
+              </div>
+              <!-- card__review-wrap -->
+            </div>
+            <!-- /.admin__answer -->
+          </div>
+          <!-- /.review__card -->
+          <div class="card review__card">
+            <div class="user__review">
+              <div class="card__photo-wrap">
+                <img src="./img/about/image-3.png" alt="Фото" class="card__photo">
+              </div>
+              <!-- /.card__photo-wrap -->
+              <div class="card__review-wrap">
+                <p class="review__text">Потрясающая юбка! Ткань приятная, форму держит. Размер соответствует .Девочки , смотрите внимательнее прежде чем заказывать.</p>
+                <div class="row review__row">
+                  <div class="col-45 col__user">
+                    <span class="review__user">Полина венская</span>
+                  </div>
+                  <!-- /.col-45 -->
+                  <div class="col-20 col__useful">
+                    <div class="review__useful-wrap">
+                      <span class="review__label">Отзыв полезен?</span>
+                      <div class="review__useful-value-wrap">
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--yes"></button>
+                          <span class="review__useful-num">0</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                        <div class="review__useful-value">
+                          <button class="review__useful-button review__useful-button--no"></button>
+                          <span class="review__useful-num">0</span>
+                        </div>
+                        <!-- /.review__useful-value -->
+                      </div>
+                      <!-- /.review__useful-value-wrap -->
+                    </div>
+                    <!-- /.review__useful-wrap -->
+                  </div>
+                  <!-- /.col-20 -->
+                  <div class="col-20 col__estimation">
+                    <div class="review__estimation-wrap">
+                      <span class="review__label">Оценка</span>
+                      <div class="review__estimation-value">
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                        <span class="review__estimation-item"></span>
+                      </div>
+                      <!-- /.review__estimation-value -->
+                    </div>
+                    <!-- /.review__estimation-wrap -->
+                  </div>
+                  <!-- /.col-20 col__estimation -->
+                  <div class="col-13 col__date">
+                    <span class="review__date">15 июня, 10:58</span>
+                  </div>
+                  <!-- /.col-13 col__date -->
+                </div>
+                <!-- /.row review__row -->
+              </div>
+              <!-- card__review-wrap -->
+            </div>
+            <!-- /.user__review -->
           </div>
           <!-- /.review__card -->
         </div>
-        <!-- /.about__reviews-wrap -->
+        <!-- /.about__review-wrap -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.section__about -->
-    
+
     <section class="section top-products section__top-products section__slider">
       <div class="section__wrapper">
         <div class="swiper-button-prev swiper-button-prev2"></div>
