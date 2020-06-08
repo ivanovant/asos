@@ -66,6 +66,23 @@
   .col-40
     padding-left: 3rem
 @media screen and ( max-width: 991px )
+  .delivery
+    &__visa
+      min-width: 94px
+    &__num
+      min-width: 50px
+  .catalog
+    &__button
+      cursor: default
+      outline: none
+      &:hover
+        background-color: #eeeeee
+        color: $dark-blue
+      &:active
+        color: $light
+        background-color: $dark-blue
+  .item-page__link
+    cursor: default
   .preview
     &__image
       &-wrap
@@ -130,10 +147,19 @@
         &:hover
           background: url("../img/star.svg") no-repeat center / cover
         &:active
+          background: url("../img/star.svg") no-repeat center / cover
+        &--active
           background: url("../img/star-active.svg") no-repeat center / cover
+          &:hover
+            background: url("../img/star-active.svg") no-repeat center / cover
     &__form
       &-button
         margin-right: 0
+        cursor: default
+        &:hover
+          background-color: $dark-blue
+        &:active
+          background-color: $pink
   .about
     &__item
       cursor: default
@@ -217,7 +243,8 @@
       &__list
         cursor: default
         outline: none
-  .card-select__list .card-select__item
+  .card-select__list,
+  .card-select__item
     cursor: default
     outline: none
     &:hover
@@ -226,6 +253,9 @@
     &:active
       outline: none
       background-color: #f5f5f5
+  .select__head
+    cursor: default
+    outline: none
   .card
     &__delete-btn
       cursor: default
@@ -920,13 +950,15 @@
       width: 50%
       justify-content: flex-start
     &__estimation
-      flex-basis: 34%
-      max-width: 34%
-      width: 34%
+      flex-basis: 50%
+      max-width: 50%
+      width: 50%
+      padding-right: 0
     &__date
-      flex-basis: 16%
-      max-width: 16%
-      width: 16%
+      margin-top: 1rem   
+      flex-basis: 100%
+      max-width: 100%
+      width: 100%
   .review
     &__input
       &-group
@@ -1218,6 +1250,15 @@
   .top-products
     &__section-title
       margin-bottom: 1.5rem
+  .delivery
+    &__text
+      &-wrap
+        flex-direction: column
+        align-items: flex-start
+    &__num
+      margin-bottom: 2rem
+    &__visa
+      margin-bottom: 2rem
 @media screen and ( max-width: 375px )
   .description__social-links
     max-width: 65%

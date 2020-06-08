@@ -1,3 +1,28 @@
+.tabs
+  width: 90%
+  max-width: 1179px
+  margin: auto
+  &__wrap
+    padding: 0 0 1.6rem 0
+  &__links
+    text-decoration: none
+    position: relative
+    color: #141414
+    font-size: 1rem
+    text-transform: uppercase
+    letter-spacing: 0.12rem
+    line-height: 2rem
+    font-weight: 700
+    &--active
+      color: #808080
+.about__item--active::before
+  content: ''
+  position: absolute
+  height: 3px
+  width: 100%
+  left: 0
+  bottom: -15px
+  background-color: $pink
 .about
   &__title
     display: flex
@@ -23,20 +48,9 @@
     letter-spacing: 0.12rem
     line-height: 2rem
     font-weight: 700
-    &--active
-      color: #808080
-      &::before
-        content: ''
-        position: absolute
-        height: 3px
-        width: 100%
-        left: 0
-        bottom: -10px
-        background-color: $pink
 .review
   &__content
-    display: flex
-    flex-direction: column
+    display: block
   &-title
     &__heading
       color: #141414
@@ -78,6 +92,10 @@
       resize: none
       width: 100%
       max-width: 100%
+      padding: 12.5px 0 21px 20px
+      line-height: 1.15rem
+      color: #252525
+      font-size: 1.0714rem
   &__label
     color: #40494e
     font-size: 0.8571rem
@@ -92,6 +110,7 @@
   &__input
     width: 100%
     &-group
+      position: relative
       width: 100%
       max-width: 585.2px
       margin-bottom: 1.2rem
@@ -177,6 +196,7 @@
 .input
   &-group
     &__text
+      position: relative
       width: 100%
       max-width: 1170px
       flex-basis: 100%

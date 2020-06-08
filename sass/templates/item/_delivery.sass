@@ -1,0 +1,56 @@
+.section__delivery
+  display: none
+.visible
+  display: flex
+  flex-direction: column
+.delivery
+  &__heading
+    font-size: 1.1429rem
+    font-weight: 700
+    line-height: 2rem
+    color: #141414
+    text-transform: uppercase
+    margin: 0 0 1.7rem 0
+  &__text
+    margin: 0
+    font-weight: 700
+    line-height: 1.8571rem
+    color: #40494e
+    max-width: 56rem
+    letter-spacing: 0.11px
+    &--small
+      font-size: 0.9286rem
+      max-width: 65rem
+      letter-spacing: 0.07px
+    &-wrap
+      display: flex
+      align-items: center
+      margin-bottom: 2.1rem
+      &--last
+        margin-top: 2.2rem
+        margin-bottom: 3.7rem
+  &__num
+    width: 50px
+    height: 50px
+    margin-right: 2.47rem
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $pink
+    color: $light
+    font-size: 1.2857rem
+    font-family: Gotham Pro
+    font-weight: 700
+  &__visa
+    width: 94px
+    height: 40px
+    background: url('../img/delivery-visa.png') no-repeat center
+    margin-right: 2rem
+.item
+  &__title
+    &--medium
+      margin-bottom: 2.5rem
+      &::after
+        bottom: -36px
+.item__info-value--pink
+  color: $pink

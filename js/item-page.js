@@ -137,12 +137,59 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           $(form)[0].reset();
-          // success.toggleClass('success--visible');
         }
       });
     },
   });
 });
+  const reviewForm = $('.review__form');
+    
+  reviewForm.validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userEmail: {
+        required: true,
+        email: true,
+        minlength: 8
+      },
+      userText: {
+        required:true,
+        minlength: 10
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее пятнадцати букв"
+      },
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+        minlength: "Email не может содержать менее 8 символов"
+      },
+      userText: {
+        required: "Напишите ваш отзыв",
+        minlength: "В отзыве должно быть не менее 10 символов"
+      },
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+        }
+      });
+    }
+  });
 
   const swiper2 = new Swiper ('.swiper2', {
     loop: true,
@@ -311,5 +358,19 @@ $(document).ready(function () {
     $(currentSize).each(i => $(sizeRow).removeClass('size__row--purpule--active'))
     $(target).addClass('size__row--purpule--active');
   });
+
+  const tabBtn = $('.tabs__links')
+
+  const tab = $('.tabs > div'); 
+
+	tabBtn.click(function(event){
+    event.preventDefault();
+		tab.hide(); 
+    tab.filter(event.target.hash).show();
+		$(tabBtn).removeClass('about__item--active');
+		$(this).addClass('about__item--active');
+		return false;
+  })
+  
 });
 
