@@ -232,7 +232,7 @@
               <!-- /.card__select-wrap -->
               <div class="item__size-wrap">
                 <div class="item__size-table">
-                  <a href="#" class="item__size-table-link">Открыть таблицу размеров</a>
+                  <button class="item__size-table-button">Открыть таблицу размеров</button>
                 </div>
                 <!-- /.item__size-tab -->
                 <div class="item__size-choice">
@@ -307,6 +307,32 @@
       <!-- /.container -->
     </section>
     <!-- /.section__item-card -->
+    <section class="section__about">
+      <div class="container">
+        <div class="about__title">
+          <span class="about__item title__description">Описание</span>
+          <span class="about__item title__review">Отзывы (03)</span>
+          <span class="about__item title__delivery">Оплата и доставка</span>
+        </div>
+        <!-- /.about__title -->
+        <div class="review review__content">
+          <div class="review-title">
+            <h4 class="review-title__heading">3 отзыва к товару</h4>
+          </div>
+          <!-- /.review__title -->
+          <div class="card review__card">
+            <div class="card__photo-wrap">
+              <img src="" alt="" class="card__photo">
+            </div>
+            <!-- /.card__photo-wrap -->
+          </div>
+          <!-- /.review__card -->
+        </div>
+        <!-- /.about__reviews-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section__review -->
     <section class="section top-products section__top-products section__slider">
       <div class="section__wrapper">
         <div class="swiper-button-prev swiper-button-prev2"></div>
@@ -657,18 +683,148 @@
     <!-- /.zoom__dialog -->
   </div>
   <!-- /.zoom -->
+
   <div class="size">
     <div class="size__dialog">
       <div class="size-title">
-        <button class="size__close"></button>
+        <button class="size__close" data-toggle="size"></button>
         <h4 class="size-title__heading">Таблица размеров</h4>
       </div>
       <!-- /.size-title -->
       <div class="size__content">
-        <div class="row">
-          
+        <div class="row size__row">
+          <div class="col-25 size__col">
+            <span class="size__info-heading">Российский размер</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info-heading">Обхват талии</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info-heading">Обхват бедер</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info-heading">Размер производителя</span>
+          </div>
+          <!-- /.col-25 size__col -->
         </div>
-        <!-- /.row -->
+        <!-- /.size__row -->
+        <div class="row  size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">40</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">58-62</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">86-90</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">XXS</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
+        <div class="row  size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">42</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">62-66</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">90-94</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">XS</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
+        <div class="row  size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">44</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">66-70</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">94-98</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">S</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
+        <div class="row  size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">46</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">70-74</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">98-102</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">M</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
+        <div class="row  size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">48</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">74-78</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">102-104</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">L</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
+        <div class="row size__row--purpule">
+          <div class="col-25 size__col">
+            <span class="size__info">50</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">78-82</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">104-108</span>
+          </div>
+          <!-- /.col-25 size__col -->
+          <div class="col-25 size__col">
+            <span class="size__info">XL</span>
+          </div>
+          <!-- /.col-25 size__col -->
+        </div>
+        <!-- /.size__row -->
       </div>
       <!-- /.size__content -->
     </div>
@@ -678,7 +834,7 @@
   <footer class="footer section__footer">
     <div class="container">
       <div class="row footer__row">
-        <div class="col-25">
+        <div class="col-25 size__col">
           <div class="footer__contacts">
             <a target="blank" href="#" class="footer__main-link footer__main-page"><h4 class="footer__main-heading"><img src="img/logo--dark.svg" alt="Asos" class="logo__icon"></h4></a>
             <a target="blank" href="https://yandex.ru/maps/?rtext=~55.733836%2C37.588134" class="footer__link footer__link--left footer__adress">г. Москва, ул. Сибирский тракт 59, офис 514</a>
@@ -688,8 +844,8 @@
           </div>
           <!-- footer__contacts -->
         </div>
-        <!-- col-25 -->
-        <div class="col-25">
+        <!-- col-25 size__col -->
+        <div class="col-25 size__col">
           <div class="footer__content">
             <h4 class="footer__heading">Полезное</h4>
             <a target="blank" href="#" class="footer__link">Услуги</a>
@@ -701,8 +857,8 @@
           </div>
           <!-- footer__content -->
         </div>
-        <!-- col-25 -->
-        <div class="col-25">
+        <!-- col-25 size__col -->
+        <div class="col-25 size__col">
           <div class="footer__content">
             <h4 class="footer__heading">Магазин</h4>
             <a target="blank" href="#" class="footer__link">О нас</a>
@@ -714,8 +870,8 @@
           </div>
           <!-- footer__content -->
         </div>
-        <!-- col-25 -->
-        <div class="col-25">
+        <!-- col-25 size__col -->
+        <div class="col-25 size__col">
           <div class="footer__content footer__content--right">
             <h4 class="footer__heading">Мой аккаунт</h4>
             <a target="blank" href="#" class="footer__link">Мой аккаунт</a>
@@ -726,7 +882,7 @@
           </div>
           <!-- footer__content -->
         </div>
-        <!-- col-25 -->
+        <!-- col-25 size__col -->
       </div>
       <!-- /.row -->
       <div class="footer__policy-wrap">

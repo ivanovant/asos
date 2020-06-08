@@ -85,11 +85,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     switchCart();
     });
   });
-
+  const size1 = document.querySelector('.size')
   document.addEventListener('keydown', (event) => {
     if (event.key === "Escape") {
         cart.classList.remove('cart__modal--visible');
         search.classList.remove('search--visible');
+        size1.classList.remove('size--visible')
     }
   });
 
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (e.target === search) {search.classList.remove('search--visible')}
   });
 });
+
 $(document).ready(function () {
     
   const offersForm = $('.offers__form');
@@ -140,16 +142,7 @@ $(document).ready(function () {
       });
     },
   });
-
-
-
-
-
-
-
 });
-
-
 
   const swiper2 = new Swiper ('.swiper2', {
     loop: true,
@@ -296,5 +289,27 @@ $(document).ready(function () {
           $('.card-select__head').removeClass('open');
           $('.card-select__list').fadeOut();
       }
+
+  const size = $('.size');
+  const sizeClose = $('.size__close');
+  const sizeBtn = $('.item__size-table-button');
+  const currentSize = $('.size__col');
+  const sizeRow = $('.size__row--purpule');
+  const switchOnSize = () => $(size).addClass('size--visible');
+  const switchOffSize = () => $(size).removeClass('size--visible');
+  sizeBtn.on('click', switchOnSize)
+  sizeClose.on('click', switchOffSize);
+
+  $(document).on('click', (e) => {
+    if (size.is(e.target)) {
+      switchOffSize();
+    }
+  })
+  sizeRow.on('click', (e) => {
+    let target = e.currentTarget;
+    let i = $(sizeRow).index(target)
+    $(currentSize).each(i => $(sizeRow).removeClass('size__row--purpule--active'))
+    $(target).addClass('size__row--purpule--active');
   });
+});
 

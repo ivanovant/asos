@@ -2578,12 +2578,16 @@ img {
 
 .item__size-table {
   margin-bottom: 0.7rem; }
-  .item__size-table-link {
+  .item__size-table-button {
     color: #ef50a2;
     font-size: 1.0714rem;
     text-decoration: none;
-    font-weight: 700; }
-    .item__size-table-link:hover {
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer; }
+    .item__size-table-button:hover {
       color: #2d3a4b; }
 
 .item__payment {
@@ -2772,6 +2776,78 @@ img {
 
 .item-6 {
   border: 2px solid #e2a040; }
+
+.size {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 82, 165, 0.9); }
+  .size--visible {
+    opacity: 1;
+    visibility: visible; }
+  .size__col {
+    display: flex;
+    justify-content: center; }
+  .size__row {
+    position: relative; }
+    .size__row::after {
+      position: absolute;
+      content: '';
+      width: 97%;
+      height: 1px;
+      background-color: #d1d5db;
+      left: 22px;
+      bottom: 24px; }
+  .size__dialog {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    max-width: 70rem;
+    color: #ffffff; }
+  .size__close {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent url("../img/close.svg") no-repeat center/cover;
+    border: none;
+    margin: 0.7rem 0.857rem;
+    cursor: pointer;
+    outline: none; }
+    .size__close:hover {
+      background: transparent url("../img/close-hover.svg") no-repeat center/cover; }
+  .size-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 3.5rem; }
+    .size-title__heading {
+      font-family: Gotham Pro;
+      font-weight: 700;
+      font-size: 1.5714rem;
+      text-transform: uppercase;
+      letter-spacing: 2.64px; }
+  .size__info {
+    line-height: 3.5714rem; }
+    .size__info-heading {
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 2rem;
+      letter-spacing: 0.13rem;
+      margin-bottom: 2.5rem; }
+
+.size__row--purpule--active {
+  background-color: #ef50a2; }
 
 @media screen and (max-width: 1275px) {
   html {
