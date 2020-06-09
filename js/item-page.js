@@ -169,16 +169,6 @@ $(document).ready(function () {
         minlength: "В отзыве должно быть не менее 10 символов"
       },
     },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-        }
-      });
-    }
   });
 
   const swiper2 = new Swiper ('.swiper2', {
@@ -376,6 +366,11 @@ $(document).ready(function () {
   access.on('click', (e) => {
     if (access.is(e.target))
       access.removeClass('access--visible');
+    });
+    $(document).one('mouseenter', (e) => {
+      if (e.currentTarget = 'document') {
+        $( "<script type=\"text/javascript\" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, \"script\", \"https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js\", \"ym\")   ; ym(64743577, \"init\", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src=\"https://mc.yandex.ru/watch/64743577\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>").appendTo('head')
+      }
     });
 });
 

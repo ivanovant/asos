@@ -1,4 +1,11 @@
 @media screen and ( max-width: 1275px )
+  .item
+    &__color
+      &-wrap
+        max-width: 28rem
+    &__input
+      &-wrap
+        max-width: 12.5rem
   html
     font-size: 12px
   .col
@@ -65,6 +72,10 @@
         padding-left: 2rem
   .col-40
     padding-left: 3rem
+  .product
+    &-card
+      &__heading
+        letter-spacing: 0.1px
 @media screen and ( max-width: 991px )
   .access
     &__close
@@ -833,7 +844,9 @@
       transform-origin: 15rem -1rem
       opacity: 0
       z-index: 1
+      display: none
       &--active
+        display: flex
         opacity: 1
         transform: translateX(0%)
         z-index: 50
@@ -1419,9 +1432,74 @@
       &__heading
         font-size: 1.3rem
 @media screen and ( max-width: 355px )
+  .item
+    &__color
+      &-wrap
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 1rem
+    &__info--big
+      margin-bottom: 1rem
   .search
     max-height: 479px
   .section
     &-title
       &__heading
         font-size: 1.4rem
+
+@media screen and ( max-height: 450px )
+  .cart
+    &__modal
+      height: 300px
+      overflow: auto
+      top: 10px
+  .form
+    &__label
+      margin-bottom: 0.3rem
+  .access
+    &__dialog
+      padding: 1rem 2rem
+      height: 280px
+      overflow: auto
+    &__text
+      &-wrap
+        justify-content: center
+        flex-direction: row
+        margin-top: 0.5rem
+    &-title
+      &__heading
+        margin-bottom: 1rem
+    &__button
+      margin-top: 1rem
+    &__input-group
+      margin-bottom: 0.5rem
+  .search
+    &__dialog
+      margin-bottom: 5rem
+  .swiper
+    &-slide
+      &__heading
+        margin-bottom: 2.8rem
+      &__text
+        padding-top: 4rem
+      &__description
+        margin-top: 1rem
+        line-height: 1rem
+        &--big
+          font-size: 4rem
+          line-height: 8rem
+  .product__card
+    flex-direction: row
+    justify-content: space-around
+  .card
+    &__text
+      align-items: flex-end
+  .hero
+    &__content
+      padding-top: 4rem
+  .section
+    padding: 2rem 0
+    &__hero
+      &--small
+        min-height: 250px
+        background: #5a52a5 url(../img/hero-shop-bg.jpg) no-repeat center / cover

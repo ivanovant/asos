@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     $(window).on('scroll', () =>{
       let wide = $(window).width(); // Получаем ширину окна
-      if (wide > 785) { console.log(wide)
+      if (wide > 785) {
         if (scrollY > 100) {
           cart.addClass('cart--scroll')
         } else {
@@ -148,5 +148,10 @@ $(document).ready(function () {
         scrollTop: 0
     }, 1500);
     return false;
+  });
+  $(document).one('mouseenter', (e) => {
+    if (e.currentTarget = 'document') {
+      $( "<script type=\"text/javascript\" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, \"script\", \"https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js\", \"ym\")   ; ym(64743577, \"init\", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src=\"https://mc.yandex.ru/watch/64743577\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>").appendTo('head')
+    }
   });
 });
