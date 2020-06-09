@@ -128,4 +128,20 @@ $(document).ready(function () {
           }
         },
       });
+
+      const access = $('.access');
+  const accessClose = $('.access__close')
+  const userLink = $('.user__link')
+
+  accessClose.on('click', () => {
+    access.toggleClass('access--visible')
+  });
+  userLink.on('click', () => {
+    access.toggleClass('access--visible');
+  })
+
+  access.on('click', (e) => {
+    if (access.is(e.target))
+      access.removeClass('access--visible');
+    });
 });
