@@ -66,6 +66,32 @@
   .col-40
     padding-left: 3rem
 @media screen and ( max-width: 991px )
+  .access
+    &__close
+      outline: none
+      cursor: default
+      &:hover
+        outline: none
+        background: url('../img/close.svg') no-repeat center / cover
+      &:active
+        outline: none
+        background: url('../img/close-hover.svg') no-repeat center / cover
+    &__button
+      cursor: default
+      &:hover
+        background-color: $pink
+        outline: none
+      &:active
+        background-color: $dark-blue
+        outline: none
+    &__link
+      outline: none
+      cursor: default
+      &:hover
+        color: $dark-blue
+      &:active
+        outline: none
+        color: $pink
   .delivery
     &__visa
       min-width: 94px
@@ -981,6 +1007,22 @@
         width: 100%
         max-width: 100%
 @media screen and ( max-width: 574px )
+  .access
+    &__close
+      right: 10px
+      top: 10px
+      background: url('../img/close-mobile.svg') no-repeat center
+      &:hover
+        background: url('../img/close-mobile.svg') no-repeat center
+      &:active
+        background: url('../img/close-mobile-hover.svg') no-repeat center
+    &__text
+      &-wrap
+        flex-direction: column
+  .section
+    &__shopping
+      &-cart
+        padding: 0px 0 84px
   .about
     &__title
       flex-direction: column
@@ -1025,8 +1067,9 @@
   .card
     &__photo
       &-wrap
+        display: flex
         padding-top: 1rem
-        align-items: flex-start
+        justify-content: center
   .col
     &__useful
       width: 100%
@@ -1111,19 +1154,46 @@
   .card
     &__pricetag
       &-wrap
+        justify-content: space-between
+        max-width: 100%
         margin-right: 0.5rem
     &__button-wrap
       padding-bottom: 0
+      flex-basis: 100%
+      justify-content: flex-start
     &__lable--mobile
       display: flex
       margin-right: 1rem
     &__photo-block
-      flex-basis: 50%
+      flex-basis: 100%
+      width: 100%
+      max-width: 100%
       margin-bottom: 2rem
+      justify-content: center
+    &__delete
+      &-btn
+        display: none
+        &--mobile
+          display: flex
+          text-transform: uppercase
+          color: $light
+          background-color: $pink
+          border: none
+          font-weight: 700
+          padding: 1rem 3rem
+          outline: none
+          &:active
+            outline: none
+            background-color: $dark-blue
+
   .shopping-cart
     &__row
       flex-wrap: wrap
       justify-content: space-between
+      max-width: 262px
+      margin: auto
+      &--first
+        display: none
   .swiper
     &-button
       &-next3, &-prev3
@@ -1134,7 +1204,9 @@
         font-size: 1.5rem
     &__title
       &-wrap
-        flex-basis: 50%
+        flex-basis: 100%
+        max-width: 100%
+        padding-left: 0
     &__pricetag
       &-wrap
         flex-basis: 100%
@@ -1147,10 +1219,13 @@
       &-wrap
         flex-basis: 100%
         margin-bottom: 1rem
-        justify-content: flex-start
+        justify-content: space-between
+    &__img
+      display: none
+      &--mobile
+        display: block
     &__button
       &-wrap
-        margin-top: -7rem
   .calculation
     &__button
       width: 100% 
@@ -1270,14 +1345,16 @@
       &-wrap
         flex-basis: 100%
         margin-bottom: 1rem
+        justify-content: space-between
     &__select
       &-wrap
         flex-basis: 100%
         margin-bottom: 1rem
-        justify-content: flex-start
+        max-width: 100%
+        justify-content: space-between
     &__button
       &-wrap
-        margin-top: -7rem
+        
   .calculation
     &__form
       padding: 1.5rem 1.5rem

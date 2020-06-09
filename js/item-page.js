@@ -130,16 +130,6 @@ $(document).ready(function () {
         minlength: "Email не может содержать менее 8 символов"
       }
     },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-        }
-      });
-    },
   });
 });
   const reviewForm = $('.review__form');

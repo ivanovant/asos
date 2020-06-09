@@ -46,6 +46,16 @@ img
     padding: 10.8rem 0 11rem
     &--small
       padding: 6.2rem 0 11rem
+    &--line
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: #e6e6e6
   &__offers
     padding: 9.5rem 0
   &__contacts

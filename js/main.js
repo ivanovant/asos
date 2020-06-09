@@ -174,11 +174,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     switchCart();
     });
   });
-
+  const access1 = document.querySelector('.access');
   document.addEventListener('keydown', (event) => {
     if (event.key === "Escape") {
         cart.classList.remove('cart__modal--visible');
         search.classList.remove('search--visible');
+        access1.classList.remove('access--visible')
     }
   });
 
@@ -218,17 +219,6 @@ offersForm.validate({
       minlength: "Email не может содержать менее 8 символов"
     }
   },
-  submitHandler: function(form) {
-    $.ajax({
-      type: "POST",
-      url: "send.php",
-      data: $(form).serialize(),
-      success: function (response) {
-        $(form)[0].reset();
-        // success.toggleClass('success--visible');
-      }
-    });
-  }
 });
 $(document).ready(function () {
   const scrollUp = $('.scroll-up__button');
@@ -257,4 +247,20 @@ $(document).ready(function () {
           cart.removeClass('cart__modal--visible');
     }
   });
+
+  const access = $('.access');
+  const accessClose = $('.access__close')
+  const userLink = $('.user__link')
+
+  accessClose.on('click', () => {
+    access.toggleClass('access--visible')
+  });
+  userLink.on('click', () => {
+    access.toggleClass('access--visible');
+  })
+
+  access.on('click', (e) => {
+    if (access.is(e.target))
+      access.removeClass('access--visible');
+    });
 });

@@ -20,17 +20,6 @@ $(document).ready(function () {
         minlength: "Email не может содержать менее 10 символов"
       }
     },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          // success.toggleClass('success--visible');
-        }
-      });
-    }
   });
 
   const cart = $('.cart__modal');
