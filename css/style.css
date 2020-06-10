@@ -915,7 +915,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1rem; }
-  .nav__link:hover::after {
+  .nav__link::after {
     position: absolute;
     left: 0;
     top: 1.9rem;
@@ -925,11 +925,15 @@ img {
     height: 2px; }
   .nav__link--light {
     color: #ffffff; }
-    .nav__link--light:hover::after {
+    .nav__link--light:hover {
+      color: #ef50a2; }
+    .nav__link--light--active::after {
       background-color: #ffffff; }
   .nav__link--dark {
     color: #2d3a4b; }
-    .nav__link--dark:hover::after {
+    .nav__link--dark:hover {
+      color: #ef50a2; }
+    .nav__link--dark--active::after {
       background-color: #2d3a4b; }
 
 .links {
